@@ -57,7 +57,7 @@ const pricing = [
     ],
     button: {
       text: "Contact us",
-      link: "/contact",
+      link: "/about",
     },
   },
 ];
