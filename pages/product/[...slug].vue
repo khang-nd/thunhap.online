@@ -1,0 +1,60 @@
+<template>
+  <main class="max-w-screen-xl mx-auto pt-16 flex flex-col lg:flex-row">
+    <ContentDoc>
+      <template #default="{ doc }">
+        <ProductContainer as="article" class="order-1">
+          <h1 class="text-4xl lg:text-5xl font-bold mb-2">{{ doc.title }}</h1>
+          <CoreParagraph>{{ doc.description }}</CoreParagraph>
+          <img v-if="doc.image?.src" :src="doc.image.src" :alt="doc.image.alt"
+            class="border border-gray-300 my-6 p-3 rounded-lg" />
+          <ContentRenderer :value="doc" />
+          <ProductTags :tags="doc.hashtags" />
+        </ProductContainer>
+        <ProductContainer as="aside" class="order-none lg:order-1 lg:max-w-xs">
+          <div>
+            <CoreHeading as="h3" class="mb-4">Tổng quan</CoreHeading>
+            <ProductField title="Tình trạng">
+              <CoreBadge :color="doc.status">
+                <NuxtLink :href="'/browse?status=' + doc.status">{{ status[doc.status] }}</NuxtLink>
+              </CoreBadge>
+            </ProductField>
+            <ProductField title="Phân loại">
+              <CoreBadge v-for="category in doc.categories" :key="category">
+                <NuxtLink :href="'/browse/' + category">{{ categories[category] || category }}</NuxtLink>
+              </CoreBadge>
+            </ProductField>
+            <ProductField v-if="doc.revenue" title="Doanh thu">
+              <span class="font-bold text-xl">{{ formatPrice(doc.revenue) }}/tháng</span>
+            </ProductField>
+            <ProductField v-if="doc.models" title="Mô hình thu nhập">
+              <CoreBadge v-if="typeof doc.models === 'string'">
+                <NuxtLink :href="'/browse?models=' + doc.models">{{ revenueModels[doc.models] }}</NuxtLink>
+              </CoreBadge>
+              <CoreBadge v-else v-for="model in doc.models" :key="model">
+                <NuxtLink :href="'/browse?models=' + model">{{ revenueModels[model] }}</NuxtLink>
+              </CoreBadge>
+            </ProductField>
+            <ProductField v-if="doc.year" title="Năm thành lập">
+              {{ doc.year }}
+            </ProductField>
+            <CoreButton v-if="doc.homepage" style-name="outline" :href="`https://${doc.homepage}`" target="_blank"
+              class="flex items-center justify-center space-x-2 w-full">
+              <span>Trang chủ</span>
+              <Icon name="uil:external-link-alt" />
+            </CoreButton>
+          </div>
+        </ProductContainer>
+      </template>
+      <template #not-found>
+        <div class="w-full text-center py-16">
+          <h1 class="text-9xl font-bold mb-6">404</h1>
+          <CoreParagraph class="mb-6">Oopsie! Trang này không tồn tại.</CoreParagraph>
+          <CoreButton href="/">Về trang chủ</CoreButton>
+        </div>
+      </template>
+    </ContentDoc>
+  </main>
+</template>
+
+<script setup lang="ts">
+</script>
