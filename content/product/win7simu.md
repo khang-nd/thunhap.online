@@ -7,7 +7,7 @@ image:
 
 homepage: visnalize.com/win7simu/about.html
 status: active
-categories: [entertainment, utility]
+categories: [entertainment, mobile]
 revenue: 2500
 models: [advertising, subscription]
 year: 2020

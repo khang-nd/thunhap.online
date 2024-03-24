@@ -2,7 +2,7 @@ export const categories = {
   ai: "AI",
   marketing: "Marketing",
   design: "Thiết kế",
-  website: "Website Builders",
+  website: "Công cụ làm web",
   mobile: "Di động",
   analytics: "Analytics",
   editor: "Chỉnh sửa ảnh/video",
@@ -10,6 +10,7 @@ export const categories = {
   utility: "Tiện ích",
   service: "Dịch vụ",
   entertainment: "Giải trí",
+  jobs: "Trang tìm việc",
 };
 
 export const categoryIcon: Record<keyof typeof categories, string> = {
@@ -22,8 +23,9 @@ export const categoryIcon: Record<keyof typeof categories, string> = {
   editor: "uil:image-edit",
   notes: "uil:notes",
   utility: "uil:box",
-  service: "uil:briefcase",
+  service: "uil:calling",
   entertainment: "uil:play-circle",
+  jobs: "uil:briefcase-alt",
 };
 
 export const revenueModels = {
