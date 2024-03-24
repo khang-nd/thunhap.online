@@ -37,9 +37,9 @@
             <ProductField v-if="doc.year" title="Năm thành lập">
               {{ doc.year }}
             </ProductField>
-            <CoreButton v-if="doc.homepage" style-name="outline" :href="`https://${doc.homepage}`" target="_blank"
+            <CoreButton v-if="doc.homepage" :href="getFullUrl(doc.homepage)" target="_blank"
               class="flex items-center justify-center space-x-2 w-full">
-              <span>Trang chủ</span>
+              <span>{{ getHost(doc.homepage) }}</span>
               <Icon name="uil:external-link-alt" />
             </CoreButton>
           </div>
@@ -57,4 +57,6 @@
 </template>
 
 <script setup lang="ts">
+const getFullUrl = (host: string) => /^https?:\/\//.test(host) ? host : `https://${host}`;
+const getHost = (url: string) => new URL(getFullUrl(url)).host;
 </script>
