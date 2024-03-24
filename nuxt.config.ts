@@ -8,5 +8,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/content", "nuxt-icon", "nuxt-gtag"],
+  modules: ["@nuxt/content", "@nuxtjs/seo", "nuxt-icon", "nuxt-gtag"],
+  site: {
+    url: "https://thunhap.online",
+    name: "Thu Nhập Online",
+    description: "Khám phá các sản phẩm online thành công, mang lại thu nhập",
+  },
 });
