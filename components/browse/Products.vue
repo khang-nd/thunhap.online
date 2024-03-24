@@ -34,7 +34,7 @@ watch(() => route.query, () => {
       models && { models: { $in: models } },
       tags && { hashtags: { $in: tags } },
     ].filter(Boolean),
-    limit: 24,
+    limit: 18,
     sort: [{}]
   }
 }, { immediate: true })

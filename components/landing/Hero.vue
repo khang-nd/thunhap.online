@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div class="p-24">
+    <div class="lg:p-16">
       <img src="~/assets/img/hero.png" alt="Starship starts the engine" loading="eager" format="avif" width="512"
         height="512" />
     </div>

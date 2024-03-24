@@ -19,6 +19,7 @@ const generate = computed(() => props.id && headings?.anchorLinks?.h2)
 const iconMap: Record<string, string> = {
   "doanh-thu": "healthicons:money-bag-outline",
   "quảng-bá": "healthicons:megaphone-outline",
+  "thông-tin": "healthicons:info-outline",
 }
 const icon = Object.keys(iconMap).reduce((acc, key) => {
   return (props.id?.includes(key)) ? iconMap[key] : acc

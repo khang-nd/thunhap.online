@@ -7,7 +7,7 @@
           <CoreParagraph>{{ doc.description }}</CoreParagraph>
           <img v-if="doc.image?.src" :src="doc.image.src" :alt="doc.image.alt"
             class="border border-gray-300 my-6 p-3 rounded-lg" />
-          <ContentRenderer :value="doc" />
+          <ContentRenderer :value="doc" class="mb-16" />
           <ProductTags :tags="doc.hashtags" />
         </ProductContainer>
         <ProductContainer as="aside" class="order-none lg:order-1 lg:max-w-xs">
