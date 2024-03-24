@@ -8,5 +8,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/content", "nuxt-icon"],
+  modules: ["@nuxt/content", "nuxt-icon", "nuxt-gtag"],
 });
