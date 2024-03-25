@@ -9,6 +9,7 @@ revenue: 2500
 models: [advertising, subscription]
 year: 2020
 hashtags: [vietnam, b2c, anon]
+publishedAt: 1711187774000
 ---
 
 # Win7 Simu

@@ -3,6 +3,7 @@
     <ContentDoc>
       <template #default="{ doc }">
         <ProductContainer as="article" class="order-1">
+          <ProductDatetime :timestamp="doc.publishedAt" class="mb-2" />
           <ContentRenderer :value="doc" class="mb-16" />
           <ProductTags :tags="doc.hashtags" />
         </ProductContainer>

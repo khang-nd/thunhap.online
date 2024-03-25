@@ -9,6 +9,7 @@ revenue: 90000
 models: subscription
 year: 2016
 hashtags: [b2c, buildinpublic]
+publishedAt: 1711274173000
 ---
 
 # Carrd

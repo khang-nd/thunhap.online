@@ -9,6 +9,7 @@ revenue: 14000
 models: subscription
 year: 2021
 hashtags: [vietnam, buildinpublic, b2c]
+publishedAt: 1711187773000
 ---
 
 # Black Magic

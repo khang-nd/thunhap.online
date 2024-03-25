@@ -10,7 +10,7 @@
       </aside>
       <CoreDialog title="Lọc kết quả" v-model:open="openFilterModal">
         <template #trigger>
-          <CoreButton class="mb-6 flex items-center space-x-2 lg:hidden" style-name="outline">
+          <CoreButton class="mb-6 flex items-center space-x-2 lg:hidden" variant="outline">
             <Icon name="uil:sliders-v-alt" />
             <span>Lọc kết quả</span>
           </CoreButton>

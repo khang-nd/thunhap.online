@@ -9,6 +9,7 @@ revenue: 35000
 models: transaction
 year: 2021
 hashtags: [b2c, notion]
+publishedAt: 1711274175000
 ---
 
 # Notionway

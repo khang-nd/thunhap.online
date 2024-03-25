@@ -9,6 +9,7 @@ revenue: 2500
 models: transaction
 year: 2023
 hashtags: [vietnam, b2c]
+publishedAt: 1711187773010
 ---
 
 # CompressX

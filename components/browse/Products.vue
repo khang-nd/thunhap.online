@@ -35,7 +35,7 @@ watch(() => route.query, () => {
       tags && { hashtags: { $in: tags } },
     ].filter(Boolean),
     limit: 18,
-    sort: [{}]
+    sort: [{ publishedAt: -1 }]
   }
 }, { immediate: true })
 </script>

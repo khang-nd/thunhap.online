@@ -9,6 +9,7 @@ revenue: 4000
 models: transaction
 year: 2022
 hashtags: [vietnam, b2c, buildinpublic]
+publishedAt: 1711187773001
 ---
 
 # Xnapper

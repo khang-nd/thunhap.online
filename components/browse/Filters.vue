@@ -36,7 +36,7 @@
       {{ tag }}
     </CoreToggle>
   </BrowseFilterGroup>
-  <CoreButton v-if="showReset" href="/browse" style-name="outline" class="block w-full sticky bottom-4">
+  <CoreButton v-if="showReset" href="/browse" variant="outline" class="block w-full sticky bottom-4">
     Reset
   </CoreButton>
 </template>
@@ -44,7 +44,7 @@
 <script setup lang="ts">
 const route = useRoute()
 const router = useRouter();
-const { data } = await useAsyncData('product', () => queryContent('/').find())
+const { data } = await useAsyncData('product', () => queryContent('/product').find())
 const initial = {
   revenue: () => (route.query.revenue as string)?.split('-').map(Number) || [0, 100000],
   status: () => (route.query.status as string)?.split(',') || [],

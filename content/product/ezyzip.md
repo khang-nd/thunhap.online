@@ -9,6 +9,7 @@ revenue: 8000
 models: advertising
 year: 2004
 hashtags: [b2c]
+publishedAt: 1711274174000
 ---
 
 # ezyZip

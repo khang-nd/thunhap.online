@@ -1,7 +1,7 @@
 <template>
   <CoreHeading as="h2" :id="id" class="mt-12">
     <a v-if="id && generate" :href="`#${id}`" class="hover:opacity-70">
-      <Icon :name="icon" class="inline mr-1 relative bottom-[0.1em]" />
+      <Icon v-if="icon" :name="icon" class="inline mr-1 relative bottom-[0.1em]" />
       <span>
         <slot />
       </span>
@@ -23,5 +23,5 @@ const iconMap: Record<string, string> = {
 }
 const icon = Object.keys(iconMap).reduce((acc, key) => {
   return (props.id?.includes(key)) ? iconMap[key] : acc
-}, 'healthicons:money-bag-outline')
+}, '')
 </script>

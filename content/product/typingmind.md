@@ -9,6 +9,7 @@ revenue: 40000
 models: [transaction, subscription]
 year: 2023
 hashtags: [vietnam, b2c, b2b, buildinpublic]
+publishedAt: 1711187773100
 ---
 
 # Typing Mind
