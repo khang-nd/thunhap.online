@@ -1,3 +1,5 @@
+export type CategoryType = keyof typeof categories;
+
 export const categories = {
   ai: "AI",
   marketing: "Marketing",
@@ -13,7 +15,7 @@ export const categories = {
   jobs: "Trang tìm việc",
 };
 
-export const categoryIcon: Record<keyof typeof categories, string> = {
+export const categoryIcon: Record<CategoryType, string> = {
   ai: "uil:robot",
   marketing: "uil:megaphone",
   design: "uil:palette",
@@ -28,6 +30,8 @@ export const categoryIcon: Record<keyof typeof categories, string> = {
   jobs: "uil:briefcase-alt",
 };
 
+export type RevenueModelType = keyof typeof revenueModels;
+
 export const revenueModels = {
   subscription: "Thu phí định kỳ",
   advertising: "Tiền quảng cáo",
@@ -35,6 +39,8 @@ export const revenueModels = {
   sponsorship: "Tài trợ",
   affiliate: "Tiếp thị liên kết",
 };
+
+export type StatusType = keyof typeof status;
 
 export const status = {
   active: "Hoạt động",

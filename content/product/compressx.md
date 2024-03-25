@@ -1,10 +1,7 @@
 ---
-title: CompressX
-description: Phần mềm nén ảnh và video dành cho MacOS
 image:
   src: https://cdn.thunhap.online/product/compressx.png
   alt: CompressX
-
 homepage: compressx.app
 status: active
 categories: [editor, utility]
@@ -13,6 +10,12 @@ models: transaction
 year: 2023
 hashtags: [vietnam, b2c]
 ---
+
+# CompressX
+
+Phần mềm nén ảnh và video dành cho MacOS
+
+:hero-img{:src="image.src" :alt="image.alt"}
 
 __CompressX__ với tính năng chính là hỗ trợ việc nén ảnh và video, kích cỡ file giảm đáng kể mà không làm mất đi chất lượng hình ảnh. Cùng với nhiều tính năng đi kèm tiện lợi khác, CompressX đang trở thành một trong những phần mềm nén ảnh và video phổ biến được nhiều người dùng MacOS lựa chọn.
 

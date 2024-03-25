@@ -1,10 +1,7 @@
 ---
-title: Remote Rocketship
-description: Trang đăng tin tuyển dụng và tìm kiếm việc làm từ xa
 image:
   src: https://cdn.thunhap.online/product/remoterocketship.png
   alt: Remote Rocketship
-
 homepage: remoterocketship.com
 status: active
 categories: [jobs]
@@ -13,6 +10,12 @@ models: [subscription, transaction]
 year: 2022
 hashtags: [b2c, b2b]
 ---
+
+# Remote Rocketship
+
+Trang đăng tin tuyển dụng và tìm kiếm việc làm từ xa
+
+:hero-img{:src="image.src" :alt="image.alt"}
 
 __Remote Rocketship__ thu thập dữ liệu việc làm từ xa từ nhiều nguồn khác nhau, giúp người tìm việc dễ dàng tìm kiếm công việc phù hợp với mình. Đồng thời, trang web cũng cho phép nhà tuyển dụng đăng tin và tiếp cận được nhiều ứng viên tiềm năng trên toàn thế giới.
 

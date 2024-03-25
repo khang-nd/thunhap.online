@@ -27,7 +27,7 @@ withDefaults(defineProps<Props>(), {
 
 const sizes: Record<Size, string> = {
   lg: "px-5 py-2.5",
-  md: "px-4 py-2",
+  md: "px-3 py-2",
 };
 
 const styles: Record<StyleName, string> = {

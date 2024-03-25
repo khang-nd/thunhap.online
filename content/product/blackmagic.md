@@ -1,10 +1,7 @@
 ---
-title: Black Magic
-description: Công cụ hỗ trợ phân tích và quản lý Twitter
 image:
   src: https://cdn.thunhap.online/product/blackmagic.png
   alt: Black Magic
-
 homepage: blackmagic.so
 status: acquired
 categories: [marketing, utility]
@@ -13,6 +10,12 @@ models: subscription
 year: 2021
 hashtags: [vietnam, buildinpublic, b2c]
 ---
+
+# Black Magic
+
+Công cụ hỗ trợ phân tích và quản lý Twitter
+
+:hero-img{:src="image.src" :alt="image.alt"}
 
 __Black Magic__ sử dụng [API của Twitter](https://developer.twitter.com/en/docs/twitter-api){target="blank"} để bổ sung nhiều tính năng hữu ích hỗ trợ người dùng trên mạng xã hội này, giúp họ dễ dàng quản lý tài khoản, quản lý bài đăng, phân tích dữ liệu, và tương tác với cộng đồng một cách hiệu quả. Công cụ được phát hành dưới dạng tiện ích mở rộng cho trình duyệt và ứng dụng di động.
 

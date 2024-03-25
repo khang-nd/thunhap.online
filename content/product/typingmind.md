@@ -1,10 +1,7 @@
 ---
-title: Typing Mind
-description: Phần mềm chat AI thay thế cho ChatGPT, Gemini, Claude
 image:
   src: https://cdn.thunhap.online/product/typingmind.png
   alt: Typing Mind
-
 homepage: typingmind.com
 status: active
 categories: [ai, utility]
@@ -13,6 +10,12 @@ models: [transaction, subscription]
 year: 2023
 hashtags: [vietnam, b2c, b2b, buildinpublic]
 ---
+
+# Typing Mind
+
+Phần mềm chat AI thay thế cho ChatGPT, Gemini, Claude
+
+:hero-img{:src="image.src" :alt="image.alt"}
 
 __Typing Mind__ có xuất phát điểm đơn giản chỉ là một giao diện để chat với AI, sử dụng API của ChatGPT để bổ sung các tính năng mà chính ChatGPT chưa hỗ trợ. Tuy nhiên, với sự phát triển và mở rộng, phần mềm đã trở thành một nền tảng chat AI đa nhiệm, hỗ trợ nhiều tính năng vượt trội và nhiều loại AI khác như Gemini, Claude.
 

@@ -1,10 +1,7 @@
 ---
-title: Win7 Simu
-description: Ứng dụng mô phỏng Windows 7 dành cho web và Android
 image:
   src: https://cdn.thunhap.online/product/win7simu.png
   alt: Win7 Simu
-
 homepage: visnalize.com/win7simu/about.html
 status: active
 categories: [entertainment, mobile]
@@ -13,6 +10,12 @@ models: [advertising, subscription]
 year: 2020
 hashtags: [vietnam, b2c, anon]
 ---
+
+# Win7 Simu
+
+Ứng dụng mô phỏng Windows 7 dành cho web và Android
+
+:hero-img{:src="image.src" :alt="image.alt"}
 
 __Win7 Simu__ mô phỏng giao diện và chức năng của Windows 7, cho phép người dùng trải nghiệm một hệ điều hành cổ điển trên web hoặc ngay trên chiếc điện thoại Android của mình mà không cần qua các bước cài đặt phức tạp.
 

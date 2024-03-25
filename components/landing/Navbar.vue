@@ -8,25 +8,25 @@
           <span class="font-bold text-slate-800">Thu Nhập</span>
           <span class="text-slate-500">.online</span>
         </NuxtLink>
-        <div class="block lg:hidden">
-          <button @click="open = !open" class="text-gray-800">
-            <svg fill="currentColor" class="w-4 h-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <title>Menu</title>
-              <path v-show="open" fill-rule="evenodd" clip-rule="evenodd"
-                d="M18.278 16.864a1 1 0 01-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 01-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 011.414-1.414l4.829 4.828 4.828-4.828a1 1 0 111.414 1.414l-4.828 4.829 4.828 4.828z">
-              </path>
-              <path v-show="!open" fill-rule="evenodd"
-                d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z">
-              </path>
-            </svg>
-          </button>
-        </div>
+        <button @click="openMenu = !openMenu"
+          class="block p-1 lg:hidden text-gray-500 rounded-full transition-colors hover:text-black hover:bg-gray-100">
+          <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path v-show="openMenu" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.278 16.864a1 1 0 01-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 01-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 011.414-1.414l4.829 4.828 4.828-4.828a1 1 0 111.414 1.414l-4.828 4.829 4.828 4.828z">
+            </path>
+            <path v-show="!openMenu" fill-rule="evenodd"
+              d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z">
+            </path>
+          </svg>
+        </button>
       </div>
-      <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ block: open, hidden: !open }">
+      <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ block: openMenu, hidden: !openMenu }">
+        <LandingSearch />
         <ul class="flex flex-col lg:flex-row lg:gap-3">
           <li v-for="item of menuitems ">
             <NuxtLink :href="item.path"
-              :class='[($route.path.includes(item.path) ? "text-black bg-gray-100" : "text-gray-500"), "rounded-sm flex p-2 transition-colors hover:text-black lg:px-3"]'>
+              :class='[($route.path.includes(item.path) ? "text-black bg-gray-100" : "text-gray-500"), "rounded-md flex p-2 transition-colors hover:text-black lg:px-3"]'>
               {{ item.title }}
             </NuxtLink>
           </li>
@@ -60,6 +60,6 @@ const menuitems = [
   },
 ];
 
-const open = ref(false);
+const openMenu = ref(false);
 const titleMouseOver = ref(false);
 </script>

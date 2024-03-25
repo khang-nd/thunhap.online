@@ -1,5 +1,5 @@
 <template>
-  <BrowseFilterGroup title="Phân loại">
+  <BrowseFilterGroup title="Phân loại" class="pt-4 lg:pt-0">
     <ul>
       <li v-for="(text, category) in categories" :key="category">
         <NuxtLink :to="{ path: isActive(category) ? '/browse' : `/browse/${category}`, query: $route.query }"

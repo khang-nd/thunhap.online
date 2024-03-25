@@ -1,10 +1,7 @@
 ---
-title: Xnapper
-description: Phần mềm chụp và tinh chỉnh ảnh chụp màn hình dành cho MacOS
 image:
   src: https://cdn.thunhap.online/product/xnapper.png
   alt: Xnapper
-
 homepage: xnapper.com
 status: acquired
 categories: [editor, utility]
@@ -13,6 +10,12 @@ models: transaction
 year: 2022
 hashtags: [vietnam, b2c, buildinpublic]
 ---
+
+# Xnapper
+
+Phần mềm chụp và tinh chỉnh ảnh chụp màn hình dành cho MacOS
+
+:hero-img{:src="image.src" :alt="image.alt"}
 
 __Xnapper__ cung cấp nhiều tính năng vượt trội hỗ trợ việc chụp và tinh chỉnh ảnh chụp màn hình như tự động cân bằng ảnh chụp, tự động nhận diện màu nền, văn bản, thậm chí cho phép ẩn đi những thông tin nhạy cảm. Phần mềm tận dụng một số giải pháp mà MacOS cung cấp để xây dựng một công cụ chụp ảnh màn hình mạnh mẽ, dễ sử dụng và hiệu quả.
 

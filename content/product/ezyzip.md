@@ -1,10 +1,7 @@
 ---
-title: ezyZip
-description: Công cụ online để nén, giải nén và chuyển đổi định dạng file nén
 image:
   src: https://cdn.thunhap.online/product/ezyzip.png
   alt: ezyZip
-
 homepage: ezyzip.com
 status: active
 categories: [utility]
@@ -13,6 +10,12 @@ models: advertising
 year: 2004
 hashtags: [b2c]
 ---
+
+# ezyZip
+
+Công cụ online để nén, giải nén và chuyển đổi định dạng file nén
+
+:hero-img{:src="image.src" :alt="image.alt"}
 
 __ezyZip__ thực hiện duy nhất một nhiệm vụ, đó là cho phép người dùng làm việc với các file nén, bao gồm nén, giải nén các loại file khác nhau, quản lý và chuyển đổi giữa các định dạng nén. Công cụ có giao diện đơn giản và dễ sử dụng, chỉ cần truy cập trang web là có thể sử dụng ngay mà không cần cài đặt phần mềm nào.
 

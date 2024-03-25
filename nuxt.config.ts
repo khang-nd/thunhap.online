@@ -8,7 +8,18 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/content", "@nuxtjs/seo", "nuxt-icon", "nuxt-gtag"],
+  content: {
+    experimental: {
+      search: {},
+    },
+  },
+  modules: [
+    "@nuxt/content",
+    "@nuxtjs/seo",
+    "@vueuse/nuxt",
+    "nuxt-icon",
+    "nuxt-gtag",
+  ],
   site: {
     url: "https://thunhap.online",
     name: "Thu Nhập Online",

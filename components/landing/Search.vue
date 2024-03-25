@@ -1,0 +1,53 @@
+<template>
+  <CoreDialog title="Tìm kiếm" portal="body" v-model:open="openSearch">
+    <template #trigger>
+      <button
+        class="flex items-center w-full lg:w-auto mb-2 lg:mr-3 px-3 py-2 space-x-1 text-gray-500 border rounded-md transition-colors hover:text-black hover:border-gray-400 hover:bg-gray-100">
+        <Icon name="uil:search" class="" />
+        <span>Tìm kiếm</span>
+      </button>
+    </template>
+
+    <div class="px-4 py-6">
+      <label class="flex items-center mb-6 gap-4">
+        <Icon name="uil:search" size="24" />
+        <input type="text" placeholder="Tìm kiếm..." v-model="searchText" class="w-full p-2 border rounded-sm" />
+      </label>
+      <div class="h-80 overflow-auto">
+        <ul v-if="results?.value.length > 0">
+          <li v-for="item in results.value" :key="item.id">
+            <NuxtLink :href="item.id" class="block p-2 transition-colors hover:bg-gray-200">
+              <div class="font-medium mb-1">
+                <span v-for="(title, index) in [...item.titles, item.title]">
+                  <Icon v-if="index > 0" name="uil:angle-right" class="inline" />
+                  <span>{{ title }}</span>
+                </span>
+              </div>
+              <div class="text-sm" v-html="truncateText(item.content, item.terms[0])" />
+            </NuxtLink>
+          </li>
+        </ul>
+        <div v-else class="flex items-center justify-center h-full text-gray-500 italic">
+          {{ !searchText ? "Vui lòng nhập từ khóa" : "Không có kết quả" }}
+        </div>
+      </div>
+    </div>
+  </CoreDialog>
+</template>
+
+<script setup lang="ts">
+const openSearch = ref(false)
+const searchText = ref("")
+const results = ref()
+
+const truncateText = (text: string, key: string) => {
+  const index = text.toLowerCase().indexOf(key.toLowerCase())
+  const start = Math.max(0, index - 25)
+  const end = Math.min(text.length, index + 25)
+  return (start > 0 ? '...' : '') + text.slice(start, end).trim() + (end < text.length ? '...' : '')
+}
+
+watchDebounced(searchText, async (text) => {
+  results.value = await searchContent(text)
+}, { debounce: 500 })
+</script>

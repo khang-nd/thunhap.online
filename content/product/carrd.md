@@ -1,10 +1,7 @@
 ---
-title: Carrd
-description: Nền tảng xây dựng web một trang đơn giản và nhanh chóng
 image:
   src: https://cdn.thunhap.online/product/carrd.png
   alt: Carrd
-
 homepage: carrd.co
 status: active
 categories: [website]
@@ -13,6 +10,12 @@ models: subscription
 year: 2016
 hashtags: [b2c, buildinpublic]
 ---
+
+# Carrd
+
+Nền tảng xây dựng web một trang đơn giản và nhanh chóng
+
+:hero-img{:src="image.src" :alt="image.alt"}
 
 __Carrd__ thực hiện một nhiệm vụ vô cùng đơn giản, đó là tạo website nhưng chỉ với một trang duy nhất. Tuy vậy, nền tảng này lại cung cấp rất nhiều tính năng vượt trội và dễ sử dụng, giúp người dùng có thể tạo ra những trang web đẹp mắt và chuyên nghiệp, phù hợp với nhiều mục đích khác nhau mà không cần phải biết lập trình hay viết code.
 
