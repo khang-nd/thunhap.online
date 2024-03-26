@@ -20,7 +20,7 @@ Phần mềm chat AI thay thế cho ChatGPT, Gemini, Claude
 
 __Typing Mind__ có xuất phát điểm đơn giản chỉ là một giao diện để chat với AI, sử dụng API của ChatGPT để bổ sung các tính năng mà chính ChatGPT chưa hỗ trợ. Tuy nhiên, với sự phát triển và mở rộng, phần mềm đã trở thành một nền tảng chat AI đa nhiệm, hỗ trợ nhiều tính năng vượt trội và nhiều loại AI khác như Gemini, Claude.
 
-Công cụ được xây dựng và phát triển từ năm {{ $doc.year }} bởi anh [Tony Dinh](https://twitter.com/tdinh_me){target="_blank"}, một kỹ sư phần mềm người Việt Nam.
+Công cụ được xây dựng và phát triển từ năm {{ $doc.year }} bởi anh [Tony Dinh](https://twitter.com/tdinh_me), một kỹ sư phần mềm người Việt Nam.
 
 ## Mô hình thu nhập & doanh thu
 

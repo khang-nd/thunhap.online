@@ -18,9 +18,9 @@ Thương hiệu cung cấp các template Notion miễn phí và trả phí
 
 :hero-img{:src="image.src" :alt="image.alt"}
 
-__Notionway__ tận dụng sự phổ biến của [Notion](https://www.notion.so/){target=blank}, một công cụ ghi chú đa năng, để cung cấp các mẫu template Notion miễn phí và trả phí cho người dùng. Các mẫu template này giúp người dùng tiết kiệm thời gian và công sức trong việc tạo ra các trang ghi chú, quản lý dự án, lịch trình, và nhiều rất nhiều mục đích khác.
+__Notionway__ tận dụng sự phổ biến của [Notion](https://www.notion.so/), một công cụ ghi chú đa năng, để cung cấp các mẫu template Notion miễn phí và trả phí cho người dùng. Các mẫu template này giúp người dùng tiết kiệm thời gian và công sức trong việc tạo ra các trang ghi chú, quản lý dự án, lịch trình, và nhiều rất nhiều mục đích khác.
 
-Thương hiệu được xây dựng và phát triển từ năm {{ $doc.year }} bởi anh [Modest Mitkus](https://twitter.com/ModestMitkus){target="_blank"}, một nhà thiết kế UI/UX người Lithuania.
+Thương hiệu được xây dựng và phát triển từ năm {{ $doc.year }} bởi anh [Modest Mitkus](https://twitter.com/ModestMitkus), một nhà thiết kế UI/UX người Lithuania.
 
 ## Mô hình thu nhập & doanh thu
 
@@ -34,4 +34,4 @@ Notionway được sự đón nhận chủ yếu từ cộng đồng Twitter, sa
 
 ![Kênh marketing Notionway](https://cdn.thunhap.online/product/notionway+channels.png)
 
-Cũng góp phần không nhỏ vào việc quảng bá cho Notionway, là việc anh Modest Mitkus chia sẻ kiến thức và kinh nghiệm của mình về việc xây dựng một doanh nghiệp online trên [trang cá nhân](https://www.modestmitkus.com/){target=_blank}.
+Cũng góp phần không nhỏ vào việc quảng bá cho Notionway, là việc anh Modest Mitkus chia sẻ kiến thức và kinh nghiệm của mình về việc xây dựng một doanh nghiệp online trên [trang cá nhân](https://www.modestmitkus.com/).

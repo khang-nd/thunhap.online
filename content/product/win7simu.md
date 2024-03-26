@@ -20,17 +20,17 @@ publishedAt: 1711187774000
 
 __Win7 Simu__ mô phỏng giao diện và chức năng của Windows 7, cho phép người dùng trải nghiệm một hệ điều hành cổ điển trên web hoặc ngay trên chiếc điện thoại Android của mình mà không cần qua các bước cài đặt phức tạp.
 
-Ứng dụng được phát triển từ năm {{ $doc.year }} bởi [Visnalize](https://visnalize.com/){target="_blank"}, một indie maker ẩn danh người Việt Nam.
+Ứng dụng được phát triển từ năm {{ $doc.year }} bởi [Visnalize](https://visnalize.com/), một indie maker ẩn danh người Việt Nam.
 
-Ứng dụng hiện đã đạt hơn 10 triệu lượt tải trên [Google Play](https://play.google.com/store/apps/details?id=com.visnalize.win7simu){target="_blank"} và có hơn [60,000](https://twitter.com/visnalize/status/1757763108846891061){target="_blank"} người dùng truy cập mỗi ngày từ cả hai nền tảng web và Android.
+Ứng dụng hiện đã đạt hơn 10 triệu lượt tải trên [Google Play](https://play.google.com/store/apps/details?id=com.visnalize.win7simu) và có hơn [60,000](https://twitter.com/visnalize/status/1757763108846891061) người dùng truy cập mỗi ngày từ cả hai nền tảng web và Android.
 
 ## Mô hình thu nhập & doanh thu
 
-Win7 Simu tạo thu nhập bằng cách hiển thị quảng cáo trong ứng dụng và bán gói đăng ký xóa quảng cáo cho người dùng. Gói đăng ký có giá [:price{v=1.99}/tháng](https://visnalize.com/win7simu/about.html#pricing){target="_blank"} hoặc :price{v=19.99}/năm. Ngoài ra, ứng dụng còn bán các chủ đề giao diện (theme) bằng hình thức sở hữu trọn đời, giá trung bình là [:price{v=1.99}](https://store.visnalize.com/){target="_blank"} cho mỗi theme.
+Win7 Simu tạo thu nhập bằng cách hiển thị quảng cáo trong ứng dụng và bán gói đăng ký xóa quảng cáo cho người dùng. Gói đăng ký có giá [:price{v=1.99}/tháng](https://visnalize.com/win7simu/about.html#pricing) hoặc :price{v=19.99}/năm. Ngoài ra, ứng dụng còn bán các chủ đề giao diện (theme) bằng hình thức sở hữu trọn đời, giá trung bình là [:price{v=1.99}](https://store.visnalize.com/) cho mỗi theme.
 
 Ứng dụng sử dụng hai nền tảng thanh toán là :payment{id="playstore"} cho Android và :payment{id="lmsqueezy"} cho web.
 
-Với mô hình này, ứng dụng hiện đang mang lại mức doanh thu ước tính trung bình là :price{:v="revenue"}/tháng theo [chia sẻ](https://twitter.com/visnalize/status/1769680648506094044){target="_blank"} của tác giả.
+Với mô hình này, ứng dụng hiện đang mang lại mức doanh thu ước tính trung bình là :price{:v="revenue"}/tháng theo [chia sẻ](https://twitter.com/visnalize/status/1769680648506094044) của tác giả.
 
 ![Doanh thu Win7 Simu 2/2024](https://pbs.twimg.com/media/GI7LsVybgAAwtfd?format=jpg&name=medium)
 

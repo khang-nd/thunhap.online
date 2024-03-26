@@ -20,7 +20,7 @@ Nền tảng xây dựng web một trang đơn giản và nhanh chóng
 
 __Carrd__ thực hiện một nhiệm vụ vô cùng đơn giản, đó là tạo website nhưng chỉ với một trang duy nhất. Tuy vậy, nền tảng này lại cung cấp rất nhiều tính năng vượt trội và dễ sử dụng, giúp người dùng có thể tạo ra những trang web đẹp mắt và chuyên nghiệp, phù hợp với nhiều mục đích khác nhau mà không cần phải biết lập trình hay viết code.
 
-Công cụ được xây dựng và phát triển từ năm {{ $doc.year }} bởi [AJ](https://twitter.com/ajlkn){target="_blank"}, một chuyên gia thiết kế và lập trình web người Mỹ với nhiều năm kinh nghiệm.
+Công cụ được xây dựng và phát triển từ năm {{ $doc.year }} bởi [AJ](https://twitter.com/ajlkn), một chuyên gia thiết kế và lập trình web người Mỹ với nhiều năm kinh nghiệm.
 
 ## Mô hình thu nhập & doanh thu
 

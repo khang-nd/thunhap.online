@@ -20,11 +20,11 @@ Phần mềm nén ảnh và video dành cho MacOS
 
 __CompressX__ với tính năng chính là hỗ trợ việc nén ảnh và video, kích cỡ file giảm đáng kể mà không làm mất đi chất lượng hình ảnh. Cùng với nhiều tính năng đi kèm tiện lợi khác, CompressX đang trở thành một trong những phần mềm nén ảnh và video phổ biến được nhiều người dùng MacOS lựa chọn.
 
-Phần mềm được xây dựng và phát triển từ cuối năm {{ $doc.year }} bởi anh [Dinh Quang Hieu](https://twitter.com/hieudinh_){target="_blank"}, một kỹ sư phần mềm người Việt Nam.
+Phần mềm được xây dựng và phát triển từ cuối năm {{ $doc.year }} bởi anh [Dinh Quang Hieu](https://twitter.com/hieudinh_), một kỹ sư phần mềm người Việt Nam.
 
 ## Mô hình thu nhập & doanh thu
 
-CompressX tạo thu nhập bằng hình thức "one-time purchase", bán giấy phép sử dụng vĩnh viễn cho người dùng. Giá bán hiện tại là [:price{v=19}/thiết bị](https://compressx.app/pricing){target="_blank"} thông qua nền tảng thanh toán là :payment{id="lmsqueezy"}.
+CompressX tạo thu nhập bằng hình thức "one-time purchase", bán giấy phép sử dụng vĩnh viễn cho người dùng. Giá bán hiện tại là [:price{v=19}/thiết bị](https://compressx.app/pricing) thông qua nền tảng thanh toán là :payment{id="lmsqueezy"}.
 
 Với mô hình này, hiện phần mềm đang mang lại mức doanh thu ước tính trung bình là :price{:v="revenue"}/tháng, với tổng doanh thu hơn :price{v=5000} (tính đến tháng 2 năm 2024), theo [chia sẻ](https://news.hieudinh.com/p/february-2024) của tác giả.
 

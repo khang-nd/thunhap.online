@@ -20,7 +20,7 @@ Phần mềm chụp và tinh chỉnh ảnh chụp màn hình dành cho MacOS
 
 __Xnapper__ cung cấp nhiều tính năng vượt trội hỗ trợ việc chụp và tinh chỉnh ảnh chụp màn hình như tự động cân bằng ảnh chụp, tự động nhận diện màu nền, văn bản, thậm chí cho phép ẩn đi những thông tin nhạy cảm. Phần mềm tận dụng một số giải pháp mà MacOS cung cấp để xây dựng một công cụ chụp ảnh màn hình mạnh mẽ, dễ sử dụng và hiệu quả.
 
-Phần mềm được xây dựng và phát triển từ năm {{ $doc.year }} đến 2024 bởi anh [Tony Dinh](https://twitter.com/tdinh_me){target="_blank"}, một kỹ sư phần mềm người Việt Nam.
+Phần mềm được xây dựng và phát triển từ năm {{ $doc.year }} đến 2024 bởi anh [Tony Dinh](https://twitter.com/tdinh_me), một kỹ sư phần mềm người Việt Nam.
 
 ## Mô hình thu nhập & doanh thu
 

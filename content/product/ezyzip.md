@@ -20,7 +20,7 @@ Công cụ online để nén, giải nén và chuyển đổi định dạng fil
 
 __ezyZip__ thực hiện duy nhất một nhiệm vụ, đó là cho phép người dùng làm việc với các file nén, bao gồm nén, giải nén các loại file khác nhau, quản lý và chuyển đổi giữa các định dạng nén. Công cụ có giao diện đơn giản và dễ sử dụng, chỉ cần truy cập trang web là có thể sử dụng ngay mà không cần cài đặt phần mềm nào.
 
-Công cụ được xây dựng và phát triển từ năm {{ $doc.year }} bởi [Andrew Dyster](https://twitter.com/andrewdyster){target="_blank"}, một kỹ sư phần mềm người Úc.
+Công cụ được xây dựng và phát triển từ năm {{ $doc.year }} bởi [Andrew Dyster](https://twitter.com/andrewdyster), một kỹ sư phần mềm người Úc.
 
 ## Mô hình thu nhập & doanh thu
 

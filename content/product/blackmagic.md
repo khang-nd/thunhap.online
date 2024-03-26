@@ -18,9 +18,9 @@ Công cụ hỗ trợ phân tích và quản lý Twitter
 
 :hero-img{:src="image.src" :alt="image.alt"}
 
-__Black Magic__ sử dụng [API của Twitter](https://developer.twitter.com/en/docs/twitter-api){target="blank"} để bổ sung nhiều tính năng hữu ích hỗ trợ người dùng trên mạng xã hội này, giúp họ dễ dàng quản lý tài khoản, quản lý bài đăng, phân tích dữ liệu, và tương tác với cộng đồng một cách hiệu quả. Công cụ được phát hành dưới dạng tiện ích mở rộng cho trình duyệt và ứng dụng di động.
+__Black Magic__ sử dụng [API của Twitter](https://developer.twitter.com/en/docs/twitter-api) để bổ sung nhiều tính năng hữu ích hỗ trợ người dùng trên mạng xã hội này, giúp họ dễ dàng quản lý tài khoản, quản lý bài đăng, phân tích dữ liệu, và tương tác với cộng đồng một cách hiệu quả. Công cụ được phát hành dưới dạng tiện ích mở rộng cho trình duyệt và ứng dụng di động.
 
-Công cụ được xây dựng và phát triển từ năm {{ $doc.year }} đến 2023 bởi anh [Tony Dinh](https://twitter.com/tdinh_me){target="_blank"}, một kỹ sư phần mềm người Việt Nam.
+Công cụ được xây dựng và phát triển từ năm {{ $doc.year }} đến 2023 bởi anh [Tony Dinh](https://twitter.com/tdinh_me), một kỹ sư phần mềm người Việt Nam.
 
 ## Mô hình thu nhập & doanh thu
 

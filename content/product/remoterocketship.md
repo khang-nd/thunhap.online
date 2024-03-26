@@ -20,7 +20,7 @@ Trang đăng tin tuyển dụng và tìm kiếm việc làm từ xa
 
 __Remote Rocketship__ thu thập dữ liệu việc làm từ xa từ nhiều nguồn khác nhau, giúp người tìm việc dễ dàng tìm kiếm công việc phù hợp với mình. Đồng thời, trang web cũng cho phép nhà tuyển dụng đăng tin và tiếp cận được nhiều ứng viên tiềm năng trên toàn thế giới.
 
-Trang web được xây dựng và phát triển từ năm {{ $doc.year }} bởi anh [Lior Neu-ner](https://twitter.com/LiorNn){target="_blank"}, một kỹ sư phần mềm người Anh.
+Trang web được xây dựng và phát triển từ năm {{ $doc.year }} bởi anh [Lior Neu-ner](https://twitter.com/LiorNn), một kỹ sư phần mềm người Anh.
 
 ## Mô hình thu nhập & doanh thu
 

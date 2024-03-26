@@ -1,5 +1,10 @@
 <template>
-  <img :src="refinedSrc" :alt="alt" :width="width" :height="height" class="py-4 md:px-6">
+  <NuxtLink :href="refinedSrc" target="_blank" class="relative [&_span]:hover:opacity-100">
+    <img :src="refinedSrc" :alt="alt" :width="width" :height="height" class="py-4 md:px-6">
+    <span class="absolute top-6 right-2 md:right-8 p-3 opacity-0 transition-opacity rounded-full text-white bg-black bg-opacity-40">
+      <Icon name="uil:search-alt" size="24" />
+    </span>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
