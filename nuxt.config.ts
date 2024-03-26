@@ -27,6 +27,7 @@ export default defineNuxtConfig({
   },
   sitemap: {
     sources: ["/api/__sitemap__/urls"],
+    cacheMaxAgeSeconds: 86400, // 1 day
   },
   ogImage: {
     enabled: false,

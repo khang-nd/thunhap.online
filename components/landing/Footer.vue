@@ -7,7 +7,7 @@
     <div>
       <CoreButton href="/changelog" variant="inverted" size="sm">Lịch sử cập nhật</CoreButton>
       <span>-</span>
-      <CoreButton href="/sitemap.xml" variant="inverted" size="sm">Sitemap</CoreButton>
+      <CoreButton href="/sitemap.xml" variant="inverted" size="sm" as="a">Sitemap</CoreButton>
     </div>
   </footer>
 </template>

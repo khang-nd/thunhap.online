@@ -2,6 +2,10 @@
 
 Các cập nhật và sửa đổi đã thực hiện trên hệ thống trang web
 
+## 26-03-2024
+
+- Tích hợp SEO cho trang web (meta tags, sitemap.xml, robots.txt)
+
 ## 25-03-2024
 
 - Thêm chức năng tìm kiếm nội dung trên trang web

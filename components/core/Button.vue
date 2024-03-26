@@ -1,5 +1,5 @@
 <template>
-  <component :is="$attrs.href ? NuxtLink : 'button'" :class="[
+  <component :is="as || ($attrs.href ? NuxtLink : 'button')" :class="[
     'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200',
     sizes[size],
     styles[$attrs.disabled === '' ? 'disabled' : variant],
@@ -16,6 +16,7 @@ type Size = 'sm' | "md" | "lg";
 type Variant = "outline" | "primary" | "inverted" | "disabled";
 
 interface Props {
+  as?: 'button' | 'a' | 'NuxtLink';
   size?: Size;
   variant?: Variant;
 }
