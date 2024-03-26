@@ -1,6 +1,7 @@
 <template>
-  <footer class="max-w-screen-xl mx-auto px-5 mt-16 mb-8 flex items-center justify-between text-slate-500">
-    <p class="text-sm">
+  <footer
+    class="max-w-screen-xl mx-auto px-5 mt-16 mb-8 flex flex-col lg:flex-row items-center justify-between text-slate-500 text-sm">
+    <p class="mb-1 lg:mb-0">
       Copyright © thunhap.online {{ new Date().getFullYear() }}
     </p>
     <div>
