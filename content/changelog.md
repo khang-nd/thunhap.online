@@ -2,9 +2,14 @@
 
 Các cập nhật và sửa đổi đã thực hiện trên hệ thống trang web
 
+## 27-03-2024
+
+- Bổ sung thêm nội dung cho trang chủ
+
 ## 26-03-2024
 
 - Tích hợp SEO cho trang web (meta tags, sitemap.xml, robots.txt)
+- Tinh chỉnh một số chức năng trên trang nội dung sản phẩm
 
 ## 25-03-2024
 

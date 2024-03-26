@@ -1,6 +1,8 @@
 <template>
   <LandingContainer>
-    <LandingHero></LandingHero>
+    <LandingHero />
+    <LandingNewProducts />
+    <LandingCategories />
   </LandingContainer>
 </template>
 

@@ -1,11 +1,11 @@
 <template>
   <BrowseFilterGroup title="Phân loại" class="pt-4 lg:pt-0">
     <ul>
-      <li v-for="(text, category) in categories" :key="category">
-        <NuxtLink :to="{ path: isActive(category) ? '/browse' : `/browse/${category}`, query: $route.query }"
-          :class="['flex items-center py-1 space-x-2 transition-colors hover:text-black', isActive(category) ? 'text-black font-semibold' : 'text-gray-500']">
-          <Icon :name="categoryIcon[category]" size="20" />
-          <span>{{ text }}</span>
+      <li v-for="(category, key) in categories" :key="key">
+        <NuxtLink :to="{ path: isActive(key) ? '/browse' : `/browse/${key}`, query: $route.query }"
+          :class="['flex items-center py-1 space-x-2 transition-colors hover:text-black', isActive(key) ? 'text-black font-semibold' : 'text-gray-500']">
+          <Icon :name="category.icon" size="20" />
+          <span>{{ category.title }}</span>
         </NuxtLink>
       </li>
     </ul>

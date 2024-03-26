@@ -17,7 +17,7 @@
           <ProductField title="Phân loại">
             <CoreBadge v-for="category in doc.categories" :key="category">
               <NuxtLink :href="'/browse/' + category">
-                {{ categories[category as CategoryType] || category }}
+                {{ categories[category as CategoryType].title || category }}
               </NuxtLink>
             </CoreBadge>
           </ProductField>

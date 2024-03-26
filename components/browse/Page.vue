@@ -32,7 +32,7 @@
 
 <script setup lang="ts">
 const { category } = useRoute().params
-const title = category ? categories[category as CategoryType] : "Khám phá"
+const title = category ? categories[category as CategoryType].title : "Khám phá"
 const openFilterModal = ref(false);
 
 useHead({ title })

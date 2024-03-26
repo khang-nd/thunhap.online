@@ -1,35 +1,58 @@
 export type CategoryType = keyof typeof categories;
 
 export const categories = {
-  ai: "AI",
-  marketing: "Marketing",
-  design: "Thiết kế",
-  website: "Công cụ làm web",
-  form: "Công cụ tạo form",
-  mobile: "Di động",
-  analytics: "Analytics",
-  editor: "Chỉnh sửa ảnh/video",
-  template: "Template",
-  utility: "Tiện ích",
-  service: "Dịch vụ",
-  entertainment: "Giải trí",
-  jobs: "Trang tìm việc",
-};
-
-export const categoryIcon: Record<CategoryType, string> = {
-  ai: "uil:robot",
-  marketing: "uil:megaphone",
-  design: "uil:palette",
-  website: "uil:web-grid",
-  form: "uil:file-plus-alt",
-  mobile: "uil:mobile-android",
-  analytics: "uil:chart-pie",
-  editor: "uil:image-edit",
-  template: "uil:box",
-  utility: "uil:wrench",
-  service: "uil:calling",
-  entertainment: "uil:play-circle",
-  jobs: "uil:briefcase-alt",
+  ai: {
+    title: "AI",
+    icon: "uil:robot",
+  },
+  marketing: {
+    title: "Marketing",
+    icon: "uil:megaphone",
+  },
+  design: {
+    title: "Thiết kế",
+    icon: "uil:palette",
+  },
+  website: {
+    title: "Công cụ làm web",
+    icon: "uil:web-grid",
+  },
+  form: {
+    title: "Công cụ tạo form",
+    icon: "uil:file-plus-alt",
+  },
+  mobile: {
+    title: "Di động",
+    icon: "uil:mobile-android",
+  },
+  analytics: {
+    title: "Phân tích dữ liệu",
+    icon: "uil:chart-pie",
+  },
+  editor: {
+    title: "Chỉnh sửa ảnh/video",
+    icon: "uil:image-edit",
+  },
+  template: {
+    title: "Template",
+    icon: "uil:box",
+  },
+  utility: {
+    title: "Tiện ích",
+    icon: "uil:wrench",
+  },
+  service: {
+    title: "Dịch vụ",
+    icon: "uil:calling",
+  },
+  entertainment: {
+    title: "Giải trí",
+    icon: "uil:play-circle",
+  },
+  jobs: {
+    title: "Trang tìm việc",
+    icon: "uil:briefcase-alt",
+  },
 };
 
 export type RevenueModelType = keyof typeof revenueModels;
