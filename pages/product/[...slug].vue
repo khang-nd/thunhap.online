@@ -37,7 +37,7 @@
             </CoreBadge>
           </ProductField>
           <ProductField v-if="doc.year" title="Năm thành lập">
-            {{ doc.year }}
+            {{ doc.year }} ({{ getTimeAgo(doc.year) }})
           </ProductField>
           <CoreButton v-if="doc.homepage" :href="getFullUrl(doc.homepage)" target="_blank"
             class="flex items-center justify-center space-x-2 w-full">
@@ -58,8 +58,7 @@
 </template>
 
 <script setup lang="ts">
-import type { ParsedContent } from '@nuxt/content/types';
-
+const getTimeAgo = (year: number) => useTimeAgo(new Date(year, 0, 1)).value;
 const getFullUrl = (host: string) => /^https?:\/\//.test(host) ? host : `https://${host}`;
 const getHost = (url: string) => new URL(getFullUrl(url)).host;
 </script>
