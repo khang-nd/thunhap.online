@@ -19,7 +19,7 @@ publishedAt: 1711498960651
 
 __Nokia Launcher__ dành cho những ai yêu thích giao diện cổ điển của điện thoại Nokia. Ứng dụng trình khởi chạy giúp giúp tùy chỉnh giao diện điện thoại Android trở thành giao diện Nokia 1280, với nhiều chủ đề, ảnh nền, biểu tượng và tính năng độc đáo được hỗ trợ.
 
-Ứng dụng được xây dựng và phát triển từ năm {{ $doc.year }} bởi anh [Đào Văn Ưởng](https://www.facebook.com/gau.nam.motor), một kỹ sư phần mềm người Việt Nam.
+Ứng dụng được xây dựng và phát triển từ năm {{ $doc.year }} bởi anh [Đào Văn Ưởng](https://www.facebook.com/gau.nam.motor), một lập trình viên ứng dụng di động người Việt Nam.
 
 ## Mô hình thu nhập & doanh thu
 

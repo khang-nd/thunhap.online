@@ -16,7 +16,5 @@
 </template>
 
 <script setup lang="ts">
-const { data } = await useAsyncData('newProducts',
-  () => queryContent('/product').limit(4).sort({ publishedAt: -1 }).find()
-)
+const { data } = await useLatestProductsQuery()
 </script>

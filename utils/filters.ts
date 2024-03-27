@@ -1,5 +1,3 @@
-export type CategoryType = keyof typeof categories;
-
 export const categories = {
   ai: {
     title: "AI",
@@ -55,8 +53,6 @@ export const categories = {
   },
 };
 
-export type RevenueModelType = keyof typeof revenueModels;
-
 export const revenueModels = {
   subscription: "Thu phí định kỳ",
   advertising: "Tiền quảng cáo",
@@ -64,8 +60,6 @@ export const revenueModels = {
   sponsorship: "Tài trợ",
   affiliate: "Tiếp thị liên kết",
 };
-
-export type StatusType = keyof typeof status;
 
 export const status = {
   active: "Hoạt động",

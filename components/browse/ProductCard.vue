@@ -25,7 +25,7 @@
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types';
 
 defineProps<{
-  product: ParsedContent
+  product: ParsedContent | (ParsedContent & Product)
 }>()
 const isHovered = ref(false);
 </script>

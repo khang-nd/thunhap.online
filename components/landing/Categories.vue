@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-const { data } = await useAsyncData('categories', () => queryContent('/product').only('categories').find())
+const { data } = await useProductFieldQuery('categories')
 const flatCategories = data.value?.map(({ categories }) => categories).flat() as string[]
 const weighedCategories = countElements(flatCategories)
 const categoryKeys = Object.keys(weighedCategories).sort((a, b) => weighedCategories[b] - weighedCategories[a]).slice(0, 8) as CategoryType[]

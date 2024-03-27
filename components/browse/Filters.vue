@@ -44,7 +44,7 @@
 <script setup lang="ts">
 const route = useRoute()
 const router = useRouter();
-const { data } = await useAsyncData('product', () => queryContent('/product').find())
+const { data } = await useProductFieldQuery('hashtags')
 const initial = {
   revenue: () => (route.query.revenue as string)?.split('-').map(Number) || [0, 100000],
   status: () => (route.query.status as string)?.split(',') || [],
