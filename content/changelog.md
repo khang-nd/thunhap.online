@@ -4,7 +4,8 @@ Các cập nhật và sửa đổi đã thực hiện trên hệ thống trang w
 
 ## 27-03-2024
 
-- Bổ sung thêm nội dung cho trang chủ
+- Thêm nội dung cho trang chủ
+- Thêm phần "Sản phẩm tương tự" cho trang nội dung sản phẩm
 
 ## 26-03-2024
 

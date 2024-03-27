@@ -1,3 +1,4 @@
+import type { ParsedContent } from "@nuxt/content/types";
 import type { status } from "./filters";
 
 export type CategoryType = keyof typeof categories;
@@ -12,10 +13,12 @@ export interface Product {
   description: string;
   homepage: string;
   status: StatusType;
-  categories: CategoryType[];
+  categories: CategoryType | CategoryType[];
   revenue: number;
-  models: RevenueModelType[];
+  models: RevenueModelType | RevenueModelType[];
   year: number;
   hashtags: string[];
   publishedAt: number;
 }
+
+export type ParsedProduct = ParsedContent & Product;

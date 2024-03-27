@@ -14,11 +14,11 @@ publishedAt: 1711462420675
 
 # Fix My Speakers
 
-Công cụ giúp đẩy nước ra khỏi loa điện thoại của bạn
+Trang web giúp đẩy nước ra khỏi loa điện thoại
 
 :hero-img{:src="image.src" :alt="image.alt"}
 
-__Fix My Speakers__ cung cấp một giải pháp vô cùng thiết yếu, đó là đẩy nước ra khỏi loa điện thoại của bạn. Cách hoạt động rất đơn giản, chỉ cần truy cập vào trang từ chiếc điện thoại bị sự cố, nhấn vào nút kích hoạt duy nhất trên trang, một âm thanh đặc biệt sẽ được phát, giúp thổi nước ra từ loa, âm thanh điện thoại của bạn sẽ được phục hồi.
+__Fix My Speakers__ cung cấp một giải pháp vô cùng thiết yếu, đó là đẩy nước ra khỏi loa điện thoại của người dùng. Cách hoạt động rất đơn giản, chỉ cần truy cập vào trang web từ chiếc điện thoại bị sự cố, nhấn vào nút kích hoạt duy nhất trên trang, một âm thanh đặc biệt sẽ được phát, giúp thổi nước ra từ loa, âm thanh điện thoại của người dùng sẽ được phục hồi.
 
 Công cụ được xây dựng và phát triển từ năm {{ $doc.year }} bởi [Joseph Maxim](https://twitter.com/josephmxm), một kỹ sư phần mềm người Canada.
 

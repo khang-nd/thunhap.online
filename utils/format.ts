@@ -4,11 +4,11 @@ interface FormatNumberOptions {
   thousand?: string;
 }
 
-export function formatPrice(
+export const formatPrice = (
   value: string | number,
   locale?: "vi" | "en",
   options?: FormatNumberOptions
-) {
+) => {
   const prefix = options?.prefix || (locale === "vi" ? "" : "$");
   const suffix = options?.suffix || (locale === "vi" ? "đ" : "");
   const thousand = options?.thousand || ",";
@@ -25,4 +25,4 @@ export function formatPrice(
     result = valueString.replace(/\B(?=(\d{3})+(?!\d))/g, thousand);
   }
   return prefix + result + suffix;
-}
+};
