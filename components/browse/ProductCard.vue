@@ -12,7 +12,9 @@
     <div class="h-full p-3 border border-t-0 border-gray-300">
       <CoreHeading as="h4">
         {{ product.title }}
-        <CoreBadge class="mb-0 text-xs align-top">{{ formatPrice(product.revenue) }}/tháng</CoreBadge>
+        <CoreBadge v-if="product.revenue" class="mb-0 text-xs align-top">
+          {{ formatPrice(product.revenue) }}/tháng
+        </CoreBadge>
       </CoreHeading>
       <p>{{ product.description }}</p>
     </div>

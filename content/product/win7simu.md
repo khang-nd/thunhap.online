@@ -22,8 +22,6 @@ __Win7 Simu__ mô phỏng giao diện và chức năng của Windows 7, cho phé
 
 Ứng dụng được phát triển từ năm {{ $doc.year }} bởi [Visnalize](https://visnalize.com/), một indie maker ẩn danh người Việt Nam.
 
-Ứng dụng hiện đã đạt hơn 10 triệu lượt tải trên [Google Play](https://play.google.com/store/apps/details?id=com.visnalize.win7simu) và có hơn [60,000](https://twitter.com/visnalize/status/1757763108846891061) người dùng truy cập mỗi ngày từ cả hai nền tảng web và Android.
-
 ## Mô hình thu nhập & doanh thu
 
 Win7 Simu tạo thu nhập bằng cách hiển thị quảng cáo trong ứng dụng và bán gói đăng ký xóa quảng cáo cho người dùng. Gói đăng ký có giá [:price{v=1.99}/tháng](https://visnalize.com/win7simu/about.html#pricing) hoặc :price{v=19.99}/năm. Ngoài ra, ứng dụng còn bán các chủ đề giao diện (theme) bằng hình thức sở hữu trọn đời, giá trung bình là [:price{v=1.99}](https://store.visnalize.com/) cho mỗi theme.
@@ -43,3 +41,7 @@ Win7 Simu được quảng bá chủ yếu thông qua chợ ứng dụng Google 
 Bên cạnh đó, Visnalize còn sở hữu kênh YouTube đạt nhiều lượt đăng ký và đăng nhiều video hướng dẫn sử dụng ứng dụng, giúp tăng cơ hội thu hút lượng truy cập và người dùng.
 
 ![Visnalize YouTube](https://cdn.thunhap.online/product/win7simu+youtube.png)
+
+## Một số thông tin khác
+
+Ứng dụng hiện đã đạt hơn 10 triệu lượt tải trên [Google Play](https://play.google.com/store/apps/details?id=com.visnalize.win7simu) và có hơn [60,000](https://twitter.com/visnalize/status/1757763108846891061) người dùng truy cập mỗi ngày từ cả hai nền tảng web và Android.
