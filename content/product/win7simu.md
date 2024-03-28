@@ -34,7 +34,7 @@ Với mô hình này, ứng dụng hiện đang mang lại mức doanh thu ướ
 
 ## Chiến lược quảng bá
 
-Win7 Simu được quảng bá chủ yếu thông qua chợ ứng dụng Google Play. Nhờ vào tính chất độc đáo, ứng dụng nhận được sự chia sẻ và lan truyền rộng rãi từ cộng đồng người dùng. Từ đó làm cơ sở cho việc thu hút người dùng mới và tạo ra một chuỗi lưu lượng truy cập ổn định, giúp ứng dụng được xếp vào top kết quả tìm kiếm cho các từ khóa liên quan.
+Win7 Simu được quảng bá chủ yếu thông qua chợ ứng dụng :directory{id=gplay}. Nhờ vào tính chất độc đáo, ứng dụng nhận được sự chia sẻ và lan truyền rộng rãi từ cộng đồng người dùng. Từ đó làm cơ sở cho việc thu hút người dùng mới và tạo ra một chuỗi lưu lượng truy cập ổn định, giúp ứng dụng được xếp vào top kết quả tìm kiếm cho các từ khóa liên quan.
 
 ![Win7 Simu SEO](https://cdn.thunhap.online/product/win7simu+seo.jpg)
 

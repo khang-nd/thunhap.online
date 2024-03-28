@@ -3,10 +3,13 @@
 </template>
 
 <script setup lang="ts">
-type PlatformId = 'ph'
+type PlatformId = 'ph' | 'gplay' | 'appstore' | 'chrome'
 
 const data: Record<PlatformId, { title: string, url: string }> = {
   ph: { title: 'Product Hunt', url: 'https://www.producthunt.com/' },
+  gplay: { title: 'Google Play', url: 'https://play.google.com/store' },
+  appstore: { title: 'App Store', url: 'https://www.apple.com/app-store/' },
+  chrome: { title: 'Chrome Web Store', url: 'https://chromewebstore.google.com' },
 }
 
 defineProps<{ id: PlatformId }>()
