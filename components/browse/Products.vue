@@ -7,7 +7,7 @@
         </div>
       </template>
       <template #not-found>
-        <CoreParagraph class="w-full text-center italic text-base py-10">
+        <CoreParagraph class="text-center italic text-base py-10">
           Không tìm thấy sản phẩm nào
         </CoreParagraph>
       </template>

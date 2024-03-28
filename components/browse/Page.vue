@@ -1,10 +1,13 @@
 <template>
   <LayoutContainer>
     <LandingSectionhead>
-      <template v-slot:title>{{ title }}</template>
-      <template v-slot:desc>Danh sách các sản phẩm online thành công</template>
+      <template v-slot:title>Khám phá</template>
+      <template v-slot:desc>Danh sách các sản phẩm
+        <strong v-if="categoryTitle">{{ categoryTitle }}</strong>
+        <template v-else>online</template>
+        thành công</template>
     </LandingSectionhead>
-    <div class="mt-10 items-start md:mt-16 lg:flex">
+    <div class="mt-10 md:mt-16 lg:flex">
       <aside class="hidden lg:block max-w-64 shrink-0 mr-6">
         <BrowseFilters />
       </aside>
@@ -32,10 +35,10 @@
 
 <script setup lang="ts">
 const { category } = useRoute().params
-const title = category ? categories[category as CategoryType].title : "Khám phá"
+const categoryTitle = categories[category as CategoryType]?.title
 const openFilterModal = ref(false);
 
-useHead({ title })
+useHead({ title: categoryTitle || "Khám phá" })
 
 onMounted(() => {
   window.addEventListener('resize', () => {
