@@ -1,9 +1,9 @@
 <template>
-  <LandingContainer>
+  <LayoutContainer>
     <LandingHero />
     <LandingNewProducts />
     <LandingCategories />
-  </LandingContainer>
+  </LayoutContainer>
 </template>
 
 <script setup>

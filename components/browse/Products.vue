@@ -1,5 +1,5 @@
 <template>
-  <main class="w-full">
+  <div class="w-full">
     <ContentList :query="query" path="/product">
       <template v-slot="{ list }">
         <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
@@ -12,7 +12,7 @@
         </CoreParagraph>
       </template>
     </ContentList>
-  </main>
+  </div>
 </template>
 
 <script setup lang="ts">

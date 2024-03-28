@@ -1,5 +1,5 @@
 <template>
-  <LandingContainer>
+  <LayoutContainer>
     <LandingSectionhead>
       <template v-slot:title>{{ title }}</template>
       <template v-slot:desc>Danh sách các sản phẩm online thành công</template>
@@ -27,7 +27,7 @@
       </CoreDialog>
       <BrowseProducts />
     </div>
-  </LandingContainer>
+  </LayoutContainer>
 </template>
 
 <script setup lang="ts">

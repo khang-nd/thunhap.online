@@ -1,11 +1,11 @@
 <template>
-  <LandingContainer>
+  <LayoutContainer>
     <LandingSectionhead>
       <template v-slot:title>{{ title }}</template>
       <template v-slot:desc>Trang tổng hợp và chia sẻ các sản phẩm online thành công</template>
     </LandingSectionhead>
 
-    <main class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
       <CoreHeading>
         Mục đích
       </CoreHeading>
@@ -64,8 +64,8 @@
           <LandingContactform />
         </div>
       </div>
-    </main>
-  </LandingContainer>
+    </div>
+  </LayoutContainer>
 </template>
 
 <script setup>

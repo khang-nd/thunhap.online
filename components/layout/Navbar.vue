@@ -1,6 +1,6 @@
 <template>
-  <LandingContainer>
-    <header class="flex flex-col lg:flex-row justify-between items-center py-5">
+  <header class="w-full">
+    <div class="max-w-screen-xl flex flex-col lg:flex-row justify-between items-center p-5 mx-auto">
       <div class="flex w-full lg:w-auto items-center justify-between">
         <NuxtLink href="/" class="flex items-center text-lg" @mouseover="titleMouseOver = true"
           @mouseout="titleMouseOver = false">
@@ -22,7 +22,7 @@
         </button>
       </div>
       <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ block: openMenu, hidden: !openMenu }">
-        <LandingSearch />
+        <LayoutSearch />
         <ul class="flex flex-col lg:flex-row lg:gap-3">
           <li v-for="item of menuitems ">
             <NuxtLink :href="item.path"
@@ -44,8 +44,8 @@
           <LandingLink href="#" size="md">Sign up</LandingLink>
         </div>
       </div> -->
-    </header>
-  </LandingContainer>
+    </div>
+  </header>
 </template>
 
 <script setup lang="ts">
