@@ -1,8 +1,8 @@
 <template>
-  <div class="inline-flex items-center space-x-2 mb-2">
+  <div class="inline-flex items-center space-x-2 mb-2 text-gray-500 hover:text-black">
     <label class="relative flex items-center cursor-pointer" :for="id">
       <input type="checkbox" :id="id" :value="value" :name="name" :checked="checked"
-        class="peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-gray-400 transition-colors checked:border-gray-900 checked:bg-gray-900"
+        class="peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-current transition-colors checked:border-gray-900 checked:bg-gray-900"
         @change="$emit('change', $event)" />
       <span
         class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
@@ -14,7 +14,7 @@
         </svg>
       </span>
     </label>
-    <label class="text-gray-600 cursor-pointer select-none" :for="id">
+    <label class="transition-colors cursor-pointer select-none" :for="id">
       <slot />
     </label>
   </div>

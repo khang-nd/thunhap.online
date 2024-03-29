@@ -4,17 +4,21 @@
       <slot name="trigger" />
     </DialogTrigger>
     <DialogPortal>
-      <DialogOverlay class="bg-black opacity-50 fixed inset-0 z-30" />
-      <DialogContent :aria-describedby="undefined"
-        class="fixed top-1/2 left-1/2 max-h-[85vh] w-[90vw] max-w-[450px] -translate-x-1/2 -translate-y-1/2 bg-white focus:outline-none z-[100] overflow-auto rounded-md">
-        <DialogClose aria-label="Close" as-child>
-          <slot name="close" />
-        </DialogClose>
-        <VisuallyHidden as-child>
-          <DialogTitle>{{ title }}</DialogTitle>
-        </VisuallyHidden>
-        <slot />
-      </DialogContent>
+      <Transition name="fade">
+        <DialogOverlay class="bg-black opacity-70 fixed inset-0 z-30" />
+      </Transition>
+      <Transition name="zoom">
+        <DialogContent :aria-describedby="undefined"
+          class="fixed top-1/2 left-1/2 max-h-[85vh] w-[90vw] max-w-[450px] -translate-x-1/2 -translate-y-1/2 bg-white focus:outline-none z-[100] rounded-md overflow-hidden">
+          <DialogClose aria-label="Close" as-child>
+            <slot name="close" />
+          </DialogClose>
+          <VisuallyHidden as-child>
+            <DialogTitle>{{ title }}</DialogTitle>
+          </VisuallyHidden>
+          <slot />
+        </DialogContent>
+      </Transition>
     </DialogPortal>
   </DialogRoot>
 </template>
@@ -36,3 +40,25 @@ defineProps<{
   portal?: string | HTMLElement
 }>();
 </script>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.zoom-enter-active,
+.zoom-leave-active {
+  transition: transform 0.2s;
+}
+
+.zoom-enter-from,
+.zoom-leave-to {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+</style>

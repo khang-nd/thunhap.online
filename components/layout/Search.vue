@@ -2,16 +2,20 @@
   <CoreDialog title="Tìm kiếm" portal="body" v-model:open="openSearch">
     <template #trigger>
       <button
-        class="flex items-center w-full lg:w-auto mb-2 lg:mr-3 px-3 py-2 space-x-1 text-gray-500 border rounded-md transition-colors hover:text-black hover:border-gray-400 hover:bg-gray-100">
+        class="flex items-center w-full lg:w-auto mb-2 lg:mb-0 lg:mr-3 px-3 py-2 space-x-1 text-gray-500 border rounded-md transition-colors hover:text-black hover:border-gray-400 hover:bg-gray-100">
         <Icon name="uil:search" class="" />
         <span>Tìm kiếm</span>
       </button>
     </template>
 
     <div class="px-4 py-6">
-      <label class="flex items-center mb-6 gap-4">
-        <Icon name="uil:search" size="24" />
-        <input type="text" placeholder="Tìm kiếm..." v-model="searchText" class="w-full p-2 border rounded-sm" />
+      <label class="block relative mb-6">
+        <span class="absolute p-2">
+          <Icon name="uil:search" size="24" :class="['transition-opacity', focused ? 'opacity-80' : 'opacity-30']" />
+        </span>
+        <input type="text" placeholder="Tìm kiếm..." v-model="searchText" @focus="focused = true"
+          @blur="focused = false"
+          class="w-full p-2 pl-10 border focus:border-transparent rounded-sm outline-none transition ring-offset-2 ring-black focus:ring-1" />
       </label>
       <div class="h-80 overflow-auto">
         <ul v-if="results?.value.length > 0">
@@ -39,6 +43,7 @@
 const openSearch = ref(false)
 const searchText = ref("")
 const results = ref()
+const focused = ref(false)
 
 const truncateText = (text: string, key: string) => {
   const index = text.toLowerCase().indexOf(key.toLowerCase())

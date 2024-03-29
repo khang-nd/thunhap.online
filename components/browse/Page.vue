@@ -20,12 +20,12 @@
         </template>
         <template #close>
           <button
-            class="text-gray-500 absolute top-4 right-4 inline-flex h-6 w-6 appearance-none items-center justify-center rounded-full transition-all hover:bg-gray-200 hover:text-black">
-            <Icon name="uil:times" size="20" />
+            class="text-gray-500 absolute top-3 right-6 p-1 inline-flex appearance-none items-center justify-center rounded-full transition-all hover:bg-gray-100 hover:text-black">
+            <Icon name="uil:times" size="24" />
           </button>
         </template>
-        <div class="px-6">
-          <BrowseFilters />
+        <div class="px-6 max-h-[80vh] overflow-auto">
+          <BrowseFilters is-mobile/>
         </div>
       </CoreDialog>
       <BrowseProducts />

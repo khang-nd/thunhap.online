@@ -17,7 +17,7 @@
   <BrowseFilterGroup title="Tình trạng">
     <ul>
       <li v-for="(state, key) in status" :key="key">
-        <CoreCheckbox :id="key" :value="key" name="status" :checked="selected.status.value.includes(key)"
+        <CoreCheckbox :id="prefix(key)" :value="key" name="status" :checked="selected.status.value.includes(key)"
           @change="handleCheckbox">{{ state }}</CoreCheckbox>
       </li>
     </ul>
@@ -25,7 +25,7 @@
   <BrowseFilterGroup title="Mô hình thu nhập">
     <ul>
       <li v-for="(model, key) in revenueModels" :key="key">
-        <CoreCheckbox :id="key" :value="key" name="models" :checked="selected.models.value.includes(key)"
+        <CoreCheckbox :id="prefix(key)" :value="key" name="models" :checked="selected.models.value.includes(key)"
           @change="handleCheckbox">{{ model }}</CoreCheckbox>
       </li>
     </ul>
@@ -42,6 +42,7 @@
 </template>
 
 <script setup lang="ts">
+const { isMobile } = defineProps<{ isMobile?: boolean }>()
 const route = useRoute()
 const router = useRouter();
 const { data } = await useProductFieldQuery('hashtags')
@@ -59,6 +60,8 @@ const selected = {
 }
 const allTags = data.value?.reduce((acc: string[], product) => [...acc, ...product.hashtags], [])
 const tags = Array.from(new Set(allTags))
+
+const prefix = (id: string) => `${isMobile ? 'm' : 'd'}-${id}`
 
 const isActive = (category: string) => route.params.category === category
 
