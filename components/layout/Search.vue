@@ -14,8 +14,7 @@
           <Icon name="uil:search" size="24" :class="['transition-opacity', focused ? 'opacity-80' : 'opacity-30']" />
         </span>
         <input type="text" placeholder="Tìm kiếm..." v-model="searchText" @focus="focused = true"
-          @blur="focused = false"
-          class="w-full p-2 pl-10 border focus:border-transparent rounded-sm outline-none transition ring-offset-2 ring-black focus:ring-1" />
+          @blur="focused = false" class="input" />
       </label>
       <div class="h-80 overflow-auto">
         <ul v-if="results?.value.length > 0">

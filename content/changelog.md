@@ -2,6 +2,10 @@
 
 Các cập nhật và sửa đổi đã thực hiện trên hệ thống trang web
 
+## 29-03-2024
+
+- Sửa lỗi và tinh chỉnh một số thành phần giao diện trên trang web
+
 ## 27-03-2024
 
 - Thêm nội dung cho trang chủ
