@@ -21,9 +21,9 @@
           </svg>
         </button>
       </div>
-      <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ block: openMenu, hidden: !openMenu }">
+      <nav class="w-full items-center lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ block: openMenu, hidden: !openMenu }">
         <LayoutSearch />
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
+        <ul class="flex flex-col lg:flex-row lg:gap-3 mb-2 lg:mb-0 lg:mr-3">
           <li v-for="item of menuitems ">
             <NuxtLink :href="item.path"
               :class='[($route.path.includes(item.path) ? "text-black bg-gray-100" : "text-gray-500"), "rounded-md flex p-2 transition-colors hover:text-black lg:px-3"]'>
@@ -31,19 +31,8 @@
             </NuxtLink>
           </li>
         </ul>
-        <!-- <div class="lg:hidden flex items-center mt-3 gap-4">
-          <LandingLink href="#" styleName="muted" block size="md"
-            >Log in</LandingLink
-          >
-          <LandingLink href="#" size="md" block>Sign up</LandingLink>
-        </div> -->
+        <CoreButton href="/submit" variant="primary" size="md" class="inline-block">Đăng sản phẩm</CoreButton>
       </nav>
-      <!-- <div>
-        <div class="hidden lg:flex items-center gap-4">
-          <a href="#">Log in</a>
-          <LandingLink href="#" size="md">Sign up</LandingLink>
-        </div>
-      </div> -->
     </div>
   </header>
 </template>

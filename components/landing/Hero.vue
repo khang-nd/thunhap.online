@@ -1,5 +1,5 @@
 <template>
-  <div class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+  <div class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 lg:pt-8">
     <div>
       <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
         Khám phá thu nhập online
