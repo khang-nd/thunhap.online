@@ -2,9 +2,11 @@
   <div class="w-full">
     <ContentList :query="query" path="/product">
       <template v-slot="{ list }">
-        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mb-6">
           <BrowseProductCard v-for="product in list" :key="product._path" :product="product" />
         </div>
+        <CorePagination v-if="total > pageSize" :total="total" :items-per-page="pageSize" :page="page"
+          @update:page="handlePaging" />
       </template>
       <template #not-found>
         <CoreParagraph class="text-center italic text-base py-10">
@@ -19,13 +21,23 @@
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types';
 
 const route = useRoute()
+const router = useRouter()
 const query = ref<QueryBuilderParams>()
+const total = ref(0);
+const page = ref(1);
+const pageSize = 15
 
-watch(() => route.query, () => {
-  const revenueRange = (route.query.revenue as string)?.split('-').map(Number)
-  const status = (route.query.status as string)?.split(',')
-  const models = (route.query.models as string)?.split(',')
-  const tags = (route.query.tags as string)?.split(',')
+const handlePaging = (page: number) => {
+  router.push({ query: { ...route.query, page } })
+}
+
+watch(() => route.query, async (routeQuery) => {
+  const revenueRange = (routeQuery.revenue as string)?.split('-').map(Number)
+  const status = (routeQuery.status as string)?.split(',')
+  const models = (routeQuery.models as string)?.split(',')
+  const tags = (routeQuery.tags as string)?.split(',')
+
+  page.value = Number(routeQuery.page) || 1
   query.value = {
     where: [
       { categories: { $contains: route.params.category } },
@@ -34,8 +46,11 @@ watch(() => route.query, () => {
       models && { models: { $in: models } },
       tags && { hashtags: { $in: tags } },
     ].filter(Boolean),
-    limit: 15,
+    skip: (page.value - 1) * pageSize,
+    limit: pageSize,
+    without: ['body'],
     sort: [{ publishedAt: -1 }]
   }
+  total.value = (await useProductCountQuery(query.value)).data.value || 0
 }, { immediate: true })
 </script>

@@ -3,6 +3,10 @@ export const categories = {
     title: "AI",
     icon: "uil:robot",
   },
+  automation: {
+    title: "Tự động hóa",
+    icon: "uil:cog",
+  },
   marketing: {
     title: "Marketing",
     icon: "uil:megaphone",
