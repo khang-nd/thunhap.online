@@ -2,7 +2,7 @@
   <BrowseFilterGroup title="Phân loại" class="pt-4 lg:pt-0">
     <ul>
       <li v-for="(category, key) in categories" :key="key">
-        <NuxtLink :to="{ path: isActive(key) ? '/browse' : `/browse/${key}`, query: $route.query }"
+        <NuxtLink :to="{ path: isActive(key) ? '/browse' : `/browse/${key}`, query: getQuery() }"
           :class="['flex items-center py-1 space-x-2 transition-colors hover:text-black', isActive(key) ? 'text-black font-semibold' : 'text-gray-500']">
           <Icon :name="category.icon" size="20" />
           <span>{{ category.title }}</span>
@@ -11,8 +11,8 @@
     </ul>
   </BrowseFilterGroup>
   <BrowseFilterGroup title="Doanh thu">
-    <CoreDualSlider :values="selected.revenue.value" :format='{ prefix: "$", thousand: "," }' :min="0" :max="100000"
-      :step="500" @value-commit="handleSlider" />
+    <CoreDualSlider :values="selected.revenue.value as number[]" :format='{ prefix: "$", thousand: "," }' :min="0"
+      :max="100000" :step="500" @value-commit="handleSlider" />
   </BrowseFilterGroup>
   <BrowseFilterGroup title="Tình trạng">
     <ul>
@@ -42,17 +42,19 @@
 </template>
 
 <script setup lang="ts">
+type Filter = 'revenue' | 'status' | 'models' | 'tags'
+
 const { isMobile } = defineProps<{ isMobile?: boolean }>()
 const route = useRoute()
 const router = useRouter();
 const { data } = await useProductFieldQuery('hashtags')
-const initial = {
+const initial: Record<Filter, () => (string | number)[]> = {
   revenue: () => (route.query.revenue as string)?.split('-').map(Number) || [0, 100000],
   status: () => (route.query.status as string)?.split(',') || [],
   models: () => (route.query.models as string)?.split(',') || [],
   tags: () => (route.query.tags as string)?.split(',') || [],
 }
-const selected = {
+const selected: Record<Filter, Ref<(string | number)[]>> = {
   revenue: ref(initial.revenue()),
   status: ref(initial.status()),
   models: ref(initial.models()),
@@ -65,20 +67,26 @@ const prefix = (id: string) => `${isMobile ? 'm' : 'd'}-${id}`
 
 const isActive = (category: string) => route.params.category === category
 
+const getQuery = () => ({ ...route.query, page: undefined })
+
+const pushQuery = (field: Filter, value: string) => {
+  router.push({ query: { ...getQuery(), [field]: value || null } })
+}
+
 const handleSlider = (values: number[]) => {
-  router.push({ query: { ...route.query, revenue: values.join('-') } })
+  pushQuery('revenue', values.join('-'))
 }
 
 const handleCheckbox = (e: Event) => {
   const target = e.target as HTMLInputElement
-  const field = target.name as 'status' | 'models';
+  const field = target.name as Filter;
   if (target.checked) {
     selected[field].value = [...selected[field].value, target.value]
   } else {
     selected[field].value = selected[field].value.filter((value) => value !== target.value)
   }
   const result = selected[field].value.join(',')
-  router.push({ query: { ...route.query, [target.name]: result || null } })
+  pushQuery(field, result)
 }
 
 const handleToggle = (e: { value: string, pressed: boolean }) => {
@@ -89,7 +97,7 @@ const handleToggle = (e: { value: string, pressed: boolean }) => {
     selected.tags.value = selected.tags.value.filter((tag) => tag !== value)
   }
   const result = selected.tags.value.join(',')
-  router.push({ query: { ...route.query, tags: result || null } })
+  pushQuery('tags', result)
 }
 
 const showReset = computed(() => route.path !== '/browse' || Object.keys(route.query).length > 0)
