@@ -23,7 +23,7 @@
       </div>
       <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ block: openMenu, hidden: !openMenu }">
         <LayoutSearch />
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
+        <ul class="flex flex-col lg:flex-row lg:gap-3 mr-3">
           <li v-for="item of menuitems ">
             <NuxtLink :href="item.path"
               :class='[($route.path.includes(item.path) ? "text-black bg-gray-100" : "text-gray-500"), "rounded-md flex p-2 transition-colors hover:text-black lg:px-3"]'>
@@ -31,6 +31,8 @@
             </NuxtLink>
           </li>
         </ul>
+        <CoreToggleGroup v-model="currentLocale"
+          :items="locales.map((({ code }) => ({ label: code.toUpperCase(), value: code })))" />
         <!-- <div class="lg:hidden flex items-center mt-3 gap-4">
           <LandingLink href="#" styleName="muted" block size="md"
             >Log in</LandingLink
@@ -60,6 +62,10 @@ const menuitems = [
   },
 ];
 
+const { locale, locales, setLocale } = useI18n()
 const openMenu = ref(false);
 const titleMouseOver = ref(false);
+const currentLocale = ref(locale.value)
+
+watch(currentLocale, setLocale)
 </script>

@@ -1,6 +1,6 @@
 <template>
   <h2 class="text-4xl lg:text-5xl text-center font-bold lg:tracking-tight mb-16">
-    Khám phá sản phẩm theo phân loại
+    {{ $t('landing.hot-categories-title') }}
   </h2>
 
   <div class="grid grid-cols-2 lg:grid-cols-4 mb-12 gap-6 lg:gap-12">
@@ -15,7 +15,7 @@
 
   <div class="text-center mb-40">
     <CoreButton href="/browse" class="inline-flex items-center">
-      <span>Xem tất cả</span>
+      <span>{{ $t('landing.view-all') }}</span>
       <Icon name="uil:arrow-right" class="ml-2" size="24" />
     </CoreButton>
   </div>
