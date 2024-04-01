@@ -4,7 +4,7 @@
       <button
         class="flex items-center w-full lg:w-auto mb-2 lg:mb-0 lg:mr-3 px-3 py-2 space-x-1 text-gray-500 border rounded-md transition-colors hover:text-black hover:border-gray-400 hover:bg-gray-100">
         <Icon name="uil:search" class="" />
-        <span>Tìm kiếm</span>
+        <span>{{ $t('common.search') }}</span>
       </button>
     </template>
 
@@ -13,7 +13,7 @@
         <span class="absolute p-2">
           <Icon name="uil:search" size="24" :class="['transition-opacity', focused ? 'opacity-80' : 'opacity-30']" />
         </span>
-        <input type="text" placeholder="Tìm kiếm..." v-model="searchText" @focus="focused = true"
+        <input type="text" :placeholder="$t('common.search') + '...'" v-model="searchText" @focus="focused = true"
           @blur="focused = false" class="input w-full p-2 pl-10" />
       </label>
       <div class="h-80 overflow-auto">

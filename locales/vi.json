@@ -6,5 +6,49 @@
     "new-products-title": "Sản phẩm được thêm gần đây",
     "hot-categories-title": "Các danh mục nổi bật",
     "view-all": "Xem tất cả"
+  },
+  "common": {
+    "browse": "Khám phá",
+    "browse-online": "Danh sách các sản phẩm online thành công",
+    "browse-category": "Danh sách các sản phẩm {category} thành công",
+    "filters": "Lọc kết quả",
+    "about": "Giới thiệu",
+    "search": "Tìm kiếm",
+    "categories": "Phân loại",
+    "revenue": "Doanh thu",
+    "status": "Tình trạng",
+    "status-types": {
+      "active": "Hoạt động",
+      "inactive": "Đã ngừng",
+      "acquired": "Đã bán",
+      "unknown": "Không rõ"
+    },
+    "revenue-models": "Mô hình thu nhập",
+    "revenue-model-types": {
+      "subscription": "Thu phí định kỳ",
+      "advertising": "Tiền quảng cáo",
+      "transaction": "Giao dịch",
+      "sponsorship": "Tài trợ",
+      "affiliate": "Tiếp thị liên kết"
+    },
+    "tags": "Được gắn thẻ",
+    "reset": "Reset",
+    "changelog": "Lịch sử cập nhật"
+  },
+  "category": {
+    "ai": "AI",
+    "automation": "Tự động hóa",
+    "marketing": "Marketing",
+    "design": "Thiết kế",
+    "website": "Công cụ làm web",
+    "form": "Công cụ tạo form",
+    "mobile": "Di động",
+    "analytics": "Phân tích dữ liệu",
+    "editor": "Chỉnh sửa ảnh/video",
+    "template": "Template",
+    "utility": "Tiện ích",
+    "service": "Dịch vụ",
+    "entertainment": "Giải trí",
+    "jobs": "Trang tìm việc"
   }
 }

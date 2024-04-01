@@ -24,10 +24,10 @@
       <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ block: openMenu, hidden: !openMenu }">
         <LayoutSearch />
         <ul class="flex flex-col lg:flex-row lg:gap-3 mr-3">
-          <li v-for="item of menuitems ">
-            <NuxtLink :href="item.path"
-              :class='[($route.path.includes(item.path) ? "text-black bg-gray-100" : "text-gray-500"), "rounded-md flex p-2 transition-colors hover:text-black lg:px-3"]'>
-              {{ item.title }}
+          <li v-for="item of menuitems">
+            <NuxtLink :href="'/' + item"
+              :class='[($route.path.includes(item) ? "text-black bg-gray-100" : "text-gray-500"), "rounded-md flex p-2 transition-colors hover:text-black lg:px-3"]'>
+              {{ $t('common.' + item) }}
             </NuxtLink>
           </li>
         </ul>
@@ -51,21 +51,11 @@
 </template>
 
 <script setup lang="ts">
-const menuitems = [
-  {
-    title: "Khám phá",
-    path: "/browse",
-  },
-  {
-    title: "Giới thiệu",
-    path: "/about",
-  },
-];
-
 const { locale, locales, setLocale } = useI18n()
 const openMenu = ref(false);
 const titleMouseOver = ref(false);
 const currentLocale = ref(locale.value)
+const menuitems = ['browse', 'about']
 
 watch(currentLocale, setLocale)
 </script>

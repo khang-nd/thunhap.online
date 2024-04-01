@@ -9,7 +9,7 @@
       <div class="inline-block p-2 bg-gray-200 rounded-full">
         <Icon :name="categories[key].icon" size="24" />
       </div>
-      <h3 class="font-semibold lg:text-lg">{{ categories[key].title }}</h3>
+      <h3 class="font-semibold lg:text-lg">{{ $t('category.' + key) }}</h3>
     </NuxtLink>
   </div>
 
