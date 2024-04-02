@@ -35,10 +35,10 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const { category } = useRoute().params
-const categoryTitle = category ? t('category.' + category) : null
+const categoryTitle = computed(() => category ? t('category.' + category) : t('common.browse'))
 const openFilterModal = ref(false);
 
-useHead({ title: categoryTitle || "Khám phá" })
+useHead({ title: categoryTitle })
 
 onMounted(() => {
   window.addEventListener('resize', () => {

@@ -23,7 +23,7 @@
       </div>
       <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ block: openMenu, hidden: !openMenu }">
         <LayoutSearch />
-        <ul class="flex flex-col lg:flex-row lg:gap-3 mr-3">
+        <ul class="flex flex-col lg:flex-row lg:gap-3 lg:mr-3 mb-2 lg:mb-0">
           <li v-for="item of menuitems">
             <NuxtLink :href="'/' + item"
               :class='[($route.path.includes(item) ? "text-black bg-gray-100" : "text-gray-500"), "rounded-md flex p-2 transition-colors hover:text-black lg:px-3"]'>
@@ -31,8 +31,10 @@
             </NuxtLink>
           </li>
         </ul>
-        <CoreToggleGroup v-model="currentLocale"
-          :items="locales.map((({ code }) => ({ label: code.toUpperCase(), value: code })))" />
+        <div class="flex items-center">
+          <CoreToggleGroup v-model="currentLocale"
+            :items="locales.map((({ code }) => ({ label: code.toUpperCase(), value: code })))" />
+        </div>
         <!-- <div class="lg:hidden flex items-center mt-3 gap-4">
           <LandingLink href="#" styleName="muted" block size="md"
             >Log in</LandingLink

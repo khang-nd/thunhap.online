@@ -1,3 +1,12 @@
+<i18n lang="yaml">
+  vi:
+    no-result: Không có kết quả
+    missing-keyword: Vui lòng nhập từ khóa
+  en:
+    no-result: No result
+    missing-keyword: Please enter a keyword
+</i18n>
+
 <template>
   <CoreDialog title="Tìm kiếm" portal="body" v-model:open="openSearch">
     <template #trigger>
@@ -31,7 +40,7 @@
           </li>
         </ul>
         <div v-else class="flex items-center justify-center h-full text-gray-500 italic">
-          {{ !searchText ? "Vui lòng nhập từ khóa" : "Không có kết quả" }}
+          {{ !searchText ? t('missing-keyword') : t('no-result') }}
         </div>
       </div>
     </div>
@@ -39,6 +48,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 const openSearch = ref(false)
 const searchText = ref("")
 const results = ref()
