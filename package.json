@@ -26,5 +26,8 @@
     "typescript": "^5.4.3",
     "vue": "^3.4.3",
     "vue-router": "^4.2.5"
+  },
+  "resolutions": {
+    "string-width": "4.2.3"
   }
 }
