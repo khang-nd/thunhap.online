@@ -6,7 +6,7 @@
         Copyright © thunhap.online {{ new Date().getFullYear() }}
       </p>
       <div>
-        <CoreButton href="/changelog" variant="inverted" size="sm">Lịch sử cập nhật</CoreButton>
+        <CoreButton href="/changelog" variant="inverted" size="sm">{{ $t('common.changelog') }}</CoreButton>
         <span>-</span>
         <CoreButton href="/sitemap.xml" variant="inverted" size="sm" as="a">Sitemap</CoreButton>
       </div>

@@ -33,7 +33,10 @@
     },
     "tags": "Tags",
     "reset": "Reset",
-    "changelog": "Changelog"
+    "changelog": "Changelog",
+    "overview": "Overview",
+    "founded-year": "Founded year",
+    "similar-products": "Similar products"
   },
   "category": {
     "ai": "AI",
@@ -49,6 +52,6 @@
     "utility": "Utility",
     "service": "Service",
     "entertainment": "Entertainment",
-    "jobs": "Job board"
+    "jobs": "Job Board"
   }
 }

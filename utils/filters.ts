@@ -1,4 +1,6 @@
-export const categories = {
+import type { CategoryType, RevenueModelType, StatusType } from "./types";
+
+export const categories: Record<CategoryType, any> = {
   ai: {
     icon: "uil:robot",
   },
@@ -43,7 +45,7 @@ export const categories = {
   },
 };
 
-export const revenueModels = [
+export const revenueModels: RevenueModelType[] = [
   "subscription",
   "advertising",
   "transaction",
@@ -51,4 +53,9 @@ export const revenueModels = [
   "affiliate",
 ];
 
-export const status = ["active", "inactive", "acquired", "unknown"];
+export const status: StatusType[] = [
+  "active",
+  "inactive",
+  "acquired",
+  "unknown",
+];

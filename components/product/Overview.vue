@@ -1,33 +1,31 @@
 <template>
-  <CoreHeading as="h3" class="mb-4">Tổng quan</CoreHeading>
-  <ProductField title="Tình trạng">
+  <CoreHeading as="h3" class="mb-4">{{ $t('common.overview') }}</CoreHeading>
+  <ProductField :title="$t('common.status')">
     <CoreBadge :color="product.status">
-      <NuxtLink :href="'/browse?status=' + product.status">{{ status[product.status as StatusType] }}</NuxtLink>
+      <NuxtLink :href="'/browse?status=' + product.status">{{ $t('common.status-types.' + product.status) }}</NuxtLink>
     </CoreBadge>
   </ProductField>
-  <ProductField title="Phân loại">
+  <ProductField :title="$t('common.categories')">
     <CoreBadge v-for="category in product.categories" :key="category">
-      <NuxtLink :href="'/browse/' + category">
-        {{ categories[category as CategoryType]?.title || category }}
-      </NuxtLink>
+      <NuxtLink :href="'/browse/' + category">{{ $t('category.' + category) }}</NuxtLink>
     </CoreBadge>
   </ProductField>
-  <ProductField v-if="product.revenue" title="Doanh thu">
+  <ProductField v-if="product.revenue" :title="$t('common.revenue')">
     <span class="font-bold text-xl">{{ formatPrice(product.revenue) }}/tháng</span>
   </ProductField>
-  <ProductField v-if="product.models" title="Mô hình thu nhập">
+  <ProductField v-if="product.models" :title="$t('common.revenue-models')">
     <CoreBadge v-if="typeof product.models === 'string'">
       <NuxtLink :href="'/browse?models=' + product.models">
-        {{ revenueModels[product.models as RevenueModelType] }}
+        {{ $t('common.revenue-model-types.' + product.models) }}
       </NuxtLink>
     </CoreBadge>
     <CoreBadge v-else v-for="model in product.models" :key="model">
       <NuxtLink :href="'/browse?models=' + model">
-        {{ revenueModels[model as RevenueModelType] }}
+        {{ $t('common.revenue-model-types.' + model) }}
       </NuxtLink>
     </CoreBadge>
   </ProductField>
-  <ProductField v-if="product.year" title="Năm thành lập">
+  <ProductField v-if="product.year" :title="$t('common.founded-year')">
     {{ product.year }} ({{ getTimeAgo(product.year) }})
   </ProductField>
   <CoreButton v-if="product.homepage" :href="getFullUrl(product.homepage)" target="_blank"

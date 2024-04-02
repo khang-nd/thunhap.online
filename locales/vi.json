@@ -33,7 +33,10 @@
     },
     "tags": "Được gắn thẻ",
     "reset": "Reset",
-    "changelog": "Lịch sử cập nhật"
+    "changelog": "Lịch sử cập nhật",
+    "overview": "Tổng quan",
+    "founded-year": "Năm thành lập",
+    "similar-products": "Sản phẩm tương tự"
   },
   "category": {
     "ai": "AI",
