@@ -8,10 +8,14 @@ export const useProductFieldQuery = (field: keyof Product) => {
   return useContentQuery(field, queryContent("product").only(field).find());
 };
 
-export const useLatestProductsQuery = () => {
+export const useLatestProductsQuery = (locale: string) => {
   return useContentQuery(
     "newProducts",
-    queryContent("product").limit(4).sort({ publishedAt: -1 }).find()
+    queryContent("product")
+      .where({ _locale: locale })
+      .limit(4)
+      .sort({ publishedAt: -1 })
+      .find()
   );
 };
 

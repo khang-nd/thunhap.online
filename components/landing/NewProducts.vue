@@ -16,5 +16,6 @@
 </template>
 
 <script setup lang="ts">
-const { data } = await useLatestProductsQuery()
+const { locale } = useI18n()
+const data = computed(() => useLatestProductsQuery(locale.value).data?.value)
 </script>
