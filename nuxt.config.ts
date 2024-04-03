@@ -1,4 +1,9 @@
 const baseUrl = "https://thunhap.online";
+const defaultLocale = "vi";
+const locales = [
+  { code: "vi", iso: "vi-VN", file: "vi.json" },
+  { code: "en", iso: "en-US", file: "en.json" },
+];
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -11,6 +16,8 @@ export default defineNuxtConfig({
     },
   },
   content: {
+    locales: locales.map((locale) => locale.code),
+    defaultLocale,
     experimental: {
       search: {},
     },
@@ -38,11 +45,8 @@ export default defineNuxtConfig({
   i18n: {
     baseUrl,
     langDir: "locales",
-    locales: [
-      { code: "vi", iso: "vi-VN", file: "vi.json" },
-      { code: "en", iso: "en-US", file: "en.json" },
-    ],
-    defaultLocale: "vi",
+    locales,
+    defaultLocale,
     strategy: "no_prefix",
   },
 });

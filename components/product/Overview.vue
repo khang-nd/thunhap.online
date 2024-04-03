@@ -11,7 +11,7 @@
     </CoreBadge>
   </ProductField>
   <ProductField v-if="product.revenue" :title="$t('common.revenue')">
-    <span class="font-bold text-xl">{{ formatPrice(product.revenue) }}/tháng</span>
+    <span class="font-bold text-xl">{{ formatPrice(product.revenue) }}/{{ $t('common.month') }}</span>
   </ProductField>
   <ProductField v-if="product.models" :title="$t('common.revenue-models')">
     <CoreBadge v-if="typeof product.models === 'string'">

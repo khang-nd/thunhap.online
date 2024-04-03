@@ -37,7 +37,10 @@
     "changelog": "Lịch sử cập nhật",
     "overview": "Tổng quan",
     "founded-year": "Năm thành lập",
-    "similar-products": "Sản phẩm tương tự"
+    "similar-products": "Sản phẩm tương tự",
+    "no-result": "Không có kết quả",
+    "missing-keyword": "Vui lòng nhập từ khóa",
+    "month": "tháng"
   },
   "category": {
     "ai": "AI",

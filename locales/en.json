@@ -37,7 +37,10 @@
     "changelog": "Changelog",
     "overview": "Overview",
     "founded-year": "Founded year",
-    "similar-products": "Similar products"
+    "similar-products": "Similar products",
+    "no-result": "No result",
+    "missing-keyword": "Please enter a keyword",
+    "month": "month"
   },
   "category": {
     "ai": "AI",

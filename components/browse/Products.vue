@@ -10,7 +10,7 @@
       </template>
       <template #not-found>
         <CoreParagraph class="text-center italic text-base py-10">
-          Không tìm thấy sản phẩm nào
+          {{ $t('common.no-result') }}
         </CoreParagraph>
       </template>
     </ContentList>
@@ -20,6 +20,7 @@
 <script setup lang="ts">
 import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types';
 
+const { locale } = useI18n()
 const route = useRoute()
 const router = useRouter()
 const query = ref<QueryBuilderParams>()
@@ -31,7 +32,7 @@ const handlePaging = (page: number) => {
   router.push({ query: { ...route.query, page } })
 }
 
-watch(() => route.query, async (routeQuery) => {
+watch([() => route.query, locale], async ([routeQuery, currentLocale]) => {
   const revenueRange = (routeQuery.revenue as string)?.split('-').map(Number)
   const status = (routeQuery.status as string)?.split(',')
   const models = (routeQuery.models as string)?.split(',')
@@ -40,6 +41,7 @@ watch(() => route.query, async (routeQuery) => {
   page.value = Number(routeQuery.page) || 1
   query.value = {
     where: [
+      { _locale: currentLocale },
       { categories: { $contains: route.params.category } },
       revenueRange && { revenue: { $gte: revenueRange[0], $lte: revenueRange[1] } },
       status && { status: { $in: status } },
@@ -48,7 +50,7 @@ watch(() => route.query, async (routeQuery) => {
     ].filter(Boolean),
     skip: (page.value - 1) * pageSize,
     limit: pageSize,
-    without: ['body'],
+    without: ['body', 'hashtags'],
     sort: [{ publishedAt: -1 }]
   }
   total.value = (await useProductCountQuery(query.value)).data.value || 0

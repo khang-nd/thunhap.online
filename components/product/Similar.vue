@@ -20,10 +20,12 @@
 <script setup lang="ts">
 import type { QueryBuilderWhere } from '@nuxt/content/types';
 
+const { locale } = useI18n()
 const { product } = defineProps<{
   product: ParsedProduct
 }>()
 const query: QueryBuilderWhere = {
+  _locale: { $eq: locale.value },
   $and: [
     { categories: { $in: toArray(product.categories) }, },
     { models: { $in: toArray(product.models) }, },
