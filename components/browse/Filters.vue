@@ -1,43 +1,43 @@
 <template>
-  <BrowseFilterGroup title="Phân loại" class="pt-4 lg:pt-0">
+  <BrowseFilterGroup :title="$t('common.categories')" class="pt-4 lg:pt-0">
     <ul>
       <li v-for="(category, key) in categories" :key="key">
         <NuxtLink :to="{ path: isActive(key) ? '/browse' : `/browse/${key}`, query: getQuery() }"
           :class="['flex items-center py-1 space-x-2 transition-colors hover:text-black', isActive(key) ? 'text-black font-semibold' : 'text-gray-500']">
           <Icon :name="category.icon" size="20" />
-          <span>{{ category.title }}</span>
+          <span>{{ $t('category.' + key) }}</span>
         </NuxtLink>
       </li>
     </ul>
   </BrowseFilterGroup>
-  <BrowseFilterGroup title="Doanh thu">
+  <BrowseFilterGroup :title="$t('common.revenue')">
     <CoreDualSlider :values="selected.revenue.value as number[]" :format='{ prefix: "$", thousand: "," }' :min="0"
       :max="100000" :step="500" @value-commit="handleSlider" />
   </BrowseFilterGroup>
-  <BrowseFilterGroup title="Tình trạng">
+  <BrowseFilterGroup :title="$t('common.status')">
     <ul>
-      <li v-for="(state, key) in status" :key="key">
+      <li v-for="key in status" :key="key">
         <CoreCheckbox :id="prefix(key)" :value="key" name="status" :checked="selected.status.value.includes(key)"
-          @change="handleCheckbox">{{ state }}</CoreCheckbox>
+          @change="handleCheckbox">{{ $t('common.status-types.' + key) }}</CoreCheckbox>
       </li>
     </ul>
   </BrowseFilterGroup>
-  <BrowseFilterGroup title="Mô hình thu nhập">
+  <BrowseFilterGroup :title="$t('common.revenue-models')">
     <ul>
-      <li v-for="(model, key) in revenueModels" :key="key">
+      <li v-for="key in revenueModels" :key="key">
         <CoreCheckbox :id="prefix(key)" :value="key" name="models" :checked="selected.models.value.includes(key)"
-          @change="handleCheckbox">{{ model }}</CoreCheckbox>
+          @change="handleCheckbox">{{ $t('common.revenue-model-types.' + key) }}</CoreCheckbox>
       </li>
     </ul>
   </BrowseFilterGroup>
-  <BrowseFilterGroup title="Được gắn thẻ">
+  <BrowseFilterGroup :title="$t('common.tags')">
     <CoreToggle v-for="tag in tags" :key="tag" :value="tag" class="mr-1 mb-1"
       :pressed="selected.tags.value.includes(tag)" @change="handleToggle">
       {{ tag }}
     </CoreToggle>
   </BrowseFilterGroup>
   <CoreButton v-if="showReset" href="/browse" variant="outline" class="block w-full sticky bottom-4">
-    Reset
+    {{ $t('common.reset') }}
   </CoreButton>
 </template>
 

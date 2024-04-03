@@ -13,7 +13,7 @@
       <CoreHeading as="h4">
         {{ product.title }}
         <CoreBadge v-if="product.revenue" class="mb-0 text-xs align-top">
-          {{ formatPrice(product.revenue) }}/tháng
+          {{ formatPrice(product.revenue) }}/{{ $t('common.month') }}
         </CoreBadge>
       </CoreHeading>
       <p>{{ product.description }}</p>

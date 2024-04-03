@@ -2,6 +2,10 @@
 
 Các cập nhật và sửa đổi đã thực hiện trên hệ thống trang web
 
+## 03-04-2024
+
+- Thêm tiếng Anh cho trang web
+
 ## 31-03-2024
 
 - Thêm chức năng phân trang cho danh sách sản phẩm

@@ -1,6 +1,6 @@
 <template>
   <h2 class="text-4xl lg:text-5xl text-center font-bold lg:tracking-tight mb-16">
-    Sản phẩm được thêm gần đây
+    {{ $t('landing.new-products-title') }}
   </h2>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
@@ -9,7 +9,7 @@
 
   <div class="text-center mb-40">
     <CoreButton href="/browse" class="inline-flex items-center">
-      <span>Xem tất cả</span>
+      <span>{{ $t('landing.view-all') }}</span>
       <Icon name="uil:arrow-right" class="ml-2" size="24" />
     </CoreButton>
   </div>

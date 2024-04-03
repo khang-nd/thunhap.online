@@ -24,7 +24,7 @@ Công cụ được xây dựng và phát triển từ năm {{ $doc.year }} bở
 
 ## Mô hình thu nhập & doanh thu
 
-ezyZip tạo thu nhập bằng cách hiển thị quảng cáo trên trang web của mình. Với gần 1 triệu lượt truy cập trung bình hàng tháng, ezyZip ước tính có thể thu được khoảng :price{:v=revenue} mỗi tháng từ tiền quảng cáo.
+ezyZip tạo thu nhập bằng cách hiển thị quảng cáo trên trang web. Với gần 1 triệu lượt truy cập trung bình hàng tháng, ezyZip ước tính có thể thu được khoảng :price{:v=revenue} mỗi tháng từ tiền quảng cáo.
 
 ![Lượt truy cập ezyZip](https://cdn.thunhap.online/product/ezyzip+traffic.png)
 

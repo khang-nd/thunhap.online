@@ -1,6 +1,6 @@
 <template>
   <main class="w-full">
-    <ContentDoc>
+    <ContentDoc :path="$route.path" :query="{ where: { _locale: locale } }">
       <template #default="{ doc }">
         <div class="max-w-screen-xl mx-auto pt-16 flex flex-col lg:flex-row">
           <ProductContainer class="lg:hidden">
@@ -29,4 +29,5 @@
 </template>
 
 <script setup lang="ts">
+const { locale } = useI18n()
 </script>

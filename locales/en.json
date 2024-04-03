@@ -1,0 +1,61 @@
+{
+  "landing": {
+    "title": "Explore Thu Nhap Online",
+    "description": "Discover successful online businesses from indie makers and learn how they generate income over the internet. Explore and get inspired by the best online business ideas!",
+    "cta": "Explore now",
+    "new-products-title": "Recently added products",
+    "hot-categories-title": "Trending categories",
+    "view-all": "View all"
+  },
+  "common": {
+    "sitename": "Thu Nhap Online",
+    "browse": "Browse",
+    "browse-online": "A list of successful online businesses",
+    "browse-category": "A list of successful {category} businesses",
+    "filters": "Filters",
+    "about": "About",
+    "search": "Search",
+    "categories": "Categories",
+    "revenue": "Revenue",
+    "status": "Status",
+    "status-types": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "acquired": "Acquired",
+      "unknown": "Unknown"
+    },
+    "revenue-models": "Revenue models",
+    "revenue-model-types": {
+      "subscription": "Subscription",
+      "advertising": "Advertising",
+      "transaction": "Transaction",
+      "sponsorship": "Sponsorship",
+      "affiliate": "Affiliate"
+    },
+    "tags": "Tags",
+    "reset": "Reset",
+    "changelog": "Changelog",
+    "overview": "Overview",
+    "founded-year": "Founded year",
+    "similar-products": "Similar products",
+    "no-result": "No result",
+    "missing-keyword": "Please enter a keyword",
+    "month": "month"
+  },
+  "category": {
+    "ai": "AI",
+    "automation": "Automation",
+    "marketing": "Marketing",
+    "design": "Design",
+    "website": "Website Builder",
+    "form": "Form Builder",
+    "mobile": "Mobile",
+    "analytics": "Analytics",
+    "editor": "Editor",
+    "template": "Template",
+    "utility": "Utility",
+    "service": "Service",
+    "entertainment": "Entertainment",
+    "jobs": "Job Board"
+  }
+}

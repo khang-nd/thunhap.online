@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@nuxt/content": "^2.12.1",
+    "@nuxtjs/i18n": "^8.2.0",
     "@nuxtjs/seo": "^2.0.0-rc.9",
     "@tailwindcss/typography": "^0.5.10",
     "@vueuse/core": "^10.9.0",
@@ -25,5 +26,8 @@
     "typescript": "^5.4.3",
     "vue": "^3.4.3",
     "vue-router": "^4.2.5"
+  },
+  "resolutions": {
+    "string-width": "4.2.3"
   }
 }

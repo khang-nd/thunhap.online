@@ -1,21 +1,20 @@
 <template>
   <LayoutContainer>
     <LandingSectionhead>
-      <template v-slot:title>Khám phá</template>
-      <template v-slot:desc>Danh sách các sản phẩm
-        <strong v-if="categoryTitle">{{ categoryTitle }}</strong>
-        <template v-else>online</template>
-        thành công</template>
+      <template v-slot:title>{{ $t('common.browse') }}</template>
+      <template v-slot:desc>{{ categoryTitle
+        ? $t('common.browse-category', { category: categoryTitle })
+        : $t('common.browse-online') }}</template>
     </LandingSectionhead>
     <div class="mt-10 md:mt-16 lg:flex">
       <aside class="hidden lg:block max-w-64 shrink-0 mr-6">
         <BrowseFilters />
       </aside>
-      <CoreDialog title="Lọc kết quả" v-model:open="openFilterModal">
+      <CoreDialog :title="$t('common.filters')" v-model:open="openFilterModal">
         <template #trigger>
           <CoreButton class="mb-6 flex items-center space-x-2 lg:hidden" variant="outline">
             <Icon name="uil:sliders-v-alt" />
-            <span>Lọc kết quả</span>
+            <span>{{ $t('common.filters') }}</span>
           </CoreButton>
         </template>
         <template #close>
@@ -25,7 +24,7 @@
           </button>
         </template>
         <div class="px-6 max-h-[80vh] overflow-auto">
-          <BrowseFilters is-mobile/>
+          <BrowseFilters is-mobile />
         </div>
       </CoreDialog>
       <BrowseProducts />
@@ -34,11 +33,13 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 const { category } = useRoute().params
-const categoryTitle = categories[category as CategoryType]?.title
+const categoryTitle = computed(() => category ? t('category.' + category) : null)
+const headTitle = computed(() => categoryTitle.value || t('common.browse'))
 const openFilterModal = ref(false);
 
-useHead({ title: categoryTitle || "Khám phá" })
+useHead({ title: headTitle })
 
 onMounted(() => {
   window.addEventListener('resize', () => {

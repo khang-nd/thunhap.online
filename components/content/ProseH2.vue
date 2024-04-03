@@ -20,6 +20,9 @@ const iconMap: Record<string, string> = {
   "doanh-thu": "healthicons:money-bag-outline",
   "quảng-bá": "healthicons:megaphone-outline",
   "thông-tin": "healthicons:info-outline",
+  "revenue": "healthicons:money-bag-outline",
+  "marketing": "healthicons:megaphone-outline",
+  "information": "healthicons:info-outline",
 }
 const icon = Object.keys(iconMap).reduce((acc, key) => {
   return (props.id?.includes(key)) ? iconMap[key] : acc
