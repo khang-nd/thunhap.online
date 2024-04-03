@@ -14,24 +14,24 @@ publishedAt: 1711718723401
 
 # WordCounter
 
-Công cụ online để đếm số ký tự, câu từ và nhiều tính năng văn bản khác
+Online tool for counting characters, words, and other text features
 
 :hero-img{:src="image.src" :alt="image.alt"}
 
-__WordCounter__ cung cấp cho người dùng một giao diện đơn giản, nhanh chóng và dễ sử dụng, giúp đếm số ký tự, từ, câu và đo lường độ dài của văn bản. Ngoài ra, công cụ còn hỗ trợ nhiều tính năng tiện lợi khác như xử lý, lưu trữ văn bản, kiểm tra chính tả, ngữ pháp...
+__WordCounter__ provides users with a simple, fast, and easy-to-use interface to count characters, words, sentences, and measure the length of text. In addition, the tool also supports many other convenient features such as processing, storing text, checking spelling, grammar...
 
-Công cụ được xây dựng và phát triển từ năm {{ $doc.year }} bởi [Nate Sanden](https://twitter.com/natesanden), một kỹ sư phần mềm và doanh nhân người Mỹ.
+The tool was built and developed from {{ $doc.year }} by [Nate Sanden](https://twitter.com/natesanden), a software engineer and entrepreneur from the United States.
 
-## Mô hình thu nhập & doanh thu
+## Revenue model
 
-WordCounter tạo thu nhập chính từ việc hiển thị quảng cáo trên trang. Với trung bình 7 triệu lượt truy cập mỗi tháng, ước tính công cụ có thể thu về khoảng :price{:v=revenue}/tháng.
+WordCounter generates revenue primarily from displaying ads on the page. With an average of 7 million visits per month, the tool is estimated to earn around :price{:v=revenue}/month.
 
-Ngoài ra, WordCounter còn kiếm tiền từ chương trình tiếp thị liên kết với các dịch vụ văn bản khác.
+In addition, WordCounter also makes money from an affiliate marketing program with other text services.
 
 ![WordCounter traffic](https://cdn.thunhap.online/product/wordcounter+traffic.png)
 
-## Chiến lược quảng bá
+## Marketing strategy
 
-WordCounter đạt được lượng truy cập lớn chủ yếu nhờ vào thời gian xuất hiện lâu dài trên thị trường, cùng với việc áp dụng các kỹ thuật về SEO, công cụ đạt được vị trí cao trên các trang kết quả tìm kiếm cho các từ khóa liên quan. Ngoài ra, WordCounter còn sử dụng quảng cáo trả tiền trên nhiều nền tảng, giúp gia tăng lượng truy cập và củng cố vị trí xếp hạng trên các công cụ tìm kiếm.
+WordCounter has achieved a large number of visits mainly due to its long presence in the market, along with the application of SEO techniques, the tool has achieved high rankings on search results pages for related keywords. In addition, WordCounter also uses paid advertising on multiple platforms to increase traffic and consolidate its ranking position on search engines.
 
 ![WordCounter search result](https://cdn.thunhap.online/product/wordcounter+seo.png)

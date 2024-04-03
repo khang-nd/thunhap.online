@@ -25,7 +25,7 @@
     address: Thành phố Hồ Chí Minh, Việt Nam
   en:
     title: About
-    description: Where you can find successful online businesses, learn and get inspired
+    description: Discover successful online businesses, learn and get inspired
     purpose: Purpose
     purpose-content:
       In the current technology era, creating an online product is no longer a difficult task. However, creating a successful

@@ -1,5 +1,5 @@
 const baseUrl = "https://thunhap.online";
-const defaultLocale = "vi";
+const defaultLocale = "en";
 const locales = [
   { code: "vi", iso: "vi-VN", file: "vi.json" },
   { code: "en", iso: "en-US", file: "en.json" },

@@ -14,24 +14,24 @@ publishedAt: 1711624459462
 
 # GoFullPage
 
-Tiện ích mở rộng trình duyệt hỗ trợ chụp màn hình trang web
+Browser extension for capturing full-page screenshots
 
 :hero-img{:src="image.src" :alt="image.alt"}
 
-__GoFullPage__ cho phép người dùng chụp màn hình toàn bộ trang web một cách đơn giản và nhanh chóng. Cùng với nhiều tính năng vượt trội đi kèm, như chỉnh sửa hình chụp, phân trang PDF thông minh, làm mờ, chèn văn bản, làm nổi, chú thích v.v... GoFullPage đã trở thành một trong những công cụ chụp màn hình tốt nhất dành cho người dùng trình duyệt web.
+__GoFullPage__ allows users to capture full-page screenshots quickly with ease. Along with many outstanding features, such as editing screenshots, smart PDF pagination, blurring, inserting text, highlighting, etc., GoFullPage has become one of the best screenshot tools for web browser users.
 
-Công cụ được xây dựng và phát triển từ năm {{ $doc.year }} bởi [Peter Coles](https://twitter.com/lethys), một kỹ sư phần mềm người Mỹ.
+The extension was built and developed from {{ $doc.year }} by [Peter Coles](https://twitter.com/lethys), a software engineer from the United States.
 
-## Mô hình thu nhập & doanh thu
+## Revenue model
 
-GoFullPage tạo thu nhập bằng cách thu phí định kì từ người dùng nếu họ muốn sử dụng những tính năng cao cấp của công cụ, với mức giá chỉ [:price{v=1}/tháng](https://gofullpage.com/premium). Ngoài ra, công cụ còn hướng đến khách hàng doanh nghiệp với một số tính năng cao cấp khác.
+GoFullPage generates revenue by charging users a recurring fee if they want to use the tool's premium features, priced at just [:price{v=1}/month](https://gofullpage.com/premium). Additionally, the tool targets enterprise customers with some other premium features.
 
-Với mô hình này, công cụ mang lại mức doanh thu ước tính trung bình là :price{:v="revenue"}/tháng.
+With this model, the tool brings in an estimated average revenue of :price{:v="revenue"}/month.
 
-## Chiến lược quảng bá
+## Marketing strategy
 
-GoFullPage ban đầu được quảng bá chủ yếu thông qua :directory{id=chrome}. Nhờ vào chất lượng vượt trội, đồng thời còn có thể được sử dụng miễn phí, công cụ đã nhận được nhiều đánh giá tích cực từ cộng đồng người dùng, và gây được sự chú ý từ nhiều trang [tin tức công nghệ](https://gofullpage.com/press) lớn, khi được xếp vào danh sách những tiện ích mở rộng trình duyệt tốt nhất.
+GoFullPage was initially promoted mainly through the :directory{id=chrome}. Thanks to its superior quality and the fact that it can be used for free, the tool has received many positive reviews from the user community and attracted attention from many major [tech news](https://gofullpage.com/press) sites, being listed among the best browser extension tools.
 
-## Một số thông tin khác
+## Other information
 
-Mã nguồn những bản đầu tiên của GoFullPage được tác giả chia sẻ công khai trên [Github](https://github.com/mrcoles/full-page-screen-capture-chrome-extension) và đã đạt hơn 1000 sao.
+The source code of the initial versions of GoFullPage was shared publicly on [Github](https://github.com/mrcoles/full-page-screen-capture-chrome-extension) and has received over 1000 stars.

@@ -13,26 +13,26 @@ publishedAt: 1711498960651
 
 # Nokia Launcher
 
-Ứng dụng biến giao diện điện thoại thành giao diện Nokia cổ điển
+Transform smartphone interface into classic Nokia interface
 
 :hero-img{:src="image.src" :alt="image.alt"}
 
-__Nokia Launcher__ dành cho những ai yêu thích giao diện cổ điển của điện thoại Nokia. Ứng dụng trình khởi chạy giúp giúp tùy chỉnh giao diện điện thoại Android trở thành giao diện Nokia 1280, với nhiều chủ đề, ảnh nền, biểu tượng và tính năng độc đáo được hỗ trợ.
+__Nokia Launcher__ is for those who love the classic interface of Nokia phones. The launcher app helps customize the Android phone interface to the Nokia 1280 interface, with many themes, wallpapers, icons, and unique features supported.
 
-Ứng dụng được xây dựng và phát triển từ năm {{ $doc.year }} bởi anh [Đào Văn Ưởng](https://www.facebook.com/gau.nam.motor), một lập trình viên ứng dụng di động người Việt Nam.
+The app was built and developed from {{ $doc.year }} by [Đào Văn Ưởng](https://www.facebook.com/gau.nam.motor), a mobile app developer from Vietnam.
 
-## Mô hình thu nhập & doanh thu
+## Revenue model
 
-Nokia Launcher tạo thu nhập bằng cách hiển thị quảng cáo trong ứng dụng và bán gói đăng ký xóa quảng cáo vĩnh viễn với giá khoảng :price{v=4} cho người dùng.
+Nokia Launcher generates revenue by displaying ads in the app and selling a subscription package to remove ads permanently for around :price{v=4} for users.
 
-Hiện chưa rõ mức doanh thu mà ứng dụng mang lại.
+The current revenue that the app brings is not disclosed.
 
-## Chiến lược quảng bá
+## Marketing strategy
 
-Nokia Launcher được quảng bá chủ yếu thông qua chợ ứng dụng Google Play. Nhờ vào tính chất độc đáo, ứng dụng nhận được sự chia sẻ và lan truyền rộng rãi từ cộng đồng người dùng. Từ đó làm cơ sở cho việc thu hút người dùng mới và tạo ra một chuỗi lưu lượng truy cập ổn định, giúp ứng dụng được xếp vào top kết quả tìm kiếm cho các từ khóa liên quan.
+Nokia Launcher is mainly promoted through the Google Play app store. Thanks to its unique nature, the app receives widespread sharing and dissemination from the user community. This forms the basis for attracting new users and creating a stable traffic flow, helping the app rank in the top search results for related keywords.
 
-## Một số thông tin khác
+## Other information
 
-Ứng dụng hiện đã đạt hơn 500K lượt tải trên [Google Play](https://play-lh.googleusercontent.com/Z5qgCbQeIcElYcU6c7zcbdYmvfnE0TxpvMswd3ZmShUvekI45UtBQgc6MujbSHsNhXQ=w1024-h512-rw) với khoảng 20K lượt tải trung bình mỗi tháng.
+The app has reached over 500K downloads on [Google Play](https://play-lh.googleusercontent.com/Z5qgCbQeIcElYcU6c7zcbdYmvfnE0TxpvMswd3ZmShUvekI45UtBQgc6MujbSHsNhXQ=w1024-h512-rw) with around 20K average downloads per month.
 
 ![Nokia Launcher avg monthly downloads](https://cdn.thunhap.online/product/nokialauncher+downloads.png)

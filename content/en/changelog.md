@@ -2,7 +2,7 @@
 
 All notable changes and updates made to this website
 
-## Apr 1, 2024
+## Apr 3, 2024
 
 - Added English version for the website
 
