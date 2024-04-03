@@ -9,9 +9,15 @@
 <script setup lang="ts">
 import { ConfigProvider } from 'radix-vue';
 
+const i18nHeader = useLocaleHead({
+  identifierAttribute: 'id',
+  addSeoAttributes: true,
+})
+
 useHead({
   titleTemplate: (title) => title ? `${title} - Thu Nhập Online` : "Thu Nhập Online",
   meta: [
+    ...i18nHeader.value.meta.map((meta: any) => (meta)),
     { property: 'og:image', content: 'https://cdn.thunhap.online/og-image.jpg' }
   ]
 })
