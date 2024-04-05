@@ -1,8 +1,8 @@
 <template>
-  <NuxtLinkLocale :href="href" :target="target"
+  <NuxtLink :href="href" :target="target"
     class="rounded-[4px] p-1 -mx-0.5 font-medium text-black transition-colors hover:bg-gray-200">
     <slot />
-  </NuxtLinkLocale>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
