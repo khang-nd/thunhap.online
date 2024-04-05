@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :href="product._path" :key="product._path" @mouseover="isHovered = true" @mouseleave="isHovered = false"
+  <NuxtLinkLocale :href="product._path" :key="product._path" @mouseover="isHovered = true" @mouseleave="isHovered = false"
     class="flex flex-col">
     <div class="w-full h-52 overflow-hidden border border-gray-300 relative shrink-0">
       <img v-if="product.image?.src" :src="product.image.src" :alt="product.image.alt"
@@ -18,7 +18,7 @@
       </CoreHeading>
       <p>{{ product.description }}</p>
     </div>
-  </NuxtLink>
+  </NuxtLinkLocale>
 </template>
 
 <script setup lang="ts">

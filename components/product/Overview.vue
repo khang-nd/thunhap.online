@@ -2,12 +2,12 @@
   <CoreHeading as="h3" class="mb-4">{{ $t('common.overview') }}</CoreHeading>
   <ProductField :title="$t('common.status')">
     <CoreBadge :color="product.status">
-      <NuxtLink :href="'/browse?status=' + product.status">{{ $t('common.status-types.' + product.status) }}</NuxtLink>
+      <NuxtLinkLocale :href="'/browse?status=' + product.status">{{ $t('common.status-types.' + product.status) }}</NuxtLinkLocale>
     </CoreBadge>
   </ProductField>
   <ProductField :title="$t('common.categories')">
     <CoreBadge v-for="category in product.categories" :key="category">
-      <NuxtLink :href="'/browse/' + category">{{ $t('category.' + category) }}</NuxtLink>
+      <NuxtLinkLocale :href="'/browse/' + category">{{ $t('category.' + category) }}</NuxtLinkLocale>
     </CoreBadge>
   </ProductField>
   <ProductField v-if="product.revenue" :title="$t('common.revenue')">
@@ -15,14 +15,14 @@
   </ProductField>
   <ProductField v-if="product.models" :title="$t('common.revenue-models')">
     <CoreBadge v-if="typeof product.models === 'string'">
-      <NuxtLink :href="'/browse?models=' + product.models">
+      <NuxtLinkLocale :href="'/browse?models=' + product.models">
         {{ $t('common.revenue-model-types.' + product.models) }}
-      </NuxtLink>
+      </NuxtLinkLocale>
     </CoreBadge>
     <CoreBadge v-else v-for="model in product.models" :key="model">
-      <NuxtLink :href="'/browse?models=' + model">
+      <NuxtLinkLocale :href="'/browse?models=' + model">
         {{ $t('common.revenue-model-types.' + model) }}
-      </NuxtLink>
+      </NuxtLinkLocale>
     </CoreBadge>
   </ProductField>
   <ProductField v-if="product.year" :title="$t('common.founded-year')">

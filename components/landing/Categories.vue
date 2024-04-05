@@ -4,13 +4,13 @@
   </h2>
 
   <div class="grid grid-cols-2 lg:grid-cols-4 mb-12 gap-6 lg:gap-12">
-    <NuxtLink v-for="key in categoryKeys" :href="'/browse/' + key"
+    <NuxtLinkLocale v-for="key in categoryKeys" :href="'/browse/' + key"
       class="text-center text-gray-500 border rounded-sm px-4 py-8 transition-colors hover:border-gray-400 hover:text-black">
       <div class="inline-block p-2 bg-gray-200 rounded-full">
         <Icon :name="categories[key].icon" size="24" />
       </div>
       <h3 class="font-semibold lg:text-lg">{{ $t('category.' + key) }}</h3>
-    </NuxtLink>
+    </NuxtLinkLocale>
   </div>
 
   <div class="text-center mb-40">

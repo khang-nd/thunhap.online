@@ -19,7 +19,7 @@
       <div class="h-80 overflow-auto">
         <ul v-if="results?.value.length > 0">
           <li v-for="item in results.value" :key="item.id">
-            <NuxtLink :href="item.id" class="block p-2 transition-colors hover:bg-gray-200">
+            <NuxtLinkLocale :href="item.id" class="block p-2 transition-colors hover:bg-gray-200">
               <div class="font-medium mb-1">
                 <span v-for="(title, index) in [...item.titles, item.title]">
                   <Icon v-if="index > 0" name="uil:angle-right" class="inline" />
@@ -27,7 +27,7 @@
                 </span>
               </div>
               <div class="text-sm" v-html="truncateText(item.content, item.terms[0])" />
-            </NuxtLink>
+            </NuxtLinkLocale>
           </li>
         </ul>
         <div v-else class="flex items-center justify-center h-full text-gray-500 italic">

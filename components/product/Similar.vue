@@ -1,6 +1,6 @@
 <template>
   <CoreHeading v-if="products.length > 0" as="h3" class="mb-4">{{ $t('common.similar-products') }}</CoreHeading>
-  <NuxtLink v-for="similarProduct in products" :href="similarProduct._path"
+  <NuxtLinkLocale v-for="similarProduct in products" :href="similarProduct._path"
     class="flex lg:flex-col items-center p-3 mb-3 border rounded-md overflow-hidden transition-colors hover:border-gray-400">
     <div v-if="similarProduct.image" class="w-32 h-24 shrink-0 mr-3 hidden sm:block lg:hidden">
       <img :src="similarProduct.image.src" :alt="similarProduct.image.alt" class="w-full h-full object-cover" />
@@ -14,7 +14,7 @@
         </CoreBadge>
       </div>
     </div>
-  </NuxtLink>
+  </NuxtLinkLocale>
 </template>
 
 <script setup lang="ts">

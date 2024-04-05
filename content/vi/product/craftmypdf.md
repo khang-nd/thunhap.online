@@ -8,7 +8,7 @@ categories: [automation, editor]
 revenue: 40000
 models: subscription
 year: 2021
-hashtags: [b2c, b2b]
+hashtags: [b2c, b2b, api]
 publishedAt: 1712224435929
 ---
 

@@ -8,17 +8,6 @@ export const useProductFieldQuery = (field: keyof Product) => {
   return useContentQuery(field, queryContent("product").only(field).find());
 };
 
-export const useLatestProductsQuery = (locale: string) => {
-  return useContentQuery(
-    "newProducts",
-    queryContent("product")
-      .where({ _locale: locale })
-      .limit(4)
-      .sort({ publishedAt: -1 })
-      .find()
-  );
-};
-
 export const useProductCountQuery = (params: QueryBuilderParams = {}) => {
   return useAsyncData("productCount", () => {
     const initialQuery = queryContent("product");

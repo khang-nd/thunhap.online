@@ -2,11 +2,11 @@
   <BrowseFilterGroup :title="$t('common.categories')" class="pt-4 lg:pt-0">
     <ul>
       <li v-for="(category, key) in categories" :key="key">
-        <NuxtLink :to="{ path: isActive(key) ? '/browse' : `/browse/${key}`, query: getQuery() }"
+        <NuxtLinkLocale :to="{ path: isActive(key) ? '/browse' : `/browse/${key}`, query: getQuery() }"
           :class="['flex items-center py-1 space-x-2 transition-colors hover:text-black', isActive(key) ? 'text-black font-semibold' : 'text-gray-500']">
           <Icon :name="category.icon" size="20" />
           <span>{{ $t('category.' + key) }}</span>
-        </NuxtLink>
+        </NuxtLinkLocale>
       </li>
     </ul>
   </BrowseFilterGroup>

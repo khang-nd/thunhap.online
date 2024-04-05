@@ -1,5 +1,5 @@
 <template>
-  <component :is="as || ($attrs.href ? NuxtLink : 'button')" :class="[
+  <component :is="as || ($attrs.href ? NuxtLinkLocale : 'button')" :class="[
     'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-black',
     sizes[size],
     styles[$attrs.disabled === '' ? 'disabled' : variant],
@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-const NuxtLink = resolveComponent("NuxtLink");
+const NuxtLinkLocale = resolveComponent("NuxtLinkLocale");
 
 type Size = 'sm' | "md" | "lg";
 

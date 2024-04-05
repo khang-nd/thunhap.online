@@ -2,12 +2,12 @@
   <header class="w-full">
     <div class="max-w-screen-xl flex flex-col lg:flex-row justify-between items-center p-5 mx-auto">
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <NuxtLink href="/" class="flex items-center text-lg" @mouseover="titleMouseOver = true"
+        <NuxtLinkLocale href="/" class="flex items-center text-lg" @mouseover="titleMouseOver = true"
           @mouseout="titleMouseOver = false">
           <Icon :name="'healthicons:money-bag' + (titleMouseOver ? '' : '-outline')" size="32" class="mr-1" />
           <span class="font-bold text-slate-800">Thu Nhập</span>
           <span class="text-slate-500">.online</span>
-        </NuxtLink>
+        </NuxtLinkLocale>
         <button @click="openMenu = !openMenu"
           class="block p-1 lg:hidden text-gray-500 rounded-full transition-colors hover:text-black hover:bg-gray-100">
           <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -25,10 +25,10 @@
         <LayoutSearch />
         <ul class="flex flex-col lg:flex-row lg:gap-3 lg:mr-3 mb-2 lg:mb-0">
           <li v-for="item of menuitems">
-            <NuxtLink :href="'/' + item"
+            <NuxtLinkLocale :href="'/' + item"
               :class='[($route.path.includes(item) ? "text-black bg-gray-100" : "text-gray-500"), "rounded-md flex p-2 transition-colors hover:text-black lg:px-3"]'>
               {{ $t('common.' + item) }}
-            </NuxtLink>
+            </NuxtLinkLocale>
           </li>
         </ul>
         <div class="flex items-center">
