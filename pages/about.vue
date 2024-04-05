@@ -61,7 +61,7 @@
       </CoreHeading>
       <CoreParagraph>
         <i18n-t keypath="purpose-content">
-          <span class="font-bold">{{ t('common.sitename') }}</span>
+          <span class="font-bold">{{ $t('common.sitename') }}</span>
         </i18n-t>
       </CoreParagraph>
 
@@ -70,7 +70,7 @@
       </CoreHeading>
       <CoreParagraph>
         <i18n-t keypath="target-content">
-          <span class="font-bold">{{ t('common.sitename') }}</span>
+          <span class="font-bold">{{ $t('common.sitename') }}</span>
         </i18n-t>
       </CoreParagraph>
       <CoreParagraph>
@@ -82,7 +82,7 @@
       </CoreHeading>
       <CoreParagraph>
         <i18n-t keypath="disclaimer-content">
-          <span class="font-bold">{{ t('common.sitename') }}</span>
+          <span class="font-bold">{{ $t('common.sitename') }}</span>
         </i18n-t>
       </CoreParagraph>
 
