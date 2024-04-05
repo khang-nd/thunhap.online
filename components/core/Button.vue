@@ -1,5 +1,5 @@
 <template>
-  <component :is="as || ($attrs.href ? NuxtLinkLocale : 'button')" :class="[
+  <component :is="resolvedAs" :href="href" :class="[
     'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-black',
     sizes[size],
     styles[$attrs.disabled === '' ? 'disabled' : variant],
@@ -9,6 +9,7 @@
 </template>
 
 <script setup lang="ts">
+const NuxtLink = resolveComponent("NuxtLink");
 const NuxtLinkLocale = resolveComponent("NuxtLinkLocale");
 
 type Size = 'sm' | "md" | "lg";
@@ -16,12 +17,13 @@ type Size = 'sm' | "md" | "lg";
 type Variant = "outline" | "primary" | "inverted" | "disabled";
 
 interface Props {
-  as?: 'button' | 'a' | 'NuxtLink';
+  as?: 'button' | 'a';
+  href?: string;
   size?: Size;
   variant?: Variant;
 }
 
-withDefaults(defineProps<Props>(), {
+const { as, href } = withDefaults(defineProps<Props>(), {
   size: "lg",
   variant: "primary",
 });
@@ -38,4 +40,6 @@ const styles: Record<Variant, string> = {
   inverted: "bg-white text-gray-500 border-2 border-transparent hover:text-black",
   disabled: "bg-gray-100 hover:bg-gray-200 border-2 border-transparent",
 };
+
+const resolvedAs = as || (!href ? 'button' : (/^https?/.test(href) ? NuxtLink : NuxtLinkLocale))
 </script>

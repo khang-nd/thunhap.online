@@ -2,7 +2,9 @@
   <CoreHeading as="h3" class="mb-4">{{ $t('common.overview') }}</CoreHeading>
   <ProductField :title="$t('common.status')">
     <CoreBadge :color="product.status">
-      <NuxtLinkLocale :href="'/browse?status=' + product.status">{{ $t('common.status-types.' + product.status) }}</NuxtLinkLocale>
+      <NuxtLinkLocale :href="'/browse?status=' + product.status">
+        {{ $t('common.status-types.' + product.status) }}
+      </NuxtLinkLocale>
     </CoreBadge>
   </ProductField>
   <ProductField :title="$t('common.categories')">

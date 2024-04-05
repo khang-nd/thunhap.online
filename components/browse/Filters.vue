@@ -100,7 +100,7 @@ const handleToggle = (e: { value: string, pressed: boolean }) => {
   pushQuery('tags', result)
 }
 
-const showReset = computed(() => route.path !== '/browse' || Object.keys(route.query).length > 0)
+const showReset = computed(() => !route.path.endsWith('/browse') || Object.keys(route.query).length > 0)
 
 watch(() => route.query, () => {
   Object.keys(selected).forEach((key) => {
