@@ -22,9 +22,7 @@
     <input type="hidden" name="access_key" value="886a8f51-1bbe-490f-b4bd-ecf7d21a17e0" />
     <input type="checkbox" class="hidden" style="display: none" name="botcheck" />
     <div class="mb-5">
-      <input type="text" :placeholder="t('fullname')" required
-        class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
-        name="name" />
+      <input type="text" :placeholder="t('fullname')" required class="input w-full px-4 py-3" name="name" />
       <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
         {{ t('required') }}
       </div>
@@ -32,7 +30,7 @@
     <div class="mb-5">
       <label for="email_address" class="sr-only">{{ t('email') }}</label>
       <input id="email_address" type="email" :placeholder="t('email')" name="email" required
-        class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100" />
+        class="input w-full px-4 py-3" />
       <div class="empty-feedback text-red-400 text-sm mt-1">
         {{ t('required') }}
       </div>
@@ -40,9 +38,8 @@
         {{ t('invalid') }}
       </div>
     </div>
-    <div class="mb-3">
-      <textarea name="message" required :placeholder="t('message')"
-        class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"></textarea>
+    <div class="mb-5">
+      <textarea name="message" required :placeholder="t('message')" class="input w-full px-4 py-3 h-36"></textarea>
       <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
         {{ t('required') }}
       </div>

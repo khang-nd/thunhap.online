@@ -92,17 +92,23 @@
       <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl">
         <div>
           <CoreParagraph>
-            {{ t('contact-content')}}
+            {{ t('contact-content') }}
           </CoreParagraph>
           <div class="mt-5">
-            <div class="flex items-center mt-2 space-x-2 text-gray-600">
-              <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
+            <div class="flex items-center mb-3 space-x-2 text-gray-500">
+              <Icon size="20" name="uil:map-marker" />
               <span>{{ t('address') }}</span>
             </div>
-            <div class="flex items-center mt-2 space-x-2 text-gray-600">
-              <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
-                href="mailto:hello@thunhap.online">hello@thunhap.online</a>
-            </div>
+            <a href="mailto:hello@thunhap.online"
+              class="flex items-center mb-3 space-x-2 text-gray-500 hover:text-black transition-colors">
+              <Icon size="20" name="uil:envelope" />
+              <span>hello@thunhap.online</span>
+            </a>
+            <a href="https://twitter.com/thunhap_online" target="_blank"
+              class="flex items-center space-x-2 text-gray-500 hover:text-black transition-colors">
+              <Icon size="20" name="uil:twitter" />
+              <span>thunhap_online</span>
+            </a>
           </div>
         </div>
         <div>

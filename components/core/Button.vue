@@ -41,5 +41,5 @@ const styles: Record<Variant, string> = {
   disabled: "bg-gray-100 hover:bg-gray-200 border-2 border-transparent",
 };
 
-const resolvedAs = as || (!href ? 'button' : (/^https?/.test(href) ? NuxtLink : NuxtLinkLocale))
+const resolvedAs = as || (!href ? 'button' : (/^(https?|mailto)/.test(href) ? NuxtLink : NuxtLinkLocale))
 </script>
