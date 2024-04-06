@@ -24,7 +24,7 @@ Sản phẩm được thành lập vào năm {{ $doc.year }} bởi [Gary Brewer]
 
 ## Mô hình thu nhập & doanh thu
 
-BuiltWith tạo thu nhập bằng hình thức thu phí định kỳ các cá nhân và doanh nghiệp khi sử dụng dịch vụ, cung cấp các [gói đăng ký](https://builtwith.com/plans) với mức giá khác nhau tùy thuộc vào hạn mức sử dụng. Mức giá cho gói cơ bản là $295/tháng, gói cao cấp là $495/tháng và gói doanh nghiệp là $995/tháng.
+BuiltWith tạo thu nhập bằng hình thức thu phí định kỳ các cá nhân và doanh nghiệp khi sử dụng dịch vụ, cung cấp các [gói đăng ký](https://builtwith.com/plans) với mức giá khác nhau tùy thuộc vào hạn mức sử dụng. Mức giá cho gói cơ bản là :price{v=295}/tháng, gói cao cấp là :price{v=495}/tháng và gói doanh nghiệp là :price{v=995}/tháng.
 
 Với mô hình này, sản phẩm đã thu về mức doanh thu ước tính :price{v=14000000}/năm, tương đương khoảng :price{:v=revenue}/tháng, theo một vài thông tin được [lan truyền](https://www.google.com/search?q=builtwith+revenue).
 

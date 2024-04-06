@@ -24,7 +24,7 @@ The product was founded in {{ $doc.year }} by [Gary Brewer](https://www.linkedin
 
 ## Revenue model
 
-BuiltWith generates revenue by charging individuals and businesses for using the service, offering [subscription plans](https://builtwith.com/plans) with different prices depending on the usage limit. The price for the basic package is $295/month, the premium package is $495/month, and the enterprise package is $995/month.
+BuiltWith generates revenue by charging individuals and businesses for using the service, offering [subscription plans](https://builtwith.com/plans) with different prices depending on the usage limit. The price for the basic package is :price{v=295}/month, the premium package is :price{v=495}/month, and the enterprise package is :price{v=995}/month.
 
 With this model, the product has earned an estimated revenue of :price{v=14000000}/year, equivalent to about :price{:v=revenue}/month, according to some [information](https://www.google.com/search?q=builtwith+revenue) that has been circulated.
 

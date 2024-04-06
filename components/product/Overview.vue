@@ -13,7 +13,7 @@
     </CoreBadge>
   </ProductField>
   <ProductField v-if="product.revenue" :title="$t('common.revenue')">
-    <span class="font-bold text-xl">{{ formatPrice(product.revenue) }}/{{ $t('common.month') }}</span>
+    <span class="font-bold text-xl">{{ formatPrice(product.revenue, locale) }}/{{ $t('common.month') }}</span>
   </ProductField>
   <ProductField v-if="product.models" :title="$t('common.revenue-models')">
     <CoreBadge v-if="typeof product.models === 'string'">
@@ -42,6 +42,7 @@ defineProps<{
   product: Product
 }>()
 
+const { locale } = useI18n();
 const getTimeAgo = (year: number) => useTimeAgo(new Date(year, 0, 1)).value;
 const getFullUrl = (host: string) => /^https?:\/\//.test(host) ? host : `https://${host}`;
 const getHost = (url: string) => new URL(getFullUrl(url)).host;

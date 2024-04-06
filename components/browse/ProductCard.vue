@@ -1,6 +1,6 @@
 <template>
-  <NuxtLinkLocale :href="product._path" :key="product._path" @mouseover="isHovered = true" @mouseleave="isHovered = false"
-    class="flex flex-col">
+  <NuxtLinkLocale :href="product._path" :key="product._path" @mouseover="isHovered = true"
+    @mouseleave="isHovered = false" class="flex flex-col">
     <div class="w-full h-52 overflow-hidden border border-gray-300 relative shrink-0">
       <img v-if="product.image?.src" :src="product.image.src" :alt="product.image.alt"
         class="w-full h-full object-cover" />
@@ -13,7 +13,7 @@
       <CoreHeading as="h4">
         {{ product.title }}
         <CoreBadge v-if="product.revenue" class="mb-0 text-xs align-top">
-          {{ formatPrice(product.revenue) }}/{{ $t('common.month') }}
+          {{ formatPrice(product.revenue, locale) }}/{{ $t('common.month') }}
         </CoreBadge>
       </CoreHeading>
       <p>{{ product.description }}</p>
@@ -27,5 +27,6 @@ import type { ParsedContent } from '@nuxt/content/types';
 defineProps<{
   product: ParsedContent | ParsedProduct
 }>()
+const { locale } = useI18n();
 const isHovered = ref(false);
 </script>

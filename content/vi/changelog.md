@@ -2,6 +2,10 @@
 
 Các cập nhật và sửa đổi đã thực hiện trên hệ thống trang web
 
+## 06-04-2024
+
+- Hiển thị đơn vị tiền ứng với ngôn ngữ
+
 ## 03-04-2024
 
 - Thêm tiếng Anh cho trang web

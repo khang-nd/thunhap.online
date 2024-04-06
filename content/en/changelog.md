@@ -2,6 +2,10 @@
 
 All notable changes and updates made to this website
 
+## Apr 6, 2024
+
+- Display currency unit corresponding to the locale
+
 ## Apr 3, 2024
 
 - Added English version for the website
