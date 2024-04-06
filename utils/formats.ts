@@ -19,9 +19,8 @@ export const formatPrice = (
   const currencyPrefix = options?.prefix || (locale === "vi" ? "" : "$");
   const currencySuffix = options?.suffix || (locale === "vi" ? " đ" : "");
   const thousand = options?.thousand || ",";
-  const convertedValue =
-    locale === "vi" ? Number(value) * EXCHANGE_RATE : value;
-  const valueString = convertedValue.toString();
+  const convertedValue = Number(value) * (locale === "vi" ? EXCHANGE_RATE : 1);
+  const valueString = convertedValue.toFixed(0);
   let result = "";
   let suffix = "";
 
