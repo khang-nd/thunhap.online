@@ -26,6 +26,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxtjs/seo",
     "@nuxtjs/i18n",
+    "@nuxthq/studio",
     "@vueuse/nuxt",
     "nuxt-icon",
     "nuxt-gtag",
