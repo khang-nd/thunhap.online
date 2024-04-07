@@ -8,7 +8,7 @@ categories: [automation, utility]
 revenue: 5500
 models: subscription
 year: 2022
-hashtags: [b2c, b2b, api, buildinpubic]
+hashtags: [b2c, b2b, api, buildinpubic, devtool]
 publishedAt: 1711967833719
 ---
 

@@ -8,7 +8,7 @@ categories: [automation, utility]
 revenue: 9000
 models: subscription
 year: 2018
-hashtags: [b2c, b2b, api]
+hashtags: [b2c, b2b, api, devtool]
 publishedAt: 1712335994286
 ---
 
