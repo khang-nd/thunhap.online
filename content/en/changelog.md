@@ -2,9 +2,14 @@
 
 All notable changes and updates made to this website
 
+## Apr 7, 2024
+
+- Added website intelligence to the product Overview section
+
 ## Apr 6, 2024
 
 - Display currency unit corresponding to the locale
+- Added Twitter to the footer
 
 ## Apr 3, 2024
 

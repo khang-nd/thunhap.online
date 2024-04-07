@@ -2,9 +2,14 @@
 
 Các cập nhật và sửa đổi đã thực hiện trên hệ thống trang web
 
+## 07-04-2024
+
+- Thêm thông tin trang web vào phần Tổng quan sản phẩm
+
 ## 06-04-2024
 
 - Hiển thị đơn vị tiền ứng với ngôn ngữ
+- Thêm Twitter vào footer
 
 ## 03-04-2024
 
