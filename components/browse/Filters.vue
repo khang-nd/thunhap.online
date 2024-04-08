@@ -1,10 +1,10 @@
 <template>
   <BrowseFilterGroup :title="$t('common.categories')" class="pt-4 lg:pt-0">
     <ul>
-      <li v-for="(category, key) in categories" :key="key">
+      <li v-for="key in sortedCategories" :key="key">
         <NuxtLinkLocale :to="{ path: isActive(key) ? '/browse' : `/browse/${key}`, query: getQuery() }"
           :class="['flex items-center py-1 space-x-2 transition-colors hover:text-black', isActive(key) ? 'text-black font-semibold' : 'text-gray-500']">
-          <Icon :name="category.icon" size="20" />
+          <Icon :name="categories[key as CategoryType].icon" size="20" />
           <span>{{ $t('category.' + key) }}</span>
         </NuxtLinkLocale>
       </li>
@@ -44,6 +44,7 @@
 <script setup lang="ts">
 type Filter = 'revenue' | 'status' | 'models' | 'tags'
 
+const { t } = useI18n()
 const { isMobile } = defineProps<{ isMobile?: boolean }>()
 const route = useRoute()
 const router = useRouter();
@@ -62,6 +63,7 @@ const selected: Record<Filter, Ref<(string | number)[]>> = {
 }
 const allTags = data.value?.reduce((acc: string[], product) => [...acc, ...product.hashtags], [])
 const tags = Array.from(new Set(allTags))
+const sortedCategories = Object.keys(categories).sort((c1, c2) => t(`category.${c1}`).localeCompare(t(`category.${c2}`)))
 
 const prefix = (id: string) => `${isMobile ? 'm' : 'd'}-${id}`
 
