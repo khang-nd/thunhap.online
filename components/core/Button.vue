@@ -1,5 +1,5 @@
 <template>
-  <component :is="resolvedAs" :href="href" :class="[
+  <component :is="resolvedAs" :href="href" :rel="rel" :class="[
     'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-black',
     sizes[size],
     styles[$attrs.disabled === '' ? 'disabled' : variant],
@@ -39,4 +39,5 @@ const styles: Record<Variant, string> = {
 };
 
 const resolvedAs = as || (href ? resolveLinkComponent(href) : 'button')
+const rel = href && isExternalLink(href) ? 'nofollow noopener noreferrer' : undefined
 </script>

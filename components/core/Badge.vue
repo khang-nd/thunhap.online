@@ -1,6 +1,6 @@
 <template>
   <component :is="as" :href="href" :target="isExternal ? '_blank' : undefined"
-    :rel="isExternal ? 'noopener noreferrer' : undefined"
+    :rel="isExternal ? 'nofollow noopener noreferrer' : undefined"
     :class="['inline-flex items-center rounded-full px-2 py-1 text-sm font-medium mr-1 mb-1 transition-opacity hover:opacity-80', colors[color]]">
     <slot />
   </component>
