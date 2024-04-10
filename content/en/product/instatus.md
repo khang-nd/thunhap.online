@@ -24,7 +24,7 @@ The product was built and developed since {{ $doc.year }} by [Ali Salah](https:/
 
 ## Revenue model
 
-Instatus generates revenue by charging individuals and businesses a recurring fee for using the service, with many different [subscription plans](https://instatus.com/pricing) suitable for the needs of each customer. The prices range from :price{v=20} to :price{v=300}.
+Instatus generates revenue by charging individuals and businesses a recurring fee for using the service, with many different [subscription plans](https://instatus.com/pricing) suitable for the needs of each customer. The prices range from :price{v=20} to :price{v=300} per month.
 
 With this model, the product currently generates revenue of about :price{:v=revenue}/month, according to the [author's sharing](https://twitter.com/alisalahio/status/1734537107245285554).
 

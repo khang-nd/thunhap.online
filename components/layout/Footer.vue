@@ -6,8 +6,6 @@
         Copyright © thunhap.online {{ new Date().getFullYear() }}
       </p>
       <div>
-        <CoreButton href="https://twitter.com/thunhap_online" target="_blank" variant="inverted" size="sm">Twitter</CoreButton>
-        <span>-</span>
         <CoreButton href="/changelog" variant="inverted" size="sm">{{ $t('common.changelog') }}</CoreButton>
         <span>-</span>
         <CoreButton href="/sitemap.xml" variant="inverted" size="sm" as="a">Sitemap</CoreButton>

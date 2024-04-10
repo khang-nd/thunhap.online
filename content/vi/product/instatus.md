@@ -24,7 +24,7 @@ Sản phẩm được xây dựng và phát triển từ năm {{ $doc.year }} b�
 
 ## Mô hình thu nhập & doanh thu
 
-Instatus tạo thu nhập bằng hình thức thu phí định kỳ các cá nhân và doanh nghiệp sử dụng dịch vụ, với nhiều [gói đăng ký](https://instatus.com/pricing) khác nhau phù hợp với nhu cầu sử dụng của từng đối tượng khách hàng. Mức giá dao động từ :price{v=20} đến :price{v=300}.
+Instatus tạo thu nhập bằng hình thức thu phí định kỳ các cá nhân và doanh nghiệp sử dụng dịch vụ, với nhiều [gói đăng ký](https://instatus.com/pricing) khác nhau phù hợp với nhu cầu sử dụng của từng đối tượng khách hàng. Mức giá dao động từ :price{v=20} đến :price{v=300} mỗi tháng.
 
 Với mô hình này, hiện sản phẩm thu về mức doanh thu khoảng :price{:v=revenue}/tháng, theo [chia sẻ](https://twitter.com/alisalahio/status/1734537107245285554) của tác giả.
 

@@ -99,15 +99,15 @@
               <Icon size="20" name="uil:map-marker" />
               <span>{{ t('address') }}</span>
             </div>
-            <a href="mailto:hello@thunhap.online"
+            <a :href="contactLinks.email.url"
               class="flex items-center mb-3 space-x-2 text-gray-500 hover:text-black transition-colors">
               <Icon size="20" name="uil:envelope" />
-              <span>hello@thunhap.online</span>
+              <span>{{ contactLinks.email.text }}</span>
             </a>
-            <a href="https://twitter.com/thunhap_online" target="_blank"
+            <a :href="contactLinks.twitter.url" target="_blank"
               class="flex items-center space-x-2 text-gray-500 hover:text-black transition-colors">
               <Icon size="20" name="uil:twitter" />
-              <span>thunhap_online</span>
+              <span>{{ contactLinks.twitter.text }}</span>
             </a>
           </div>
         </div>
