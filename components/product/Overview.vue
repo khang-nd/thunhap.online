@@ -1,5 +1,10 @@
 <template>
-  <CoreHeading as="h3" class="mb-4">{{ $t('common.overview') }}</CoreHeading>
+  <CoreHeading as="h3" class="mb-4 font-bold">{{ $t('common.overview') }}</CoreHeading>
+  <CoreButton v-if="product.homepage" :href="getFullUrl(product.homepage)" target="_blank"
+    class="flex items-center justify-center space-x-2 w-full mb-3">
+    <span>{{ hostname }}</span>
+    <Icon name="uil:external-link-alt" />
+  </CoreButton>
   <ProductField :title="$t('common.status')">
     <CoreBadge :color="product.status" :href="'/browse?status=' + product.status">
       {{ $t('common.status-types.' + product.status) }}
@@ -25,20 +30,20 @@
     {{ product.year }} ({{ getTimeAgo(product.year) }})
   </ProductField>
   <ProductField :title="$t('common.website-intelligence')">
-    <CoreBadge class="space-x-1" :href="'https://similarweb.com/website/' + hostname">
-      <span>Similarweb</span>
-      <Icon name="uil:external-link-alt" />
-    </CoreBadge>
-    <CoreBadge class="space-x-1" :href="'https://builtwith.com/' + hostname">
-      <span>BuiltWith</span>
-      <Icon name="uil:external-link-alt" />
-    </CoreBadge>
+    <div class="w-full flex items-center">
+      <CoreButton variant="inverted" size="md" class="w-full space-x-1 flex items-center justify-center"
+        :href="'https://similarweb.com/website/' + hostname" target="_blank">
+        <span>Similarweb</span>
+        <Icon name="uil:external-link-alt" />
+      </CoreButton>
+      <hr class="h-8 w-[1px] bg-gray-300 flex-shrink-0 mx-1" />
+      <CoreButton variant="inverted" size="md" class="w-full space-x-1 flex items-center justify-center"
+        :href="'https://builtwith.com/' + hostname" target="_blank">
+        <span>BuiltWith</span>
+        <Icon name="uil:external-link-alt" />
+      </CoreButton>
+    </div>
   </ProductField>
-  <CoreButton v-if="product.homepage" :href="getFullUrl(product.homepage)" target="_blank"
-    class="flex items-center justify-center space-x-2 w-full">
-    <span>{{ hostname }}</span>
-    <Icon name="uil:external-link-alt" />
-  </CoreButton>
 </template>
 
 <script setup lang="ts">
@@ -48,7 +53,7 @@ const { product } = defineProps<{
 
 const { locale } = useI18n();
 const getTimeAgo = (year: number) => useTimeAgo(new Date(year, 0, 1)).value;
-const getFullUrl = (host: string) => /^https?:\/\//.test(host) ? host : `https://${host}`;
+const getFullUrl = (host: string) => /^https?:\/\//.test(host) ? host : `https://${host}?via=thunhap-online`;
 const getHost = (url: string) => new URL(getFullUrl(url)).host;
 const hostname = getHost(product.homepage);
 </script>
