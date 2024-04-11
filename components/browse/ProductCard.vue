@@ -10,13 +10,16 @@
       </div>
     </div>
     <div class="h-full p-3 border border-t-0 border-gray-300">
-      <CoreHeading as="h4">
-        {{ product.title }}
-        <CoreBadge v-if="product.revenue" class="mb-0 text-xs align-top">
+      <CoreHeading as="h4">{{ product.title }}</CoreHeading>
+      <p class="mb-2">{{ product.description }}</p>
+      <div>
+        <CoreBadge v-if="product.revenue" class="mb-0 align-top">
           {{ formatPrice(product.revenue, locale) }}/{{ $t('common.month') }}
         </CoreBadge>
-      </CoreHeading>
-      <p>{{ product.description }}</p>
+        <CoreBadge v-if="product.affiliate" class="mb-0 align-top">
+          <Icon name="ic:outline-handshake" size="20" />
+        </CoreBadge>
+      </div>
     </div>
   </NuxtLinkLocale>
 </template>

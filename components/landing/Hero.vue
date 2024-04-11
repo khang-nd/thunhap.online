@@ -8,7 +8,7 @@
         {{ $t('landing.description') }}
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
-        <CoreButton href="/browse">
+        <CoreButton href="/browse" class="px-12 py-4 text-xl">
           {{ $t('landing.cta') }}
         </CoreButton>
       </div>
