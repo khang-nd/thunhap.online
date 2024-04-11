@@ -8,3 +8,9 @@ export const contactLinks = {
     url: "https://twitter.com/thunhap_online",
   },
 };
+
+export const affiliateLinks = {
+  "compressx.app": "https://compressx.app/?aff=Gmbpn",
+  "typingmind.com": "",
+  "carrd.co": "https://try.carrd.co/rhb9ffjr",
+};

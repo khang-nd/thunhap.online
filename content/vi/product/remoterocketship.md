@@ -10,6 +10,7 @@ models: [subscription, transaction]
 year: 2022
 hashtags: [b2c, b2b]
 publishedAt: 1711274173100
+affiliate: https://www.remoterocketship.com/affiliates
 ---
 
 # Remote Rocketship

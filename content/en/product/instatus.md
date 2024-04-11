@@ -10,6 +10,7 @@ models: subscription
 year: 2019
 hashtags: [b2c, b2b]
 publishedAt: 1712741951510
+affiliate: https://instatus.com/affiliates
 ---
 
 # Instatus

@@ -10,6 +10,7 @@ models: subscription
 year: 2016
 hashtags: [b2c, buildinpublic]
 publishedAt: 1711274173000
+affiliate: https://carrd.co/docs/account/referral-program
 ---
 
 # Carrd

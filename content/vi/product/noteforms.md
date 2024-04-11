@@ -10,6 +10,7 @@ models: subscription
 year: 2021
 hashtags: [notion, b2c, b2c, buildinpublic]
 publishedAt: 1711453376838
+affiliate: https://noteforms.com/affiliates
 ---
 
 # NoteForms

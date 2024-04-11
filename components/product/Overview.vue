@@ -53,7 +53,10 @@ const { product } = defineProps<{
 
 const { locale } = useI18n();
 const getTimeAgo = (year: number) => useTimeAgo(new Date(year, 0, 1)).value;
-const getFullUrl = (host: string) => /^https?:\/\//.test(host) ? host : `https://${host}?via=thunhap-online`;
+const getFullUrl = (host: string) => {
+  if (/^https?:\/\//.test(host)) return host;
+  return affiliateLinks[host as keyof typeof affiliateLinks] || `https://${host}?via=thunhap-online`
+};
 const getHost = (url: string) => new URL(getFullUrl(url)).host;
 const hostname = getHost(product.homepage);
 </script>
