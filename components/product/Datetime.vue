@@ -6,6 +6,7 @@
 </template>
 
 <script setup lang="ts">
+const { locale } = useI18n()
 const props = defineProps<{
   timestamp: number
 }>()
@@ -13,8 +14,8 @@ const props = defineProps<{
 const refined = computed(() => {
   const date = new Date(props.timestamp)
   return {
-    date: date.toLocaleDateString(),
-    time: date.toLocaleTimeString()
+    date: date.toLocaleDateString(locale.value),
+    time: date.toLocaleTimeString(locale.value)
   }
 })
 </script>

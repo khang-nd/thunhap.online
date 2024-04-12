@@ -1,11 +1,29 @@
 import type { ParsedContent } from "@nuxt/content/types";
-import type { status } from "./filters";
 
-export type CategoryType = keyof typeof categories;
+export type CategoryType =
+  | "ai"
+  | "automation"
+  | "marketing"
+  | "design"
+  | "website"
+  | "form"
+  | "mobile"
+  | "analytics"
+  | "editor"
+  | "template"
+  | "utility"
+  | "service"
+  | "entertainment"
+  | "jobs";
 
-export type RevenueModelType = keyof typeof revenueModels;
+export type RevenueModelType =
+  | "subscription"
+  | "advertising"
+  | "transaction"
+  | "sponsorship"
+  | "affiliate";
 
-export type StatusType = keyof typeof status;
+export type StatusType = "active" | "inactive" | "acquired" | "unknown";
 
 export interface Product {
   image: { src: string; alt: string };
@@ -19,6 +37,7 @@ export interface Product {
   year: number;
   hashtags: string[];
   publishedAt: number;
+  affiliate?: string;
 }
 
 export type ParsedProduct = ParsedContent & Product;

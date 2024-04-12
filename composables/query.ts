@@ -8,21 +8,12 @@ export const useProductFieldQuery = (field: keyof Product) => {
   return useContentQuery(field, queryContent("product").only(field).find());
 };
 
-export const useLatestProductsQuery = () => {
-  return useContentQuery(
-    "newProducts",
-    queryContent("product").limit(4).sort({ publishedAt: -1 }).find()
-  );
-};
-
 export const useProductCountQuery = (params: QueryBuilderParams = {}) => {
   return useAsyncData("productCount", () => {
     const initialQuery = queryContent("product");
     if (params.where) {
-      const convertedClause = Array.isArray(params.where)
-        ? { $and: params.where }
-        : params.where;
-      initialQuery.where(convertedClause);
+      // @ts-ignore - possible bug in types (https://github.com/nuxt/content/issues/1522)
+      initialQuery.where(params.where);
     }
     if (params.skip) {
       initialQuery.skip(params.skip);

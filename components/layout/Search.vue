@@ -4,7 +4,7 @@
       <button
         class="flex items-center w-full lg:w-auto mb-2 lg:mb-0 lg:mr-3 px-3 py-2 space-x-1 text-gray-500 border rounded-md transition-colors hover:text-black hover:border-gray-400 hover:bg-gray-100">
         <Icon name="uil:search" class="" />
-        <span>Tìm kiếm</span>
+        <span>{{ $t('common.search') }}</span>
       </button>
     </template>
 
@@ -13,13 +13,13 @@
         <span class="absolute p-2">
           <Icon name="uil:search" size="24" :class="['transition-opacity', focused ? 'opacity-80' : 'opacity-30']" />
         </span>
-        <input type="text" placeholder="Tìm kiếm..." v-model="searchText" @focus="focused = true"
+        <input type="text" :placeholder="$t('common.search') + '...'" v-model="searchText" @focus="focused = true"
           @blur="focused = false" class="input w-full p-2 pl-10" />
       </label>
       <div class="h-80 overflow-auto">
         <ul v-if="results?.value.length > 0">
           <li v-for="item in results.value" :key="item.id">
-            <NuxtLink :href="item.id" class="block p-2 transition-colors hover:bg-gray-200">
+            <NuxtLinkLocale :href="item.id" class="block p-2 transition-colors hover:bg-gray-200">
               <div class="font-medium mb-1">
                 <span v-for="(title, index) in [...item.titles, item.title]">
                   <Icon v-if="index > 0" name="uil:angle-right" class="inline" />
@@ -27,11 +27,11 @@
                 </span>
               </div>
               <div class="text-sm" v-html="truncateText(item.content, item.terms[0])" />
-            </NuxtLink>
+            </NuxtLinkLocale>
           </li>
         </ul>
         <div v-else class="flex items-center justify-center h-full text-gray-500 italic">
-          {{ !searchText ? "Vui lòng nhập từ khóa" : "Không có kết quả" }}
+          {{ !searchText ? $t('common.missing-keyword') : $t('common.no-result') }}
         </div>
       </div>
     </div>
