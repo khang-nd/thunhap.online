@@ -1,5 +1,5 @@
 <template>
-  <component :is="resolvedAs" :href="href" :class="[
+  <component :is="resolvedAs" :href="href" :rel="rel" :class="[
     'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-black',
     sizes[size],
     styles[$attrs.disabled === '' ? 'disabled' : variant],
@@ -11,7 +11,7 @@
 <script setup lang="ts">
 type Size = 'sm' | "md" | "lg";
 
-type Variant = "outline" | "primary" | "inverted" | "disabled";
+type Variant = "outline" | "primary" | "inverted" | "disabled" | "custom";
 
 interface Props {
   as?: 'button' | 'a';
@@ -36,7 +36,9 @@ const styles: Record<Variant, string> = {
   primary: "bg-black text-white hover:bg-gray-800 border-2 border-transparent",
   inverted: "bg-white text-gray-500 border-2 border-transparent hover:text-black",
   disabled: "bg-gray-100 hover:bg-gray-200 border-2 border-transparent",
+  custom: "",
 };
 
 const resolvedAs = as || (href ? resolveLinkComponent(href) : 'button')
+const rel = href && isExternalLink(href) ? 'nofollow noopener noreferrer' : undefined
 </script>

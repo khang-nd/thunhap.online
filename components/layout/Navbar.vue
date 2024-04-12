@@ -34,6 +34,13 @@
         <div class="flex items-center">
           <CoreToggleGroup v-model="currentLocale"
             :items="locales.map((({ code }) => ({ label: code.toUpperCase(), value: code })))" />
+          <NuxtLink :href="contactLinks.twitter.url" target="_blank"
+            class="ml-3 p-2 transition-colors text-gray-500 hover:text-black">
+            <Icon name="uil:twitter" size="20" />
+          </NuxtLink>
+          <NuxtLink :href="contactLinks.email.url" class="p-2 transition-colors text-gray-500 hover:text-black">
+            <Icon name="uil:envelope-alt" size="20" />
+          </NuxtLink>
         </div>
         <!-- <div class="lg:hidden flex items-center mt-3 gap-4">
           <LandingLink href="#" styleName="muted" block size="md"

@@ -2,9 +2,14 @@
 
 All notable changes and updates made to this website
 
+## Apr 12, 2024
+
+- Minor tweaks to the product Overview section's layout
+- Added "Affiliate Program" information to the product
+
 ## Apr 7, 2024
 
-- Added website intelligence to the product Overview section
+- Added "Website intelligence" to the product Overview section
 
 ## Apr 6, 2024
 

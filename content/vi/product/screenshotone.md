@@ -10,6 +10,7 @@ models: subscription
 year: 2022
 hashtags: [b2c, b2b, api, buildinpubic, devtool]
 publishedAt: 1711967833719
+affiliate: https://screenshotone.com/affiliate-program
 ---
 
 # ScreenshotOne

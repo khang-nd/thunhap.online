@@ -2,9 +2,14 @@
 
 Các cập nhật và sửa đổi đã thực hiện trên hệ thống trang web
 
+## 12-04-2024
+
+- Tinh chỉnh bố cục phần Tổng quan sản phẩm
+- Thêm thông tin "Chương trình liên kết" cho sản phẩm
+
 ## 07-04-2024
 
-- Thêm thông tin trang web vào phần Tổng quan sản phẩm
+- Thêm "thông tin trang web" vào phần Tổng quan sản phẩm
 
 ## 06-04-2024
 
