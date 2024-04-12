@@ -37,7 +37,7 @@ export interface Product {
   year: number;
   hashtags: string[];
   publishedAt: number;
-  affiliate: string;
+  affiliate?: string;
 }
 
 export type ParsedProduct = ParsedContent & Product;
