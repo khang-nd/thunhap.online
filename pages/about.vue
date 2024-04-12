@@ -14,7 +14,7 @@
       Đào sâu vào cách thức hoạt động, mô hình phát triển, tạo ra giá trị, cũng như cách tiếp cận người dùng để đem lại thành công cho sản phẩm."
     target-content-2:
       Đối tượng sản phẩm online được tổng hợp tương đối đa dạng, bao gồm dự án cá nhân, dịch vụ, ứng dụng, website,
-      SaaS... được thành lập bởi các cá nhân như indie hacker, bootstrapper, solopreneur...
+      SaaS... được thành lập bởi các cá nhân như indie maker, bootstrapper, solopreneur...
     disclaimer: Từ chối trách nhiệm
     disclaimer-content:
       Các thông tin về doanh thu, lượng truy cập, người dùng, mô hình phát triển, cách tiếp cận người dùng... được
@@ -29,18 +29,18 @@
     purpose: Purpose
     purpose-content:
       In the current technology era, creating an online product is no longer a difficult task. However, creating a successful
-      online product that brings stable and sustainable income is not easy. That's why {0} was born, with the goal of synthesizing
+      online product that brings stable and sustainable income is not easy. That's why {0} was born, with the goal of curating
       and sharing successful online products, creating inspiration, experience and knowledge, helping you find a way to achieve a similar success.
     target: Target
     target-content:
-      "{0} synthesizes successful online products that have achieved impressive figures in revenue, traffic, users...
+      "{0} curates successful online products that have achieved impressive figures in revenue, traffic, users...
       Delve into how they operate, develop models, create value, and approach users to bring success to the product."
     target-content-2:
       The target of online products is relatively diverse, including personal projects, services, applications, websites,
-      SaaS... established by individuals such as indie hackers, bootstrappers, solopreneurs...
+      SaaS... established by individuals such as indie makers, bootstrappers, solopreneurs...
     disclaimer: Disclaimer
     disclaimer-content:
-      Information about revenue, traffic, users, development model, user approach... synthesized and shared on {0}
+      Information about revenue, traffic, users, development model, user approach... curated and shared on {0}
       is for reference only, not representing any commitment or warranty. All decisions and actions based on the information
       that the site provides are entirely your responsibility.
     contact: Contact
