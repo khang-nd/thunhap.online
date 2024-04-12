@@ -9,7 +9,7 @@ All notable changes and updates made to this website
 
 ## Apr 7, 2024
 
-- Added website intelligence to the product Overview section
+- Added "Website intelligence" to the product Overview section
 
 ## Apr 6, 2024
 

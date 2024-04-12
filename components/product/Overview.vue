@@ -46,8 +46,8 @@
   </ProductField>
   <CoreButton v-if="product.affiliate" variant="custom" :href="product.affiliate" target="_blank"
     class="flex items-center justify-center space-x-2 w-full border border-gray-300 text-gray-500 hover:text-black hover:bg-gray-100">
+    <Icon name="iconoir:coins" size="20" />
     <span>{{ $t('common.affiliate-program') }}</span>
-    <Icon name="ic:outline-handshake" size="20" />
   </CoreButton>
 </template>
 
