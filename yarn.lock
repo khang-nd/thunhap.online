@@ -4115,6 +4115,11 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
+fflate@^0.4.8:
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/fflate/-/fflate-0.4.8.tgz#f90b82aefbd8ac174213abb338bd7ef848f0f5ae"
+  integrity sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==
+
 fflate@^0.7.3:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/fflate/-/fflate-0.7.4.tgz#61587e5d958fdabb5a9368a302c25363f4f69f50"
@@ -6250,16 +6255,6 @@ nuxt-component-meta@^0.6.3:
     typescript "^5.3.3"
     vue-component-meta "^1.8.27"
 
-nuxt-gtag@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/nuxt-gtag/-/nuxt-gtag-2.0.5.tgz#0a7afb8a709a151c8d5dadb8dc0f3235caa5056b"
-  integrity sha512-RX/52eXufjly/Y7PJKRLGLBQhI73SnmzcLoI4pjEJIVsEVpIXJLkAwHtKY3HvU8KiV0ai4UE3Cn1xB6ncoiFaA==
-  dependencies:
-    "@nuxt/kit" "^3.10.3"
-    defu "^6.1.4"
-    pathe "^1.1.2"
-    ufo "^1.4.0"
-
 nuxt-icon@^0.6.10, nuxt-icon@^0.6.9:
   version "0.6.10"
   resolved "https://registry.yarnpkg.com/nuxt-icon/-/nuxt-icon-0.6.10.tgz#a39afa47286a20dd78a9f9b4235ed143d9b44e1b"
@@ -7089,6 +7084,19 @@ postcss@^8.4.23, postcss@^8.4.32, postcss@^8.4.35, postcss@^8.4.36:
     nanoid "^3.3.7"
     picocolors "^1.0.0"
     source-map-js "^1.1.0"
+
+posthog-js@^1.121.2:
+  version "1.121.2"
+  resolved "https://registry.yarnpkg.com/posthog-js/-/posthog-js-1.121.2.tgz#1e72c0a8ce3a26241378f3f1cbafb9bd1780dc69"
+  integrity sha512-2rhPgzeOaSR7Ztf77fGxGnUavBJCV3+tR5O1UHsnygxKL+XIt+Vr9i/hYYgu9Gz9/eq2Y7sxpszjxSTDMZprRQ==
+  dependencies:
+    fflate "^0.4.8"
+    preact "^10.19.3"
+
+preact@^10.19.3:
+  version "10.20.2"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.20.2.tgz#0b343299a8c020562311cc25db93b3d832ec5e71"
+  integrity sha512-S1d1ernz3KQ+Y2awUxKakpfOg2CEmJmwOP+6igPx6dgr6pgDvenqYviyokWso2rhHvGtTlWWnJDa7RaPbQerTg==
 
 pretty-bytes@^6.1.1:
   version "6.1.1"
