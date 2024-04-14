@@ -9,7 +9,7 @@
       </Transition>
       <Transition name="zoom">
         <DialogContent :aria-describedby="undefined"
-          class="fixed top-1/2 left-1/2 max-h-[85vh] w-[90vw] max-w-[450px] -translate-x-1/2 -translate-y-1/2 bg-white focus:outline-none z-[100] rounded-md overflow-hidden">
+          :class="twMerge('fixed top-1/2 left-1/2 max-h-[85vh] w-[90vw] max-w-[450px] -translate-x-1/2 -translate-y-1/2 bg-white focus:outline-none z-[100] rounded-md overflow-hidden', contentClass)">
           <DialogClose aria-label="Close" as-child>
             <slot name="close" />
           </DialogClose>
@@ -24,6 +24,7 @@
 </template>
 
 <script setup lang="ts">
+import { twMerge } from 'tailwind-merge';
 import {
   DialogContent,
   DialogOverlay,
@@ -37,7 +38,8 @@ import {
 
 defineProps<{
   title: string,
-  portal?: string | HTMLElement
+  portal?: string | HTMLElement,
+  contentClass?: string,
 }>();
 </script>
 
