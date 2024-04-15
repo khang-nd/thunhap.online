@@ -1,11 +1,11 @@
 <template>
-  <DialogRoot>
+  <DialogRoot @update:open="$emit('update:open', $event)">
     <DialogTrigger as-child>
       <slot name="trigger" />
     </DialogTrigger>
     <DialogPortal>
       <Transition name="fade">
-        <DialogOverlay class="bg-black opacity-70 fixed inset-0 z-30" />
+        <DialogOverlay class="bg-black bg-opacity-70 fixed inset-0 z-30 backdrop-blur-sm" />
       </Transition>
       <Transition name="zoom">
         <DialogContent :aria-describedby="undefined"
@@ -41,6 +41,10 @@ defineProps<{
   portal?: string | HTMLElement,
   contentClass?: string,
 }>();
+
+defineEmits<{
+  (e: 'update:open', arg: boolean): void
+}>()
 </script>
 
 <style scoped>
