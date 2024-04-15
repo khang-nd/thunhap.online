@@ -6,7 +6,7 @@
       </CoreButton>
     </template>
     <iframe width="100%" height="100%" frameborder="0" allowfullscreen
-      src="https://us.posthog.com/embedded/xQfkUOAx8rzLCwi1-Rwe-7eDAECELg"></iframe>
+      src="https://us.posthog.com/embedded/r5QvvC-e3Ad2e1GooA6Y0CKJmpnCig"></iframe>
   </CoreDialog>
 </template>
 
