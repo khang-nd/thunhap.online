@@ -2,6 +2,12 @@
 
 Các cập nhật và sửa đổi đã thực hiện trên hệ thống trang web
 
+## 18-04-2024
+
+- Thêm số liệu thống kê lượt truy cập trang web
+- Thêm thông tin số lượt xem trang sản phẩm
+- Thêm chức năng sắp xếp cho trang Khám phá sản phẩm
+
 ## 12-04-2024
 
 - Tinh chỉnh bố cục phần Tổng quan sản phẩm
