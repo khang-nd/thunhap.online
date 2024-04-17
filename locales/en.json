@@ -43,7 +43,11 @@
     "month": "month",
     "website-intelligence": "Website intelligence",
     "affiliate-program": "Affiliate program",
-    "publish-date": "Publish date"
+    "publish-date": "Publish date",
+    "alphabetical": "Alphabetical",
+    "list-view": "List view",
+    "grid-view": "Grid view",
+    "showing-results": "Showing {range} of {total} results"
   },
   "category": {
     "ai": "AI",

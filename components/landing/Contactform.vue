@@ -22,7 +22,7 @@
     <input type="hidden" name="access_key" value="886a8f51-1bbe-490f-b4bd-ecf7d21a17e0" />
     <input type="checkbox" class="hidden" style="display: none" name="botcheck" />
     <div class="mb-5">
-      <input type="text" :placeholder="t('fullname')" required class="input w-full px-4 py-3" name="name" />
+      <input type="text" :placeholder="t('fullname')" required class="el-input w-full px-4 py-3" name="name" />
       <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
         {{ t('required') }}
       </div>
@@ -30,7 +30,7 @@
     <div class="mb-5">
       <label for="email_address" class="sr-only">{{ t('email') }}</label>
       <input id="email_address" type="email" :placeholder="t('email')" name="email" required
-        class="input w-full px-4 py-3" />
+        class="el-input w-full px-4 py-3" />
       <div class="empty-feedback text-red-400 text-sm mt-1">
         {{ t('required') }}
       </div>
@@ -39,7 +39,7 @@
       </div>
     </div>
     <div class="mb-5">
-      <textarea name="message" required :placeholder="t('message')" class="input w-full px-4 py-3 h-36"></textarea>
+      <textarea name="message" required :placeholder="t('message')" class="el-input w-full px-4 py-3 h-36"></textarea>
       <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
         {{ t('required') }}
       </div>

@@ -5,6 +5,7 @@ image:
 homepage: https://play.google.com/store/apps/details?id=com.daovanuong_fpt.nokialauncher
 status: active
 categories: [mobile, entertainment]
+revenue: 0000
 models: [advertising, transaction]
 year: 2022
 hashtags: [b2c, vietnam]
