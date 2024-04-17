@@ -47,7 +47,9 @@
     "alphabetical": "Alphabetical",
     "list-view": "List view",
     "grid-view": "Grid view",
-    "showing-results": "Showing {range} of {total} results"
+    "showing-results": "Showing {range} of {total} results",
+    "views": "Views",
+    "analytics": "Analytics"
   },
   "category": {
     "ai": "AI",

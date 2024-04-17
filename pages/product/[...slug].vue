@@ -4,7 +4,10 @@
       <template #default="{ doc }">
         <div class="max-w-screen-xl mx-auto pt-16 flex flex-col lg:flex-row">
           <ProductContainer as="article">
-            <ProductDatetime :timestamp="doc.publishedAt" class="mb-2" />
+            <div class="mb-2 space-x-4">
+              <ProductDatetime :timestamp="doc.publishedAt" />
+              <ProductViews />
+            </div>
             <ContentRenderer :value="doc" class="mb-16" />
             <ProductTags :tags="doc.hashtags" />
           </ProductContainer>
@@ -19,7 +22,7 @@
         </div>
       </template>
       <template #not-found>
-        <LayoutError>404</LayoutError>
+        <LayoutError :error="{ statusCode: 404, statusMessage: 'Page not found' }" />
       </template>
     </ContentDoc>
   </main>

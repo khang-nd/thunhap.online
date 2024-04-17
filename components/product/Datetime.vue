@@ -1,13 +1,13 @@
 <template>
-  <div class="flex items-center space-x-2 text-sm text-gray-500 cursor-default">
-    <Icon name="uil:clock" size="20" />
-    <CoreTooltip>
-      <template #trigger>
+  <CoreTooltip>
+    <template #trigger>
+      <span class="inline-flex items-center space-x-2 text-sm text-gray-500 cursor-default">
+        <Icon name="uil:clock" size="20" />
         <span>{{ refined.date }}</span>
-      </template>
-      {{ $t('common.publish-date') }}
-    </CoreTooltip>
-  </div>
+      </span>
+    </template>
+    {{ $t('common.publish-date') }}
+  </CoreTooltip>
 </template>
 
 <script setup lang="ts">

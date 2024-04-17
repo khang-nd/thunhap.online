@@ -47,7 +47,9 @@
     "alphabetical": "Thứ tự chữ cái",
     "list-view": "Dạng danh sách",
     "grid-view": "Dạng lưới",
-    "showing-results": "Hiển thị {range} trên tổng {total} kết quả"
+    "showing-results": "Hiển thị {range} trên tổng {total} kết quả",
+    "views": "Lượt xem",
+    "analytics": "Thống kê"
   },
   "category": {
     "ai": "AI",
