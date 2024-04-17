@@ -22,6 +22,12 @@ export default defineNuxtConfig({
       search: {},
     },
   },
+  runtimeConfig: {
+    public: {
+      posthogKey: "",
+      posthogHost: "https://us.posthog.com",
+    },
+  },
   modules: [
     "@nuxt/content",
     "@nuxtjs/seo",
@@ -29,7 +35,6 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt",
     "nuxt-icon",
-    "nuxt-gtag",
   ],
   site: {
     url: baseUrl,

@@ -7,7 +7,7 @@ status: active
 categories: [utility]
 revenue: 5000
 models: advertising
-year: 2006
+year: 2007
 hashtags: [b2c]
 publishedAt: 1712908644814
 ---
