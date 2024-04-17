@@ -6,7 +6,7 @@
           {{ $t('common.showing-results', { range, total }) }}
         </div>
         <template #fallback>
-          <div><!-- TODO: skeleton --></div>
+          <CoreSkeleton class="w-48 h-6" />
         </template>
       </ClientOnly>
       <div class="flex items-stretch">
