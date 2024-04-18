@@ -1,14 +1,17 @@
 <template>
-  <component :is="resolvedAs" :href="href" :rel="rel" :class="[
+  <component :is="resolvedAs" :href="href" :rel="rel" :class="twMerge(
     'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-black',
     sizes[size],
     styles[$attrs.disabled === '' ? 'disabled' : variant],
-  ]">
+    $attrs.class as string,
+  )">
     <slot />
   </component>
 </template>
 
 <script setup lang="ts">
+import { twMerge } from 'tailwind-merge';
+
 type Size = 'sm' | "md" | "lg";
 
 type Variant = "outline" | "primary" | "inverted" | "disabled" | "custom";

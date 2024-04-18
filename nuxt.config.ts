@@ -22,10 +22,16 @@ export default defineNuxtConfig({
       search: {},
     },
   },
+  routeRules: {
+    "/api/**": { cors: true },
+    "/product/notionway": { redirect: "/product/pathpages" },
+    "/vi/product/notionway": { redirect: "/vi/product/pathpages" },
+  },
   runtimeConfig: {
     public: {
       posthogKey: "",
       posthogHost: "https://us.posthog.com",
+      posthogApiKey: "",
     },
   },
   modules: [

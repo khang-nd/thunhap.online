@@ -2,6 +2,12 @@
 
 All notable changes and updates made to this website
 
+## Apr 18, 2024
+
+- Added website traffic analytics
+- Added product page view count
+- Added sorting functionality to the Browse page
+
 ## Apr 12, 2024
 
 - Minor tweaks to the product Overview section's layout
