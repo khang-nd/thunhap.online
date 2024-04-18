@@ -7,6 +7,7 @@ All notable changes and updates made to this website
 - Added website traffic analytics
 - Added product page view count
 - Added sorting functionality to the Browse page
+- Added submission form
 
 ## Apr 12, 2024
 

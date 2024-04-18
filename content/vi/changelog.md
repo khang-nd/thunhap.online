@@ -7,6 +7,7 @@ Các cập nhật và sửa đổi đã thực hiện trên hệ thống trang w
 - Thêm số liệu thống kê lượt truy cập trang web
 - Thêm thông tin số lượt xem trang sản phẩm
 - Thêm chức năng sắp xếp cho trang Khám phá sản phẩm
+- Thêm form đăng sản phẩm
 
 ## 12-04-2024
 
