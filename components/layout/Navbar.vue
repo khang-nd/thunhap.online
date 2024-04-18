@@ -21,9 +21,9 @@
           </svg>
         </button>
       </div>
-      <nav class="w-full items-center lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ block: openMenu, hidden: !openMenu }">
+      <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ block: openMenu, hidden: !openMenu }">
         <LayoutSearch />
-        <ul class="flex flex-col lg:flex-row lg:gap-3 lg:mr-3 mb-2 lg:mb-0">
+        <ul class="flex flex-col lg:flex-row items-center lg:mr-3 mb-2 lg:mb-0">
           <li v-for="(item) of menuitems">
             <CoreButton :href="`/${item}`" variant="custom"
               :class='[($route.path.includes(item) ? "text-black bg-gray-100" : "text-gray-500"), "flex p-2 hover:text-black lg:px-3"]'>
@@ -33,19 +33,23 @@
           <li>
             <LayoutAnalytics />
           </li>
+          <li>
+            <CoreButton href="/submit" variant="primary" size="md" class="inline-block ml-2">
+              {{ $t('common.submit') }}
+            </CoreButton>
+          </li>
         </ul>
-        <div class="flex items-center">
+        <div class="flex items-center border border-gray-400 rounded-md px-1">
           <CoreToggleGroup v-model="currentLocale"
             :items="locales.map((({ code }) => ({ label: code.toUpperCase(), value: code })))" />
           <NuxtLink :href="contactLinks.twitter.url" target="_blank"
-            class="ml-3 p-2 transition-colors text-gray-500 hover:text-black">
+            class="ml-2 p-2 transition-colors text-gray-500 hover:text-black">
             <Icon name="uil:twitter" size="20" />
           </NuxtLink>
           <NuxtLink :href="contactLinks.email.url" class="p-2 transition-colors text-gray-500 hover:text-black">
             <Icon name="uil:envelope-alt" size="20" />
           </NuxtLink>
         </div>
-        <CoreButton href="/submit" variant="primary" size="md" class="inline-block">Đăng sản phẩm</CoreButton>
         <!-- <div class="lg:hidden flex items-center mt-3 gap-4">
           <LandingLink href="#" styleName="muted" block size="md"
             >Log in</LandingLink
