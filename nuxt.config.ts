@@ -28,10 +28,10 @@ export default defineNuxtConfig({
     "/vi/product/notionway": { redirect: "/vi/product/pathpages" },
   },
   runtimeConfig: {
+    posthogApiKey: "",
     public: {
       posthogKey: "",
       posthogHost: "https://us.posthog.com",
-      posthogApiKey: "",
     },
   },
   modules: [

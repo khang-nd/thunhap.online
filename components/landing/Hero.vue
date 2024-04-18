@@ -11,6 +11,9 @@
         <CoreButton href="/browse" class="px-12 py-4 text-xl">
           {{ $t('landing.cta') }}
         </CoreButton>
+        <CoreButton href="/submit" variant="outline" class="px-10 py-4 text-xl">
+          {{ $t('common.submit') }}
+        </CoreButton>
       </div>
     </div>
 
