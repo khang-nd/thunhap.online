@@ -42,11 +42,12 @@
         <div class="flex items-center border border-gray-400 rounded-md px-1">
           <CoreToggleGroup v-model="currentLocale"
             :items="locales.map((({ code }) => ({ label: code.toUpperCase(), value: code })))" />
-          <NuxtLink :href="contactLinks.twitter.url" target="_blank"
+          <NuxtLink :href="contactLinks.twitter.url" target="_blank" title="Twitter"
             class="ml-2 p-2 transition-colors text-gray-500 hover:text-black">
             <Icon name="uil:twitter" size="20" />
           </NuxtLink>
-          <NuxtLink :href="contactLinks.email.url" class="p-2 transition-colors text-gray-500 hover:text-black">
+          <NuxtLink :href="contactLinks.email.url" title="Email"
+            class="p-2 transition-colors text-gray-500 hover:text-black">
             <Icon name="uil:envelope-alt" size="20" />
           </NuxtLink>
         </div>

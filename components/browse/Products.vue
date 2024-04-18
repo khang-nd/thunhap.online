@@ -12,11 +12,17 @@
       <div class="flex items-stretch">
         <!-- TODO: view mode -->
         <!-- <CoreToggleGroup v-model="viewMode" :items="viewOptions" class="mr-3" /> -->
-        <CoreButton variant="custom" class="el-outline border rounded-r-none px-3" @click="toggleSortDir">
-          <span class="w-5 h-5 block">
-            <Icon :name="sortDir === 'desc' ? 'uil:sort-amount-down' : 'uil:sort-amount-up'" size="20" />
-          </span>
-        </CoreButton>
+        <CoreTooltip>
+          <template #trigger>
+            <CoreButton variant="custom" :aria-label="sortOrderText" class="el-outline border rounded-r-none px-3"
+              @click="toggleSortDir">
+              <span class="w-5 h-5 block">
+                <Icon :name="sortDir === 'desc' ? 'uil:sort-amount-down' : 'uil:sort-amount-up'" size="20" />
+              </span>
+            </CoreButton>
+          </template>
+          {{ sortOrderText }}
+        </CoreTooltip>
         <CoreSelect v-model="sortMode" :options="sortOptions" class="rounded-l-none"
           @update:model-value="handleSortMode" />
       </div>
@@ -116,4 +122,6 @@ watch([() => route.query as QueryParams, locale], async ([routeQuery, currentLoc
   }
   total.value = (await useProductCountQuery(query.value)).data.value || 0
 }, { immediate: true })
+
+const sortOrderText = computed(() => t('common.sort-order', { order: t('common.' + sortDir.value) }))
 </script>
