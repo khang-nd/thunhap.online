@@ -14,6 +14,7 @@
     "@nuxthq/studio": "^1.0.13",
     "@nuxtjs/i18n": "^8.2.0",
     "@nuxtjs/seo": "^2.0.0-rc.9",
+    "@octokit/request": "^9.0.1",
     "@tailwindcss/typography": "^0.5.10",
     "@vueuse/core": "^10.9.0",
     "@vueuse/nuxt": "^10.9.0",
