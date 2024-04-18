@@ -1,4 +1,5 @@
 import { NuxtLink, NuxtLinkLocale } from "#components";
+import type { LocationQueryValueRaw } from "vue-router";
 
 export const countElements = <T>(array: T[]): { [key: string]: number } => {
   let counts: { [key: string]: number } = {};
@@ -13,3 +14,12 @@ export const isExternalLink = (href: string) => /^(https?|mailto)/.test(href);
 
 export const resolveLinkComponent = (href: string) =>
   isExternalLink(href) ? NuxtLink : NuxtLinkLocale;
+
+export const pushQuery = <F extends string | number>(
+  field: F,
+  value: LocationQueryValueRaw | LocationQueryValueRaw[]
+) => {
+  const route = useRoute();
+  const router = useRouter();
+  router.push({ query: { ...route.query, [field]: value || null } });
+};

@@ -1,4 +1,4 @@
-import type { CategoryType, RevenueModelType, StatusType } from "./types";
+import type { CategoryType, RevenueModelType, StatusType } from "./types.client";
 
 export const categories: Record<CategoryType, any> = {
   ai: {

@@ -1,8 +1,7 @@
 <template>
   <CoreDialog title="Tìm kiếm" portal="body" v-model:open="openSearch">
     <template #trigger>
-      <button
-        class="flex items-center w-full lg:w-auto mb-2 lg:mb-0 lg:mr-3 px-3 py-2 space-x-1 text-gray-500 border rounded-md transition-colors hover:text-black hover:border-gray-400 hover:bg-gray-100">
+      <button class="el-outline flex items-center w-full lg:w-auto mb-2 lg:mb-0 lg:mr-3 px-3 py-2 space-x-1 rounded-md">
         <Icon name="uil:search" class="" />
         <span>{{ $t('common.search') }}</span>
       </button>
@@ -14,7 +13,7 @@
           <Icon name="uil:search" size="24" :class="['transition-opacity', focused ? 'opacity-80' : 'opacity-30']" />
         </span>
         <input type="text" :placeholder="$t('common.search') + '...'" v-model="searchText" @focus="focused = true"
-          @blur="focused = false" class="input w-full p-2 pl-10" />
+          @blur="focused = false" class="el-input w-full p-2 pl-10" />
       </label>
       <div class="h-80 overflow-auto">
         <ul v-if="results?.value.length > 0">

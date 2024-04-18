@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-type Filter = 'revenue' | 'status' | 'models' | 'tags'
+export type Filter = 'revenue' | 'status' | 'models' | 'tags'
 
 const { t } = useI18n()
 const { isMobile } = defineProps<{ isMobile?: boolean }>()
@@ -71,12 +71,8 @@ const isActive = (category: string) => route.params.category === category
 
 const getQuery = () => ({ ...route.query, page: undefined })
 
-const pushQuery = (field: Filter, value: string) => {
-  router.push({ query: { ...getQuery(), [field]: value || null } })
-}
-
 const handleSlider = (values: number[]) => {
-  pushQuery('revenue', values.join('-'))
+  pushQuery<Filter>('revenue', values.join('-'))
 }
 
 const handleCheckbox = (e: Event) => {
@@ -99,7 +95,7 @@ const handleToggle = (e: { value: string, pressed: boolean }) => {
     selected.tags.value = selected.tags.value.filter((tag) => tag !== value)
   }
   const result = selected.tags.value.join(',')
-  pushQuery('tags', result)
+  pushQuery<Filter>('tags', result)
 }
 
 const showReset = computed(() => !route.path.endsWith('/browse') || Object.keys(route.query).length > 0)

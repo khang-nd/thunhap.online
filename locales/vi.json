@@ -43,7 +43,13 @@
     "month": "tháng",
     "website-intelligence": "Thông tin website",
     "affiliate-program": "Chương trình liên kết",
-    "publish-date": "Ngày đăng"
+    "publish-date": "Ngày đăng",
+    "alphabetical": "Thứ tự chữ cái",
+    "list-view": "Dạng danh sách",
+    "grid-view": "Dạng lưới",
+    "showing-results": "Hiển thị {range} trên tổng {total} kết quả",
+    "views": "Lượt xem",
+    "analytics": "Thống kê"
   },
   "category": {
     "ai": "AI",

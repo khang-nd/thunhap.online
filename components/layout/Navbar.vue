@@ -24,11 +24,14 @@
       <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0" :class="{ block: openMenu, hidden: !openMenu }">
         <LayoutSearch />
         <ul class="flex flex-col lg:flex-row lg:gap-3 lg:mr-3 mb-2 lg:mb-0">
-          <li v-for="item of menuitems">
-            <NuxtLinkLocale :href="'/' + item"
-              :class='[($route.path.includes(item) ? "text-black bg-gray-100" : "text-gray-500"), "rounded-md flex p-2 transition-colors hover:text-black lg:px-3"]'>
+          <li v-for="(item) of menuitems">
+            <CoreButton :href="`/${item}`" variant="custom"
+              :class='[($route.path.includes(item) ? "text-black bg-gray-100" : "text-gray-500"), "flex p-2 hover:text-black lg:px-3"]'>
               {{ $t('common.' + item) }}
-            </NuxtLinkLocale>
+            </CoreButton>
+          </li>
+          <li>
+            <LayoutAnalytics />
           </li>
         </ul>
         <div class="flex items-center">

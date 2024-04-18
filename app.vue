@@ -26,15 +26,19 @@ const useIdFunction = () => useId()
 </script>
 
 <style>
-.input {
+.el-input {
   @apply block border focus:border-transparent rounded-sm outline-none transition ring-offset-2 ring-black focus:ring-1;
 }
 
-.paging {
+.el-paging {
   @apply w-9 h-9 flex items-center justify-center disabled:opacity-50 rounded transition text-gray-500 hover:text-black disabled:hover:text-gray-500;
 }
 
-.toggle-group-item {
+.el-group-item {
   @apply text-gray-500 hover:text-black data-[state=on]:text-black bg-gray-100 data-[state=on]:bg-gray-200 flex items-center justify-center text-base min-w-[40px] p-2 leading-4 first:rounded-l-md last:rounded-r-md transition-colors;
+}
+
+.el-outline {
+  @apply transition-colors text-gray-500 hover:text-black focus:text-black border hover:border-gray-400 focus:border-gray-400 focus:bg-gray-100 hover:bg-gray-100;
 }
 </style>

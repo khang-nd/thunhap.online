@@ -41,3 +41,12 @@ export interface Product {
 }
 
 export type ParsedProduct = ParsedContent & Product;
+
+export interface AppError {
+  statusCode: number;
+  fatal?: boolean;
+  unhandled?: boolean;
+  statusMessage?: string;
+  data?: unknown;
+  cause?: unknown;
+}
