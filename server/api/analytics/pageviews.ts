@@ -12,7 +12,7 @@ export default defineEventHandler(async (e): Promise<PageviewsResponse> => {
     });
   }
 
-  const config = useRuntimeConfig();
+  const config = useRuntimeConfig(e);
   const params = new URLSearchParams({
     date_from: "all",
     date_to: "null",
