@@ -53,7 +53,8 @@
     "showing-results": "Showing {range} of {total} results",
     "views": "Views",
     "analytics": "Analytics",
-    "submit": "Submit"
+    "submit": "Submit",
+    "share": "Share"
   },
   "category": {
     "ai": "AI",

@@ -17,3 +17,7 @@
 .el-outline {
   @apply transition-colors text-gray-500 hover:text-black focus:text-black border hover:border-gray-400 focus:border-gray-400 focus:bg-gray-100 hover:bg-gray-100;
 }
+
+.el-share-button {
+  @apply p-2 transition-colors rounded-md bg-gray-100 hover:bg-gray-300;
+}

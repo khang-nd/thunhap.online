@@ -41,6 +41,7 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt",
     "nuxt-icon",
+    "@stefanobartoletti/nuxt-social-share",
   ],
   site: {
     url: baseUrl,
@@ -59,5 +60,8 @@ export default defineNuxtConfig({
     langDir: "locales",
     locales,
     defaultLocale,
+  },
+  socialShare: {
+    label: false,
   },
 });

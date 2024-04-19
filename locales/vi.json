@@ -53,7 +53,8 @@
     "showing-results": "Hiển thị {range} trên tổng {total} kết quả",
     "views": "Lượt xem",
     "analytics": "Thống kê",
-    "submit": "Đăng sản phẩm"
+    "submit": "Đăng sản phẩm",
+    "share": "Chia sẻ"
   },
   "category": {
     "ai": "AI",

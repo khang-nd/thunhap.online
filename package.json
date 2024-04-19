@@ -15,6 +15,7 @@
     "@nuxtjs/i18n": "^8.2.0",
     "@nuxtjs/seo": "^2.0.0-rc.9",
     "@octokit/request": "^9.0.1",
+    "@stefanobartoletti/nuxt-social-share": "^0.6.0",
     "@tailwindcss/typography": "^0.5.10",
     "@vueuse/core": "^10.9.0",
     "@vueuse/nuxt": "^10.9.0",
