@@ -30,6 +30,7 @@
     <ContentList :query="query" path="/product">
       <template v-slot="{ list }">
         <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mb-6">
+          <!-- <BrowseProductCard v-for="product in sponsors" :key="product._path" :product="product" /> -->
           <BrowseProductCard v-for="product in list" :key="product._path" :product="product" />
         </div>
         <CorePagination v-if="total > pageSize" :total="total" :items-per-page="pageSize" :page="page"
