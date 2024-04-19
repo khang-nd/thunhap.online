@@ -1,7 +1,16 @@
 <template>
   <LayoutContainer>
-    <div class="h-screen max-h-[calc(100vh-200px)]">
-      <iframe :src="'https://app.youform.io/forms/' + formId" width="100%" height="100%" frameborder="0"></iframe>
+    <div class="h-screen max-h-[calc(100vh-200px)] relative">
+      <iframe :src="'https://app.youform.io/forms/' + formId" width="100%" height="100%" frameborder="0"
+        @load="loading = false"></iframe>
+      <!-- Skeleton -->
+      <div v-if="loading" class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+        <div class="pb-20 flex flex-col items-center">
+          <CoreSkeleton class="w-60 h-10 mt-6 mb-8" />
+          <CoreSkeleton class="w-screen max-w-lg mb-8" />
+          <CoreSkeleton class="w-28 h-11" />
+        </div>
+      </div>
     </div>
     <!-- <LandingSectionhead>
       <template v-slot:title>{{ title }}</template>
@@ -84,5 +93,6 @@
 const { locale } = useI18n()
 const title = "Đăng sản phẩm"
 const formId = computed(() => locale.value === "vi" ? "nfqpr6xi" : "nnebnfcq")
+const loading = ref(true)
 useHead({ title })
 </script>
