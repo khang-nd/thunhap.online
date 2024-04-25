@@ -1,6 +1,6 @@
 import Queue from "p-queue";
-import { uploadFile } from "~/composables/aws";
 import { useSupabaseClient } from "~/composables/supabase";
+import { uploadFile } from "~/server/utils/aws";
 import { Sitemeta } from "~/utils/types.server";
 
 const iconSizes = [32, 48, 64, 128, 256];

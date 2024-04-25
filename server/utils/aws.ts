@@ -12,9 +12,9 @@ export const useS3Client = () => {
 };
 
 interface S3Upload {
-  folder: "favicon";
+  folder: "favicon" | "product";
   filename: string;
-  content: string | Buffer;
+  content: string | Buffer | Uint8Array;
   contentType?: string;
 }
 
