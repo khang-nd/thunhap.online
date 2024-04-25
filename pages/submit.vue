@@ -13,8 +13,8 @@
       </div>
     </div>
     <!-- <LandingSectionhead>
-      <template v-slot:title>{{ title }}</template>
-<template v-slot:desc>Chia sẻ sản phẩm và câu chuyện thành công đến cộng đồng</template>
+      <template #title>{{ title }}</template>
+<template #desc>Chia sẻ sản phẩm và câu chuyện thành công đến cộng đồng</template>
 </LandingSectionhead>
 <div class="max-w-4xl mx-auto mt-16">
   <CoreAccordionRoot type="single" default-value="overview">

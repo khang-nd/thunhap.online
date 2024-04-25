@@ -28,7 +28,12 @@ export default defineNuxtConfig({
     "/vi/product/notionway": { redirect: "/vi/product/pathpages" },
   },
   runtimeConfig: {
+    supabaseUrl: "",
+    supabaseKey: "",
+    searchApiKey: "",
     posthogApiKey: "",
+    s3AccessKey: "",
+    s3SecretKey: "",
     public: {
       posthogKey: "",
       posthogHost: "https://us.posthog.com",

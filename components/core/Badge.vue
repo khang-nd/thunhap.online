@@ -1,17 +1,20 @@
 <template>
   <component :is="as" :href="href" :target="isExternal ? '_blank' : undefined"
     :rel="isExternal ? 'nofollow noopener noreferrer' : undefined"
-    :class="['inline-flex items-center rounded-full px-2 py-1 text-sm font-medium mr-1 mb-1 transition-opacity hover:opacity-80', colors[color]]">
+    :class="twMerge('inline-flex items-center rounded-full px-2 py-1 text-sm font-medium mr-1 mb-1 transition-opacity hover:opacity-80', colors[color], $attrs.class as string)">
     <slot />
   </component>
 </template>
 
 <script setup lang="ts">
+import { twMerge } from 'tailwind-merge';
+
 interface Props {
   color?: StatusType;
   href?: string;
 }
 
+defineOptions({ inheritAttrs: false })
 const { href } = withDefaults(defineProps<Props>(), { color: 'unknown' })
 const colors: Record<StatusType, string> = {
   active: "bg-green-100 text-green-700",

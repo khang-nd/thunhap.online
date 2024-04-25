@@ -54,7 +54,8 @@
     "views": "Lượt xem",
     "analytics": "Thống kê",
     "submit": "Đăng sản phẩm",
-    "share": "Chia sẻ"
+    "share": "Chia sẻ",
+    "listings": "Danh sách"
   },
   "category": {
     "ai": "AI",
@@ -71,5 +72,35 @@
     "service": "Dịch vụ",
     "entertainment": "Giải trí",
     "jobs": "Trang tìm việc"
+  },
+  "listing": {
+    "affiliate": {
+      "title": "Liên kết",
+      "description": "Các nền tảng giúp kiếm tiền bằng cách quảng bá các sản phẩm hoặc dịch vụ khác"
+    },
+    "analytics": {
+      "title": "Phân tích",
+      "description": "Các nền tảng và công cụ để theo dõi, phân tích lượng truy cập trang web và hành vi người dùng"
+    },
+    "directory": {
+      "title": "Danh mục",
+      "description": "Các trang web và nền tảng liệt kê, quảng bá và đánh giá sản phẩm và dịch vụ"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Các nền tảng và công cụ để phân tích, quảng bá và quản lý các chiến dịch quảng cáo"
+    },
+    "monetization": {
+      "title": "Kiếm tiền",
+      "description": "Các nền tảng và công cụ hỗ trợ kiếm tiền từ trang web, ứng dụng hoặc sản phẩm số"
+    },
+    "nocode": {
+      "title": "No Code/Low Code",
+      "description": "Các nền tảng và công cụ để xây dựng ứng dụng, trang web mà không cần lập trình"
+    },
+    "payment": {
+      "title": "Thanh toán",
+      "description": "Các nền tảng hỗ trợ xử lý thanh toán trực tuyến, quản lý đăng ký và hóa đơn"
+    }
   }
 }
