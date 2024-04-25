@@ -51,8 +51,8 @@
 <template>
   <LayoutContainer>
     <LandingSectionhead>
-      <template v-slot:title>{{ title }}</template>
-      <template v-slot:desc>{{ t('description') }}</template>
+      <template #title>{{ title }}</template>
+      <template #desc>{{ t('description') }}</template>
     </LandingSectionhead>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">

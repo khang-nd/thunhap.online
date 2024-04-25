@@ -2,8 +2,9 @@
   <CoreDialog title="Tìm kiếm" content-class="max-w-[1280px] max-h-[1280px] h-[90vh] p-4 bg-[#F3F4EF]"
     @update:open="resetLoading">
     <template #trigger>
-      <CoreButton variant="custom" class="flex w-full p-2 text-gray-500 hover:text-black lg:px-3">
-        {{ $t('common.analytics') }}
+      <CoreButton variant="custom" :aria-label="$t('common.analytics')"
+        class="p-2 text-gray-500 hover:text-black">
+        <Icon name="uil:chart-line" size="20" />
       </CoreButton>
     </template>
     <iframe width="100%" height="100%" frameborder="0" allowfullscreen @load="loading = false"

@@ -26,9 +26,15 @@ export default defineNuxtConfig({
     "/api/**": { cors: true },
     "/product/notionway": { redirect: "/product/pathpages" },
     "/vi/product/notionway": { redirect: "/vi/product/pathpages" },
+    "/__internal__/**": { robots: false },
   },
   runtimeConfig: {
+    supabaseUrl: "",
+    supabaseKey: "",
+    searchApiKey: "",
     posthogApiKey: "",
+    s3AccessKey: "",
+    s3SecretKey: "",
     public: {
       posthogKey: "",
       posthogHost: "https://us.posthog.com",
@@ -41,6 +47,7 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt",
     "nuxt-icon",
+    "@stefanobartoletti/nuxt-social-share",
   ],
   site: {
     url: baseUrl,
@@ -48,6 +55,7 @@ export default defineNuxtConfig({
     description: "Khám phá các sản phẩm online thành công, mang lại thu nhập",
   },
   sitemap: {
+    exclude: ["/__internal__/**"],
     sources: ["/api/__sitemap__/urls"],
     cacheMaxAgeSeconds: 86400, // 1 day
   },
@@ -59,5 +67,8 @@ export default defineNuxtConfig({
     langDir: "locales",
     locales,
     defaultLocale,
+  },
+  socialShare: {
+    label: false,
   },
 });

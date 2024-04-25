@@ -11,6 +11,7 @@ export const contactLinks = {
 
 export const affiliateLinks = {
   "compressx.app": "https://compressx.app/?aff=Gmbpn",
-  "typingmind.com": "",
+  "typingmind.com": "https://typingmind.com/?aff=Gmbpn",
+  "pdfpals.com": "https://pdfpals.com?aff=Gmbpn",
   "carrd.co": "https://try.carrd.co/rhb9ffjr",
 };

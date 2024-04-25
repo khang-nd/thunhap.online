@@ -18,7 +18,7 @@ Online photo editor similar to Adobe Photoshop
 
 :hero-img{:src="image.src" :alt="image.alt"}
 
-__Photopea__ provides a similar interface with powerful photo editing features comparable to Adobe Photoshop such as layers, masks, smart objects, filters, and countless other utilities. Furthermore, the software runs directly in the browser without the need to install additional software on the user's device, making it extremely easy to access and use.
+__Photopea__ provides an interface with powerful photo editing features similar to Adobe Photoshop such as layers, masks, smart objects, filters, and countless other utilities. Furthermore, the software runs directly in the browser without the need to install additional software on the user's device, making it extremely easy to access and use.
 
 The product was built and developed since {{ $doc.year }} by [Ivan Kutskir](https://twitter.com/ivankutskir), a software engineer from Ukraine.
 

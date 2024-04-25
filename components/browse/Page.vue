@@ -1,8 +1,8 @@
 <template>
   <LayoutContainer>
     <LandingSectionhead>
-      <template v-slot:title>{{ $t('common.browse') }}</template>
-      <template v-slot:desc>{{ categoryTitle
+      <template #title>{{ $t('common.browse') }}</template>
+      <template #desc>{{ categoryTitle
         ? $t('common.browse-category', { category: categoryTitle })
         : $t('common.browse-online') }}</template>
     </LandingSectionhead>

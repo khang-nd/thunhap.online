@@ -59,3 +59,10 @@ export interface AppError {
   data?: unknown;
   cause?: unknown;
 }
+
+export interface ListingCategory {
+  icon: string;
+  description: string;
+}
+
+export type ParsedListingCategory = ParsedContent & ListingCategory;

@@ -53,7 +53,9 @@
     "showing-results": "Showing {range} of {total} results",
     "views": "Views",
     "analytics": "Analytics",
-    "submit": "Submit"
+    "submit": "Submit",
+    "share": "Share",
+    "listings": "Listings"
   },
   "category": {
     "ai": "AI",
@@ -70,5 +72,35 @@
     "service": "Service",
     "entertainment": "Entertainment",
     "jobs": "Job Board"
+  },
+  "listing": {
+    "affiliate": {
+      "title": "Affiliate",
+      "description": "Platforms that help make money by promoting other products or services"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "description": "Platforms and tools for tracking and analyzing website traffic and user behavior"
+    },
+    "directory": {
+      "title": "Directory",
+      "description": "Websites and platforms that list, promote and review products and services"
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Platforms and tools for analyzing, advertising and managing marketing campaigns"
+    },
+    "monetization": {
+      "title": "Monetization",
+      "description": "Platforms and tools for monetizing websites, apps or digital content"
+    },
+    "nocode": {
+      "title": "No Code/Low Code",
+      "description": "Platforms and tools for building websites, apps or digital products without coding"
+    },
+    "payment": {
+      "title": "Payment",
+      "description": "Platforms for processing online payments, managing subscriptions and billing"
+    }
   }
 }
