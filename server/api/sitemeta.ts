@@ -1,7 +1,7 @@
 import { useSupabaseClient } from "~/composables/supabase";
 
 export default defineEventHandler(async (e) => {
-  const supabase = useSupabaseClient();
+  const supabase = useSupabaseClient(e);
   const { urls } = await readBody<{ urls: string[] }>(e);
 
   if (!urls) {
