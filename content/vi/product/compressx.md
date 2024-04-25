@@ -10,7 +10,7 @@ models: transaction
 year: 2023
 hashtags: [vietnam, b2c]
 publishedAt: 1711187773010
-affiliate: https://hieudinh.lemonsqueezy.com/affiliates
+affiliate: https://compressx.lemonsqueezy.com/affiliates
 ---
 
 # CompressX
