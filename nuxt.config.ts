@@ -26,6 +26,7 @@ export default defineNuxtConfig({
     "/api/**": { cors: true },
     "/product/notionway": { redirect: "/product/pathpages" },
     "/vi/product/notionway": { redirect: "/vi/product/pathpages" },
+    "/__internal__/**": { robots: false },
   },
   runtimeConfig: {
     supabaseUrl: "",
@@ -54,6 +55,7 @@ export default defineNuxtConfig({
     description: "Khám phá các sản phẩm online thành công, mang lại thu nhập",
   },
   sitemap: {
+    exclude: ["/__internal__/**"],
     sources: ["/api/__sitemap__/urls"],
     cacheMaxAgeSeconds: 86400, // 1 day
   },
