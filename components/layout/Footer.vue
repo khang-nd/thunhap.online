@@ -8,7 +8,7 @@
       <div>
         <CoreButton href="/changelog" variant="inverted" size="sm">{{ $t('common.changelog') }}</CoreButton>
         <span>-</span>
-        <CoreButton href="/sitemap.xml" variant="inverted" size="sm" as="a">Sitemap</CoreButton>
+        <CoreButton href="/sitemap_index.xml" variant="inverted" size="sm" as="a">Sitemap</CoreButton>
       </div>
     </div>
   </footer>

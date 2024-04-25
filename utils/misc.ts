@@ -23,3 +23,9 @@ export const pushQuery = <F extends string | number>(
   const router = useRouter();
   router.push({ query: { ...route.query, [field]: value || null } });
 };
+
+export const getFullUrl = (host: string) => {
+  if (/^https?:\/\//.test(host)) return host;
+  const affiliateLink = affiliateLinks[host as keyof typeof affiliateLinks];
+  return affiliateLink || `https://${host}?via=thunhap-online`;
+};

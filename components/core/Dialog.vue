@@ -4,10 +4,10 @@
       <slot name="trigger" />
     </DialogTrigger>
     <DialogPortal>
-      <Transition name="fade">
+      <CoreTransition name="fade">
         <DialogOverlay class="bg-black bg-opacity-70 fixed inset-0 z-30 backdrop-blur-sm" />
-      </Transition>
-      <Transition name="zoom">
+      </CoreTransition>
+      <CoreTransition name="zoom">
         <DialogContent :aria-describedby="undefined"
           :class="twMerge('fixed top-1/2 left-1/2 max-h-[85vh] w-[90vw] max-w-[450px] -translate-x-1/2 -translate-y-1/2 bg-white focus:outline-none z-[100] rounded-md overflow-hidden', contentClass)">
           <DialogClose aria-label="Close" as-child>
@@ -18,7 +18,7 @@
           </VisuallyHidden>
           <slot />
         </DialogContent>
-      </Transition>
+      </CoreTransition>
     </DialogPortal>
   </DialogRoot>
 </template>
@@ -46,25 +46,3 @@ defineEmits<{
   (e: 'update:open', arg: boolean): void
 }>()
 </script>
-
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.zoom-enter-active,
-.zoom-leave-active {
-  transition: transform 0.2s;
-}
-
-.zoom-enter-from,
-.zoom-leave-to {
-  transform: translate(-50%, -50%) scale(0.9);
-}
-</style>

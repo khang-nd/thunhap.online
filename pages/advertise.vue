@@ -1,8 +1,8 @@
 <template>
   <LayoutContainer>
     <LandingSectionhead>
-      <template v-slot:title>Đặt quảng cáo</template>
-      <template v-slot:desc>Sản phẩm của bạn nổi bật giữa những sản phẩm thành công</template>
+      <template #title>Đặt quảng cáo</template>
+      <template #desc>Sản phẩm của bạn nổi bật giữa những sản phẩm thành công</template>
     </LandingSectionhead>
 
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
