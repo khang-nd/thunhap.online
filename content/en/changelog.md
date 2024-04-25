@@ -2,6 +2,10 @@
 
 All notable changes and updates made to this website
 
+## Apr 25, 2024
+
+- Added "Listings" section to the website - a compilation of tools and resources to leverage online businesses
+
 ## Apr 18, 2024
 
 - Added website traffic analytics
