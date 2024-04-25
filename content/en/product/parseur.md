@@ -8,7 +8,7 @@ categories: [ai, automation]
 revenue: 40000
 models: subscription
 year: 2016
-hashtags: [b2c, b2b]
+hashtags: [b2c, b2b, co-founder]
 publishedAt: 1714038691047
 ---
 
@@ -28,7 +28,7 @@ Parseur generates revenue through a [subscription-based](https://parseur.com/pri
 
 ![Parseur Pricing](https://cdn.thunhap.online/product/parseur+pricing.png)
 
-With this model, the product achieves a revenue of :revenue{:v=revenue}/month, according to the [author's sharing](https://www.starterstory.com/develop-email-parser-application).
+With this model, the product achieves a revenue of :price{:v=revenue}/month, according to the [author's sharing](https://www.starterstory.com/develop-email-parser-application).
 
 ## Marketing strategy
 

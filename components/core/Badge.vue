@@ -14,7 +14,6 @@ interface Props {
   href?: string;
 }
 
-defineOptions({ inheritAttrs: false })
 const { href } = withDefaults(defineProps<Props>(), { color: 'unknown' })
 const colors: Record<StatusType, string> = {
   active: "bg-green-100 text-green-700",

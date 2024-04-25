@@ -8,7 +8,7 @@ categories: [ai, automation]
 revenue: 40000
 models: subscription
 year: 2016
-hashtags: [b2c, b2b]
+hashtags: [b2c, b2b, co-founder]
 publishedAt: 1714038691047
 ---
 
@@ -28,7 +28,7 @@ Parseur tạo thu nhập bằng hình thức [thu phí định kỳ](https://par
 
 ![Parseur Pricing](https://cdn.thunhap.online/product/parseur+pricing.png)
 
-Với mô hình này, sản phẩm đạt mức doanh thu khoảng :revenue{:v=revenue}/tháng, theo [chia sẻ](https://www.starterstory.com/develop-email-parser-application) của tác giả.
+Với mô hình này, sản phẩm đạt mức doanh thu khoảng :price{:v=revenue}/tháng, theo [chia sẻ](https://www.starterstory.com/develop-email-parser-application) của tác giả.
 
 ## Chiến lược quảng bá
 
