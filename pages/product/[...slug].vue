@@ -20,6 +20,9 @@
             <div class="mb-16">
               <ProductOverview :product="doc" />
             </div>
+            <!-- <div class="mb-16 border border-gray-300 bg-gray-100 p-6 rounded-md">
+              <ProductSponsors />
+            </div> -->
             <div>
               <ProductSimilar :product="doc" />
             </div>

@@ -42,6 +42,15 @@ export interface Product {
 
 export type ParsedProduct = ParsedContent & Product;
 
+export type SponsorProduct = Partial<ParsedProduct> & {
+  title: string;
+  description: string;
+  icon: string;
+  image: { src: string; alt: string };
+  _path: string;
+  _sponsor: boolean;
+};
+
 export interface AppError {
   statusCode: number;
   fatal?: boolean;
