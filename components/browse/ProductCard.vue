@@ -1,6 +1,6 @@
 <template>
-  <div @mouseover="isHovered = true" @mouseleave="isHovered = false" class="flex flex-col">
-    <div class="w-full h-52 overflow-hidden border border-gray-300 relative shrink-0">
+  <div @mouseover="isHovered = true" @mouseleave="isHovered = false" class="flex flex-col dark:bg-neutral-900">
+    <div class="w-full h-52 overflow-hidden border border-gray-300 dark:border-neutral-700 relative shrink-0">
       <component :is="ResolvedLink" :href="product._path">
         <img v-if="product.image?.src" :src="product.image.src" :alt="product.image.alt"
           class="w-full h-full object-cover" />
@@ -11,9 +11,9 @@
       </component>
       <BrowseProductAdLabel v-if="product._sponsor" />
     </div>
-    <component :is="ResolvedLink" :href="product._path" class="h-full p-3 border border-t-0 border-gray-300">
+    <component :is="ResolvedLink" :href="product._path" class="h-full p-3 border border-t-0 border-gray-300 dark:border-neutral-700">
       <CoreHeading as="h4">{{ product.title }}</CoreHeading>
-      <p class="mb-2">{{ product.description }}</p>
+      <p class="mb-2 dark:text-gray-400">{{ product.description }}</p>
       <div>
         <CoreTooltip>
           <template #trigger>

@@ -1,6 +1,6 @@
 <template>
   <component :is="as"
-    :class="twMerge('text-gray-800 mb-3', sizes[as], as === 'h2' ? 'font-semibold' : 'font-medium', $attrs.class as string)">
+    :class="twMerge('text-gray-800 dark:text-gray-300 mb-3', sizes[as], as === 'h2' ? 'font-semibold' : 'font-medium', $attrs.class as string)">
     <slot />
   </component>
 </template>

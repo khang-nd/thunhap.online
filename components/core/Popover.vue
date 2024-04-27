@@ -5,7 +5,7 @@
     </PopoverTrigger>
     <PopoverPortal>
       <PopoverContent side="bottom" :side-offset="4"
-        class="bg-white p-2 rounded border shadow-md relative data-[state=open]:animate-[popIn_200ms_ease]">
+        class="bg-white dark:bg-neutral-950 p-2 rounded border dark:border-gray-600 shadow-md relative data-[state=open]:animate-[popIn_200ms_ease]">
         <slot />
       </PopoverContent>
     </PopoverPortal>

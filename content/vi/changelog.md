@@ -2,6 +2,10 @@
 
 Các cập nhật và sửa đổi đã thực hiện trên hệ thống trang web
 
+## 27-04-2024
+
+- Thêm chế độ sáng/tối cho trang web
+
 ## 25-04-2024
 
 - Thêm phần "Danh sách" cho trang web - tổng hợp các công cụ và tài liệu hỗ trợ việc xây dựng sản phẩm online

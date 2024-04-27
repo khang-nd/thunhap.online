@@ -95,17 +95,17 @@
             {{ t('contact-content') }}
           </CoreParagraph>
           <div class="mt-5">
-            <div class="flex items-center mb-3 space-x-2 text-gray-500">
+            <div class="flex items-center mb-3 space-x-2 text-gray-500 dark:text-gray-400">
               <Icon size="20" name="uil:map-marker" />
               <span>{{ t('address') }}</span>
             </div>
             <a :href="contactLinks.email.url"
-              class="flex items-center mb-3 space-x-2 text-gray-500 hover:text-black transition-colors">
+              class="el-link flex items-center mb-3 space-x-2 transition-colors">
               <Icon size="20" name="uil:envelope" />
               <span>{{ contactLinks.email.text }}</span>
             </a>
             <a :href="contactLinks.twitter.url" target="_blank"
-              class="flex items-center space-x-2 text-gray-500 hover:text-black transition-colors">
+              class="el-link flex items-center space-x-2 transition-colors">
               <Icon size="20" name="uil:twitter" />
               <span>{{ contactLinks.twitter.text }}</span>
             </a>

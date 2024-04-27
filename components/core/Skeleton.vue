@@ -1,5 +1,5 @@
 <template>
-  <span :class="twMerge('animate-pulse bg-gray-300 rounded-md block h-5', $attrs.class as string)" />
+  <span :class="twMerge('animate-pulse bg-gray-300 dark:bg-gray-600 rounded-md block h-5', $attrs.class as string)" />
 </template>
 
 <script setup lang="ts">

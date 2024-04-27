@@ -3,21 +3,25 @@
 @tailwind utilities;
 
 .el-input {
-  @apply block border focus:border-transparent rounded-sm outline-none transition ring-offset-2 ring-black focus:ring-1;
+  @apply block border focus:border-transparent rounded-sm outline-none transition ring-offset-2 ring-black focus:ring-1 dark:bg-neutral-900 dark:border-neutral-700 dark:text-white;
 }
 
 .el-paging {
-  @apply w-9 h-9 flex items-center justify-center disabled:opacity-50 rounded transition text-gray-500 hover:text-black disabled:hover:text-gray-500;
+  @apply el-link w-9 h-9 flex items-center justify-center disabled:opacity-50 rounded transition disabled:hover:text-gray-500;
 }
 
 .el-group-item {
-  @apply text-gray-500 hover:text-black border data-[state=on]:text-black data-[state=on]:bg-gray-200 flex items-center justify-center text-base min-w-[40px] p-2 leading-4 first:rounded-l-md last:rounded-r-md transition-colors;
+  @apply el-link dark:text-gray-400 dark:hover:text-white border dark:border-gray-800 data-[state=on]:text-black data-[state=on]:bg-gray-200 dark:data-[state=on]:bg-gray-800 flex items-center justify-center text-base min-w-[40px] p-2 leading-4 first:rounded-l-md last:rounded-r-md transition-colors;
 }
 
 .el-outline {
-  @apply transition-colors text-gray-500 hover:text-black focus:text-black border hover:border-gray-400 focus:border-gray-400 focus:bg-gray-100 hover:bg-gray-100;
+  @apply transition-colors text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white focus:text-black border dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-800 focus:border-gray-400 focus:bg-gray-100 dark:focus:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-900;
 }
 
 .el-share-button {
-  @apply p-2 transition-colors rounded-md bg-gray-100 hover:bg-gray-300;
+  @apply p-2 transition-colors rounded-md bg-gray-100 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-300;
+}
+
+.el-link {
+  @apply text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white;
 }

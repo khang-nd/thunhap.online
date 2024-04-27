@@ -9,7 +9,7 @@
       </PaginationPrev>
       <template v-for="(page, index) in items">
         <PaginationListItem v-if="page.type === 'page'" :key="index"
-          class="el-paging border ring-gray-600 ring-offset-2 hover:border-gray-400 data-[selected]:bg-white data-[selected]:text-black data-[selected]:ring-1"
+          class="el-paging border dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 ring-gray-600 dark:ring-transparent ring-offset-2 data-[selected]:text-black dark:data-[selected]:text-white data-[selected]:ring-1"
           :value="page.value">
           {{ page.value }}
         </PaginationListItem>

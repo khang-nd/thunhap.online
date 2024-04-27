@@ -1,8 +1,8 @@
 <template>
   <SliderRoot v-model="innerValues" :step="500" :min-steps-between-thumbs="1"
     class="relative flex items-center select-none touch-none my-8">
-    <SliderTrack class="bg-gray-200 relative grow rounded-full h-1.5 cursor-pointer">
-      <SliderRange class="absolute bg-black rounded-full h-full transition" />
+    <SliderTrack class="bg-gray-200 dark:bg-neutral-700 relative grow rounded-full h-1.5 cursor-pointer">
+      <SliderRange class="absolute bg-black dark:bg-neutral-100 rounded-full h-full transition" />
     </SliderTrack>
     <SliderThumb
       class="relative block w-4 h-4 bg-white rounded-full shadow-[0_0_3px_0] cursor-grab transition-shadow focus:outline-none focus:shadow-[0_0_1px_2px]">

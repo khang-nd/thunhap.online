@@ -1,7 +1,7 @@
 import defaultTheme from "tailwindcss/defaultTheme";
+import type { Config } from "tailwindcss/types/config";
 
-/** @type {import('tailwindcss').Config} */
-export default {
+const config: Config = {
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -18,4 +18,7 @@ export default {
     },
   },
   plugins: [require("@tailwindcss/typography")],
+  darkMode: "class",
 };
+
+export default config;

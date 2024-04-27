@@ -35,10 +35,10 @@ const sizes: Record<Size, string> = {
 };
 
 const styles: Record<Variant, string> = {
-  outline: "bg-white border-2 border-black hover:bg-gray-100 text-black",
-  primary: "bg-black text-white hover:bg-gray-800 border-2 border-transparent",
-  inverted: "bg-white text-gray-500 border-2 border-transparent hover:text-black",
-  disabled: "bg-gray-100 hover:bg-gray-200 border-2 border-transparent",
+  outline: "bg-white hover:bg-gray-100 dark:bg-neutral-950 border-2 border-black dark:border-gray-800 dark:hover:border-gray-600 text-black dark:text-white",
+  primary: "bg-black hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-white text-white dark:hover:text-black border-2 border-transparent",
+  inverted: "el-link border-2 border-transparent",
+  disabled: "bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 border-2 border-transparent dark:text-gray-500",
   custom: "",
 };
 

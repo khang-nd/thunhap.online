@@ -1,12 +1,12 @@
 <template>
-  <h2 class="text-4xl lg:text-5xl text-center font-bold lg:tracking-tight mb-16">
+  <h2 class="text-4xl lg:text-5xl text-center font-bold lg:tracking-tight mb-16 dark:text-gray-300">
     {{ $t('landing.hot-categories-title') }}
   </h2>
 
   <div class="grid grid-cols-2 lg:grid-cols-4 mb-12 gap-6 lg:gap-12">
     <NuxtLinkLocale v-for="key in categoryKeys" :href="'/browse/' + key"
-      class="text-center text-gray-500 border rounded-sm px-4 py-8 transition-colors hover:border-gray-400 hover:text-black">
-      <div class="inline-block p-2 bg-gray-200 rounded-full">
+      class="el-link text-center rounded-sm px-4 py-8 transition-colors border hover:border-gray-400 dark:border-gray-700 dark:hover:border-gray-400">
+      <div class="inline-block p-2 bg-gray-200 dark:bg-gray-800 rounded-full">
         <Icon :name="categories[key].icon" size="24" />
       </div>
       <h3 class="font-semibold lg:text-lg">{{ $t('category.' + key) }}</h3>

@@ -1,7 +1,7 @@
 <template>
   <CorePopover>
     <template #trigger>
-      <CoreButton variant="inverted" class="flex items-center space-x-2 hover:bg-gray-100 p-2">
+      <CoreButton variant="inverted" class="flex items-center space-x-2 hover:bg-gray-100 dark:hover:bg-gray-900 p-2">
         <Icon name="uil:share-alt" />
         <span>{{ $t('common.share') }}</span>
       </CoreButton>

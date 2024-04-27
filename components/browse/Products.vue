@@ -2,7 +2,7 @@
   <div class="w-full">
     <div class="flex items-center justify-between mb-4">
       <ClientOnly>
-        <div class="hidden sm:block text-gray-500">
+        <div class="hidden sm:block text-gray-500 dark:text-gray-400">
           {{ $t('common.showing-results', { range, total }) }}
         </div>
         <template #fallback>

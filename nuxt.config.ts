@@ -44,6 +44,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxtjs/seo",
     "@nuxtjs/i18n",
+    "@nuxtjs/color-mode",
     "@nuxthq/studio",
     "@vueuse/nuxt",
     "nuxt-icon",
@@ -71,4 +72,5 @@ export default defineNuxtConfig({
   socialShare: {
     label: false,
   },
+  colorMode: { classSuffix: "" },
 });

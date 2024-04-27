@@ -3,7 +3,7 @@
     @update:open="resetLoading">
     <template #trigger>
       <CoreButton variant="custom" :aria-label="$t('common.analytics')"
-        class="p-2 text-gray-500 hover:text-black">
+        class="el-link p-2">
         <Icon name="uil:chart-line" size="20" />
       </CoreButton>
     </template>

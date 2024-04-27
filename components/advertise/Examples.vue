@@ -1,9 +1,9 @@
 <template>
   <div class="mb-32">
-    <h2 class="text-3xl font-bold text-center mb-12">Placement examples</h2>
+    <h2 class="text-3xl font-bold text-center mb-12 dark:text-white">Placement examples</h2>
     <div class="flex gap-6">
       <NuxtLink v-for="p in adplacements" :href="p.img" target="_blank">
-        <div class="text-lg font-semibold text-center mb-4">{{ p.name }}</div>
+        <div class="text-lg font-semibold text-center mb-4 dark:text-white">{{ p.name }}</div>
         <span class="relative group">
           <img :src="p.img" :alt="p.name" height="600" />
           <span

@@ -7,10 +7,10 @@
     </SelectTrigger>
 
     <SelectPortal>
-      <SelectContent class="bg-white p-1 rounded border shadow-md data-[state=open]:animate-[popIn_200ms_ease]">
+      <SelectContent class="bg-white dark:bg-neutral-950 dark:text-white p-1 rounded border dark:border-gray-700 shadow-md data-[state=open]:animate-[popIn_200ms_ease]">
         <SelectViewport>
           <SelectItem v-for="(option, index) in options" :key="index" :value="option"
-            class="relative p-1 pl-6 cursor-default transition-colors hover:bg-gray-200 outline-none">
+            class="relative p-1 pl-6 cursor-default transition-colors hover:bg-gray-200 dark:hover:bg-gray-800 outline-none">
             <SelectItemIndicator class="absolute left-1 top-1/2 -translate-y-1/2">
               <Icon name="uil:check" />
             </SelectItemIndicator>

@@ -2,11 +2,11 @@
   <header class="w-full">
     <div class="max-w-screen-xl flex flex-col lg:flex-row justify-between items-center p-5 mx-auto">
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <NuxtLinkLocale href="/" class="flex items-center text-lg" @mouseover="titleMouseOver = true"
-          @mouseout="titleMouseOver = false">
+        <NuxtLinkLocale href="/" class="flex items-center text-lg text-slate-800 dark:text-slate-200"
+          @mouseover="titleMouseOver = true" @mouseout="titleMouseOver = false">
           <Icon :name="'healthicons:money-bag' + (titleMouseOver ? '' : '-outline')" size="32" class="mr-1" />
-          <span class="font-bold text-slate-800">Thu Nhập</span>
-          <span class="text-slate-500">.online</span>
+          <span class="font-bold">Thu Nhập</span>
+          <span class="text-slate-500 dark:text-slate-400">.online</span>
         </NuxtLinkLocale>
         <button @click="openMenu = !openMenu"
           class="block p-1 lg:hidden text-gray-500 rounded-full transition-colors hover:text-black hover:bg-gray-100">
@@ -26,7 +26,7 @@
         <ul class="flex flex-col lg:flex-row lg:items-center lg:mr-3 mb-2 lg:mb-0">
           <li v-for="(item) of menuitems">
             <CoreButton :href="`/${item}`" variant="custom"
-              :class='[($route.path.includes(item) ? "text-black bg-gray-100" : "text-gray-500"), "flex p-2 hover:text-black lg:px-3"]'>
+              :class='[($route.path.includes(item) ? "text-black bg-gray-100 dark:text-white dark:bg-gray-900" : "text-gray-500 dark:text-gray-400"), "flex p-2 hover:text-black dark:hover:text-white lg:px-3"]'>
               {{ $t('common.' + item) }}
             </CoreButton>
           </li>
@@ -36,16 +36,17 @@
             </CoreButton>
           </li>
         </ul>
-        <div class="flex items-center border border-gray-400 rounded-md p-1">
+        <div class="flex items-center border border-gray-400 dark:border-gray-600 rounded-md p-1">
           <CoreToggleGroup v-model="currentLocale" class="mr-2"
             :items="locales.map((({ code }) => ({ label: code.toUpperCase(), value: code })))" />
           <LayoutAnalytics />
+          <LayoutColorMode />
           <NuxtLink :href="contactLinks.twitter.url" target="_blank" title="Twitter"
-            class="p-2 transition-colors text-gray-500 hover:text-black">
+            class="el-link p-2 transition-colors">
             <Icon name="uil:twitter" size="20" />
           </NuxtLink>
           <NuxtLink :href="contactLinks.email.url" title="Email"
-            class="p-2 transition-colors text-gray-500 hover:text-black">
+            class="el-link p-2 transition-colors">
             <Icon name="uil:envelope-alt" size="20" />
           </NuxtLink>
         </div>

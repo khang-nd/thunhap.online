@@ -1,5 +1,5 @@
 <template>
-  <div class="inline-flex items-center space-x-2 mb-2 text-gray-500 hover:text-black">
+  <div class="el-link inline-flex items-center space-x-2 mb-2">
     <div class="relative flex items-center cursor-pointer" :for="id">
       <input type="checkbox" :id="id" :value="value" :name="name" :checked="checked"
         class="peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-current transition-colors checked:border-gray-900 checked:bg-gray-900"

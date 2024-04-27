@@ -1,6 +1,6 @@
 <template>
   <NuxtLink :href="href" :target="target"
-    class="rounded-[4px] p-1 -mx-0.5 font-medium text-black transition-colors hover:bg-gray-200">
+    class="rounded-[4px] p-1 -mx-0.5 font-medium text-black dark:text-white transition-colors hover:bg-gray-200 dark:hover:bg-gray-800">
     <slot />
   </NuxtLink>
 </template>

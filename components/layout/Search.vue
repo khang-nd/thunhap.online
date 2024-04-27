@@ -9,7 +9,7 @@
 
     <div class="px-4 py-6">
       <label class="block relative mb-6">
-        <span class="absolute p-2">
+        <span class="absolute p-2 dark:text-white">
           <Icon name="uil:search" size="24" :class="['transition-opacity', focused ? 'opacity-80' : 'opacity-30']" />
         </span>
         <input type="text" :placeholder="$t('common.search') + '...'" v-model="searchText" @focus="focused = true"
@@ -18,7 +18,7 @@
       <div class="h-80 overflow-auto">
         <ul v-if="results?.value.length > 0">
           <li v-for="item in results.value" :key="item.id">
-            <NuxtLinkLocale :href="item.id" class="block p-2 transition-colors hover:bg-gray-200">
+            <NuxtLinkLocale :href="item.id" class="block p-2 transition-colors hover:bg-gray-200 dark:text-gray-300 dark:hover:bg-neutral-800">
               <div class="font-medium mb-1">
                 <span v-for="(title, index) in [...item.titles, item.title]">
                   <Icon v-if="index > 0" name="uil:angle-right" class="inline" />
@@ -29,7 +29,7 @@
             </NuxtLinkLocale>
           </li>
         </ul>
-        <div v-else class="flex items-center justify-center h-full text-gray-500 italic">
+        <div v-else class="flex items-center justify-center h-full text-gray-500 dark:text-gray-400 italic">
           {{ !searchText ? $t('common.missing-keyword') : $t('common.no-result') }}
         </div>
       </div>

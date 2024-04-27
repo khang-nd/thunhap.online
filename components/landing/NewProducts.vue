@@ -1,5 +1,5 @@
 <template>
-  <h2 class="text-4xl lg:text-5xl text-center font-bold lg:tracking-tight mb-16">
+  <h2 class="text-4xl lg:text-5xl text-center font-bold lg:tracking-tight mb-16 dark:text-gray-300">
     {{ $t('landing.new-products-title') }}
   </h2>
 

@@ -1,7 +1,7 @@
 <template>
   <NuxtLinkLocale :href="category._path" @mouseover="hovered = true" @mouseleave="hovered = false"
-    class="flex items-center text-gray-500 border rounded-sm px-4 py-8 transition-colors hover:border-gray-400 hover:text-black">
-    <div class="hidden sm:block mr-4 p-2 bg-gray-200 rounded-full">
+    class="flex items-center text-gray-500 dark:text-gray-400 rounded-sm px-4 py-8 transition-colors border dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-400 hover:text-black dark:hover:text-white">
+    <div class="hidden sm:block mr-4 p-2 bg-gray-200 dark:bg-gray-800 rounded-full">
       <Icon :name="category.icon" size="32" />
     </div>
     <div>

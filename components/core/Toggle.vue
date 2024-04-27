@@ -1,6 +1,6 @@
 <template>
     <Toggle v-model:pressed="isActive" @update:pressed="$emit('change', { value, pressed: isActive })"
-        class="bg-gray-100 border border-transparent px-3 py-1 rounded-full transition-all data-[state=on]:bg-gray-300 data-[state=on]:border-gray-400">
+        class="bg-gray-100 dark:bg-gray-800 dark:text-gray-400 dark:data-[state=on]:text-white border border-transparent px-3 py-1 rounded-full transition-all data-[state=on]:bg-gray-300 dark:data-[state=on]:bg-gray-700 data-[state=on]:border-gray-400">
         <slot />
     </Toggle>
 </template>

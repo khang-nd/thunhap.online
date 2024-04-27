@@ -3,7 +3,7 @@
     <ul>
       <li v-for="key in sortedCategories" :key="key">
         <NuxtLinkLocale :to="{ path: isActive(key) ? '/browse' : `/browse/${key}`, query: getQuery() }"
-          :class="['flex items-center py-1 space-x-2 transition-colors hover:text-black', isActive(key) ? 'text-black font-semibold' : 'text-gray-500']">
+          :class="['flex items-center py-1 space-x-2 transition-colors hover:text-black dark:hover:text-white', isActive(key) ? 'text-black dark:text-white font-semibold' : 'text-gray-500 dark:text-gray-400']">
           <Icon :name="categories[key as CategoryType].icon" size="20" />
           <span>{{ $t('category.' + key) }}</span>
         </NuxtLinkLocale>
