@@ -10,6 +10,7 @@
     <LandingHero />
     <LandingNewProducts />
     <LandingCategories />
+    <!-- <LandingSponsors /> -->
   </LayoutContainer>
 </template>
 
