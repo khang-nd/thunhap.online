@@ -55,7 +55,8 @@
     "analytics": "Thống kê",
     "submit": "Đăng sản phẩm",
     "share": "Chia sẻ",
-    "listings": "Danh sách"
+    "listings": "Danh sách",
+    "listing-title": "Tổng hợp các công cụ và nền tảng {category}"
   },
   "category": {
     "ai": "AI",
@@ -79,7 +80,7 @@
       "description": "Các nền tảng giúp kiếm tiền bằng cách quảng bá các sản phẩm hoặc dịch vụ khác"
     },
     "analytics": {
-      "title": "Phân tích",
+      "title": "Phân tích dữ liệu",
       "description": "Các nền tảng và công cụ để theo dõi, phân tích lượng truy cập trang web và hành vi người dùng"
     },
     "directory": {

@@ -55,7 +55,8 @@
     "analytics": "Analytics",
     "submit": "Submit",
     "share": "Share",
-    "listings": "Listings"
+    "listings": "Listings",
+    "listing-title": "All {category} tools and resources"
   },
   "category": {
     "ai": "AI",

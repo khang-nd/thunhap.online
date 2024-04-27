@@ -27,7 +27,7 @@ const key = computed(() => doc.value?.title?.toLowerCase())
 const title = computed(() => t(`listing.${key.value}.title`))
 const description = computed(() => t(`listing.${key.value}.description`))
 useHead({
-  title: title.value,
+  title: t('common.listing-title', { category: title.value }),
   meta: [{ name: 'description', content: description.value }]
 })
 </script>

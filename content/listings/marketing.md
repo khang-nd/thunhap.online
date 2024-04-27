@@ -16,3 +16,4 @@ icon: uil:megaphone
 :product{url=beehiiv.com}
 :product{url=inmobi.com}
 :product{url=applovin.com}
+:product{url=resend.com}
