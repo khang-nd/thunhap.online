@@ -10,6 +10,7 @@ models: [transaction]
 year: 2024
 hashtags: [b2c, devtool, buildinpublic]
 publishedAt: 1714272813413
+affiliate: https://shipfa.st/affiliates
 ---
 
 # ShipFast

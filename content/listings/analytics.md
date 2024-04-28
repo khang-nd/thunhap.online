@@ -23,3 +23,5 @@ icon: uil:chart-pie
 :product{url=metrical.xyz}
 :product{url=goatcounter.com}
 :product{url=usefathom.com}
+:product{url=pirsch.io}
+:product{url=wideangle.co}
