@@ -56,7 +56,10 @@
     "submit": "Đăng sản phẩm",
     "share": "Chia sẻ",
     "listings": "Danh sách",
-    "listing-title": "Tổng hợp các công cụ và nền tảng {category}"
+    "listing-title": "Tổng hợp các công cụ và nền tảng {category}",
+    "dark": "Chế độ tối",
+    "light": "Chế độ sáng",
+    "system": "Theo thiết bị"
   },
   "category": {
     "ai": "AI",
