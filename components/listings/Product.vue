@@ -11,7 +11,7 @@
     </div>
     <h2 class="font-semibold lg:text-lg">{{ data.name || data.domain }}</h2>
   </NuxtLink>
-  <div v-else class="flex items-center border rounded-sm px-4 py-6">
+  <div v-else class="flex items-center border dark:border-gray-700 rounded-sm px-4 py-6">
     <CoreSkeleton class="w-12 h-12 mr-4 rounded-md" />
     <CoreSkeleton class="w-1/2 h-7" />
   </div>

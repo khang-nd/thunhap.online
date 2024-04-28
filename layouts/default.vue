@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between dark:bg-neutral-950">
+  <div class="flex flex-col justify-between">
     <LayoutNavbar></LayoutNavbar>
     <slot></slot>
     <LayoutFooter></LayoutFooter>

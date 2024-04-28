@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html.dark {
+  background-color: rgb(10, 10, 10);
+}
+
 .el-input {
   @apply block border focus:border-transparent rounded-sm outline-none transition ring-offset-2 ring-black focus:ring-1 dark:bg-neutral-900 dark:border-neutral-700 dark:text-white;
 }

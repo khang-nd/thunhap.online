@@ -5,7 +5,7 @@
         <ClientOnly>
           <Icon :name="icon" size="20" />
           <template #fallback>
-            <Icon name="uil:desktop" size="20" />
+            <Icon :name="fallbackIcon" size="20" />
           </template>
         </ClientOnly>
       </CoreButton>
@@ -25,5 +25,6 @@ const colorModeOptions = [
   { value: 'light', label: t('common.light'), icon: 'mdi:lightbulb-outline' },
   { value: 'dark', label: t('common.dark'), icon: 'mdi:lightbulb-off' },
 ]
-const icon = computed(() => colorModeOptions.find((option) => option.value === colorMode.preference)?.icon as string)
+const fallbackIcon = 'uil:desktop'
+const icon = computed(() => colorModeOptions.find((option) => option.value === colorMode.preference)?.icon || fallbackIcon)
 </script>
