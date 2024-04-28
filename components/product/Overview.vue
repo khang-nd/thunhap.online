@@ -36,7 +36,7 @@
         <span>Similarweb</span>
         <Icon name="uil:external-link-alt" />
       </CoreButton>
-      <hr class="h-8 w-[1px] bg-gray-300 flex-shrink-0 mx-1" />
+      <hr class="h-8 w-[1px] border-0 bg-gray-300 dark:bg-gray-700 flex-shrink-0 mx-1" />
       <CoreButton variant="inverted" size="md" class="w-full space-x-1 flex items-center justify-center"
         :href="'https://builtwith.com/' + hostname" target="_blank">
         <span>BuiltWith</span>
@@ -45,7 +45,7 @@
     </div>
   </ProductField>
   <CoreButton v-if="product.affiliate" variant="custom" :href="product.affiliate" target="_blank"
-    class="el-link flex items-center justify-center space-x-2 w-full border border-gray-300 hover:bg-gray-100">
+    class="el-link flex items-center justify-center space-x-2 w-full border border-gray-300 hover:bg-gray-100 dark:border-gray-800 dark:hover:bg-gray-900">
     <Icon name="iconoir:coins" size="20" />
     <span>{{ $t('common.affiliate-program') }}</span>
   </CoreButton>
