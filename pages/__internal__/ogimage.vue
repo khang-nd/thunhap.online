@@ -31,6 +31,8 @@
 <script setup lang="ts">
 import { domToBlob, } from 'modern-screenshot'
 
+defineI18nRoute(false)
+
 interface Props {
   icon: string
   title: string
