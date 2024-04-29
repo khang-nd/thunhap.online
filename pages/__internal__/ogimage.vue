@@ -2,8 +2,7 @@
   <LayoutContainer>
     <CoreButton @click="capture">Capture</CoreButton>
 
-    <div v-if="icon && title && description" ref="image"
-      class="bg-white border border-black w-[1200px] h-[630px] relative">
+    <div v-if="icon && title && description" ref="image" class="bg-white w-[1200px] h-[630px] relative">
       <div class="flex items-center justify-center h-full max-w-[1000px] mx-auto">
         <Icon :name="icon" size="300" class="shrink-0" />
         <div class="ml-6">
@@ -44,10 +43,11 @@ const { icon, title, description } = route.query as Partial<Props>;
 
 const capture = async () => {
   const ogimage = await domToBlob(image.value, { quality: 1 })
+  const name = title?.replace(' ', '').toLowerCase()
   const type = ogimage.type;
   const [, ext] = type.split('/');
   const formData = new FormData();
-  formData.append('file', new File([ogimage], `${title?.toLowerCase()}.${ext}`, { type }));
+  formData.append('file', new File([ogimage], `${name}.${ext}`, { type }));
   formData.append('folder', 'ogimage')
   const { data, error } = await useFetch('/api/product/upload', {
     method: 'POST',
