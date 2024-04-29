@@ -11,14 +11,22 @@ export const useS3Client = () => {
   });
 };
 
+const s3Folders = ["favicon", "product", "ogimage"] as const;
+
+export type S3Folder = (typeof s3Folders)[number];
+
 interface S3Upload {
-  folder: "favicon" | "product";
+  folder: S3Folder;
   filename: string;
   content: string | Buffer | Uint8Array;
   contentType?: string;
 }
 
 export const uploadFile = async (upload: S3Upload) => {
+  if (!s3Folders.includes(upload.folder)) {
+    throw new Error("Invalid folder");
+  }
+
   const s3 = useS3Client();
   const cmd = new PutObjectCommand({
     Bucket: "cdn.thunhap.online",

@@ -23,11 +23,14 @@ const path = route.path.replace(`/${locale.value}`, '')
 const { data: doc, error } = await useAsyncData(path, () => queryContent<MarkdownParsedContent>(path).findOne())
 const urls = doc.value?.body?.children.map((item) => item.props?.url) as string[]
 const { data: sitemeta, pending } = useLazyFetch('/api/sitemeta', { method: 'POST', body: { urls } })
-const key = computed(() => doc.value?.title?.toLowerCase())
-const title = computed(() => t(`listing.${key.value}.title`))
-const description = computed(() => t(`listing.${key.value}.description`))
+const key = route.params.category as string
+const title = computed(() => t(`listing.${key}.title`))
+const description = computed(() => t(`listing.${key}.description`))
 useHead({
   title: t('common.listing-title', { category: title.value }),
-  meta: [{ name: 'description', content: description.value }]
+  meta: [
+    { property: 'og:image', content: `https://cdn.thunhap.online/ogimage/${key}.png` },
+    { name: 'description', content: description.value }
+  ]
 })
 </script>

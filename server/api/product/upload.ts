@@ -1,4 +1,4 @@
-import { uploadFile } from "~/server/utils/aws";
+import { S3Folder, uploadFile } from "~/server/utils/aws";
 
 export default defineEventHandler(async (e) => {
   const data = await readMultipartFormData(e);
@@ -10,9 +10,9 @@ export default defineEventHandler(async (e) => {
     });
   }
 
-  const [file] = data;
+  const [file, folder] = data;
   return uploadFile({
-    folder: "product",
+    folder: folder.data.toString("utf-8") as S3Folder,
     filename: file.filename as string,
     content: file.data,
     contentType: file.type,

@@ -24,6 +24,7 @@
     "@vueuse/core": "^10.9.0",
     "@vueuse/nuxt": "^10.9.0",
     "autoprefixer": "^10.4.16",
+    "modern-screenshot": "^4.4.39",
     "nuxt": "^3.9.0",
     "nuxt-icon": "^0.6.8",
     "p-queue": "^8.0.1",
