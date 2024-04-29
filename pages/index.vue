@@ -1,6 +1,6 @@
 <i18n lang="yaml">
   vi:
-    title: Khám phá các sản phẩm online thành công, mang lại thu nhập
+    title: Khám phá các sản phẩm online thành công
   en:
     title: Discover successful online businesses
 </i18n>

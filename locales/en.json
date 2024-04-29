@@ -56,7 +56,7 @@
     "submit": "Submit",
     "share": "Share",
     "listings": "Listings",
-    "listing-title": "All {category} tools and resources",
+    "listing-title": "{category} tools and resources",
     "dark": "Dark mode",
     "light": "Light mode",
     "system": "System"
