@@ -36,7 +36,7 @@ const uploadFile = async () => {
   const formData = new FormData();
   formData.append('file', file.value as File);
   formData.append('folder', folder.value)
-  const { data, error } = await useFetch('/api/product/upload', {
+  const { data, error } = await useFetch('/api/upload', {
     method: 'POST',
     headers: { contentType: 'multipart/form-data' },
     body: formData

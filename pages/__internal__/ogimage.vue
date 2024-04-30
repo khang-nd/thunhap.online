@@ -51,7 +51,7 @@ const capture = async () => {
   const formData = new FormData();
   formData.append('file', new File([ogimage], `${name}.${ext}`, { type }));
   formData.append('folder', 'ogimage')
-  const { data, error } = await useFetch('/api/product/upload', {
+  const { data, error } = await useFetch('/api/upload', {
     method: 'POST',
     headers: { contentType: 'multipart/form-data' },
     body: formData
