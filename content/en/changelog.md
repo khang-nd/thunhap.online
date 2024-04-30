@@ -2,6 +2,10 @@
 
 All notable changes and updates made to this website
 
+## Apr 30, 2024
+
+- Added the [OG Image Generator](/ogimage) tool
+
 ## Apr 27, 2024
 
 - Added light/dark mode for the website
