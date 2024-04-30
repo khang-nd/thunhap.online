@@ -1,55 +1,55 @@
 <template>
   <LayoutContainer>
-    <CoreButton @click="capture">Capture</CoreButton>
-
-    <div v-if="icon && title && description" ref="image" class="bg-white w-[1200px] h-[630px] relative">
-      <div class="flex items-center justify-center h-full max-w-[1000px] mx-auto">
-        <Icon :name="icon" size="300" class="shrink-0" />
-        <div class="ml-6">
-          <h1 class="text-8xl font-bold mb-4">{{ title }}</h1>
-          <p class="text-5xl leading-[130%] text-slate-600">{{ description }}</p>
+    <div class="flex flex-col lg:flex-row gap-3 mx-auto max-w-screen-lg mt-16">
+      <div class="flex flex-col gap-4 dark:text-white">
+        <label>
+          <span class="block mb-2">Title</span>
+          <input class="el-input px-1 py-2 w-full min-w-60" v-model="ogTitle" />
+        </label>
+        <label>
+          <span class="block mb-2">Description</span>
+          <input class="el-input px-1 py-2 w-full min-w-60" v-model="ogDescription" />
+        </label>
+        <label>
+          <span class="flex items-center mb-2 space-x-1">
+            <span>Icon</span>
+            <NuxtLink target="_blank" href="https://icones.js.org/collection/all">
+              <Icon name="uil:question-circle" size="24" />
+            </NuxtLink>
+          </span>
+          <input class="el-input px-1 py-2 w-full min-w-60" v-model="ogIcon" />
+        </label>
+        <CoreButton @click="exportImage">Upload</CoreButton>
+      </div>
+      <div class="w-full overflow-auto">
+        <div class="mb-2 dark:text-white">Preview</div>
+        <div class="overflow-auto border border-black">
+          <OgimageDefault ref="ogImage" :icon="ogIcon" :title="ogTitle" :description="ogDescription" />
         </div>
       </div>
-
-      <Icon name="tdesign:chart-analytics" size="120" class="absolute top-8 left-16 opacity-10" />
-      <Icon name="system-uicons:coins" size="130" class="absolute top-8 right-80 opacity-10" />
-      <Icon name="system-uicons:coins" size="90" class="absolute bottom-24 left-80 opacity-10" />
-      <Icon name="grommet-icons:analytics" size="80" class="absolute bottom-8 left-16 opacity-10" />
-      <Icon name="pepicons-pop:internet" size="90" class="absolute top-20 right-20 opacity-10" />
-      <Icon name="pepicons-pop:internet" size="80" class="absolute bottom-11 left-1/2 opacity-10" />
-      <Icon name="akar-icons:coin" size="80" class="absolute top-44 left-1/3 opacity-10 -rotate-45" />
-      <Icon name="akar-icons:coin" size="130" class="absolute bottom-12 right-16 opacity-10 rotate-45" />
-      <Icon name="icon-park:chart-line" size="80" class="absolute top-1/2 left-2/3 opacity-10" />
-    </div>
-
-    <div v-else class="dark:text-white text-3xl">
-      Missing required query params (icon, title, description)
     </div>
   </LayoutContainer>
 </template>
 
 <script setup lang="ts">
-import { domToBlob, } from 'modern-screenshot'
+import type { OgimageDefault } from '#build/components';
+import { domToBlob } from 'modern-screenshot';
 
 defineI18nRoute(false)
 
-interface Props {
-  icon: string
-  title: string
-  description: string
-}
+const ogIcon = ref('healthicons:money-bag-outline')
+const ogTitle = ref('Thu Nhập.online')
+const ogDescription = ref('Discover successful online businesses')
+const ogImage = ref<InstanceType<typeof OgimageDefault>>()
 
-const route = useRoute()
-const image = ref()
-const { icon, title, description } = route.query as Partial<Props>;
-
-const capture = async () => {
-  const ogimage = await domToBlob(image.value, { quality: 1 })
-  const name = title?.replace(' ', '').toLowerCase()
-  const type = ogimage.type;
+const exportImage = async () => {
+  if (!ogImage.value || !ogImage.value.image) return;
+  const image = await domToBlob(ogImage.value.image)
+  const name = ogTitle.value.replace(/ /g, '').toLowerCase()
+  const type = image.type;
   const [, ext] = type.split('/');
   const formData = new FormData();
-  formData.append('file', new File([ogimage], `${name}.${ext}`, { type }));
+  formData.append('file', new File([image], `${name}.${ext}`, { type }));
   formData.append('folder', 'ogimage')
   const { data, error } = await useFetch('/api/upload', {
     method: 'POST',
