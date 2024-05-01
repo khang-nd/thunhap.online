@@ -1,10 +1,23 @@
+<i18n lang="yaml">
+  en:
+    browse-online: A list of successful online businesses
+    browse-category: A list of successful {category} businesses
+    browse-status: A list of successful online businesses with {status} status
+    browse-model: A list of successful online businesses with {model} revenue model
+    browse-tag: A list of successful online businesses for {tag} tag
+  vi:
+    browse-online: Danh sách các sản phẩm online thành công
+    browse-category: Danh sách các sản phẩm {category} thành công
+    browse-status: Danh sách các sản phẩm online thành công có trạng thái {status}
+    browse-model: Danh sách các sản phẩm online thành công có mô hình doanh thu {model}
+    browse-tag: Danh sách các sản phẩm online thành công được gắn thẻ {tag}
+</i18n>
+
 <template>
   <LayoutContainer>
     <LandingSectionhead>
       <template #title>{{ $t('common.browse') }}</template>
-      <template #desc>{{ categoryTitle
-        ? $t('common.browse-category', { category: categoryTitle })
-        : $t('common.browse-online') }}</template>
+      <template #desc>{{ description }}</template>
     </LandingSectionhead>
     <div class="mt-10 md:mt-16 lg:flex">
       <aside class="hidden lg:block max-w-64 shrink-0 mr-6">
@@ -34,12 +47,21 @@
 
 <script setup lang="ts">
 const { t } = useI18n()
-const { category } = useRoute().params
+const route = useRoute()
+const { category, model, status, tag } = route.params
 const categoryTitle = computed(() => category ? t('category.' + category) : null)
-const headTitle = computed(() => categoryTitle.value || t('common.browse'))
+const modelTitle = computed(() => model ? t('common.revenue-model-types.' + model) : null)
+const statusTitle = computed(() => status ? t('common.status-types.' + status) : null)
+const description = computed(() =>
+  categoryTitle.value && t('browse-category', { category: categoryTitle.value })
+  || modelTitle.value && t('browse-model', { model: modelTitle.value })
+  || statusTitle.value && t('browse-status', { status: statusTitle.value })
+  || tag && t('browse-tag', { tag })
+  || t('browse-online'))
+const subtitle = computed(() => categoryTitle.value || modelTitle.value || statusTitle.value || tag as string)
 const openFilterModal = ref(false);
 
-useHead({ title: headTitle })
+useHead({ title: t('common.browse') + (subtitle.value ? ` - ${subtitle.value}` : '') })
 
 onMounted(() => {
   window.addEventListener('resize', () => {

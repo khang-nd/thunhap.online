@@ -10,8 +10,6 @@
   "common": {
     "sitename": "Thu Nhap Online",
     "browse": "Browse",
-    "browse-online": "A list of successful online businesses",
-    "browse-category": "A list of successful {category} businesses",
     "filters": "Filters",
     "about": "About",
     "search": "Search",
