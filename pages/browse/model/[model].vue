@@ -1,0 +1,3 @@
+<template>
+  <BrowsePage />
+</template>

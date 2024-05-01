@@ -47,13 +47,12 @@ export type Filter = 'revenue' | 'status' | 'models' | 'tags'
 const { t } = useI18n()
 const { isMobile } = defineProps<{ isMobile?: boolean }>()
 const route = useRoute()
-const router = useRouter();
 const { data } = await useProductFieldQuery('hashtags')
 const initial: Record<Filter, () => (string | number)[]> = {
   revenue: () => (route.query.revenue as string)?.split('-').map(Number) || [0, 100000],
-  status: () => (route.query.status as string)?.split(',') || [],
-  models: () => (route.query.models as string)?.split(',') || [],
-  tags: () => (route.query.tags as string)?.split(',') || [],
+  status: () => ((route.params.status || route.query.status) as string)?.split(',') || [],
+  models: () => ((route.params.model || route.query.models) as string)?.split(',') || [],
+  tags: () => ((route.params.tag || route.query.tags) as string)?.split(',') || [],
 }
 const selected: Record<Filter, Ref<(string | number)[]>> = {
   revenue: ref(initial.revenue()),

@@ -100,9 +100,9 @@ const mapSortMode = (mode: SortMode): SortOptions[] => {
 
 watch([() => route.query as QueryParams, locale], async ([routeQuery, currentLocale]) => {
   const revenueRange = (routeQuery.revenue as string)?.split('-').map(Number)
-  const status = (routeQuery.status as string)?.split(',')
-  const models = (routeQuery.models as string)?.split(',')
-  const tags = (routeQuery.tags as string)?.split(',')
+  const status = ((route.params.status || routeQuery.status) as string)?.split(',')
+  const models = ((route.params.model || routeQuery.models) as string)?.split(',')
+  const tags = ((route.params.tag || routeQuery.tags) as string)?.split(',')
 
   page.value = Number(routeQuery.page) || initial.page
   sortDir.value = routeQuery.sortdir || initial.sortdir

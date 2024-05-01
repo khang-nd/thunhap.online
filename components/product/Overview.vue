@@ -6,7 +6,7 @@
     <Icon name="uil:external-link-alt" />
   </CoreButton>
   <ProductField :title="$t('common.status')">
-    <CoreBadge :color="product.status" :href="'/browse?status=' + product.status">
+    <CoreBadge :color="product.status" :href="'/browse/status/' + product.status">
       {{ $t('common.status-types.' + product.status) }}
     </CoreBadge>
   </ProductField>
@@ -19,10 +19,10 @@
     <span class="font-bold text-xl">{{ formatPrice(product.revenue, locale) }}/{{ $t('common.month') }}</span>
   </ProductField>
   <ProductField v-if="product.models" :title="$t('common.revenue-models')">
-    <CoreBadge v-if="typeof product.models === 'string'" :href="'/browse?models=' + product.models">
+    <CoreBadge v-if="typeof product.models === 'string'" :href="'/browse/model/' + product.models">
       {{ $t('common.revenue-model-types.' + product.models) }}
     </CoreBadge>
-    <CoreBadge v-else v-for="model in product.models" :key="model" :href="'/browse?models=' + model">
+    <CoreBadge v-else v-for="model in product.models" :key="model" :href="'/browse/model/' + model">
       {{ $t('common.revenue-model-types.' + model) }}
     </CoreBadge>
   </ProductField>
