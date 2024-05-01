@@ -16,9 +16,9 @@ interface Props {
 
 const { href } = withDefaults(defineProps<Props>(), { color: 'unknown' })
 const colors: Record<StatusType, string> = {
-  active: "bg-green-100 text-green-700",
-  inactive: "bg-red-100 text-red-700",
-  acquired: "bg-purple-100 text-purple-700",
+  active: "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-100",
+  inactive: "bg-red-100 text-red-700 dark:bg-red-950 dark:text-red-100",
+  acquired: "bg-purple-100 text-purple-700 dark:bg-purple-900 dark:text-purple-100",
   unknown: "bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300",
 };
 const as = href ? resolveLinkComponent(href) : 'span'
