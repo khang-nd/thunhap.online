@@ -41,14 +41,6 @@
             :items="locales.map((({ code }) => ({ label: code.toUpperCase(), value: code })))" />
           <LayoutAnalytics />
           <LayoutColorMode />
-          <NuxtLink :href="contactLinks.twitter.url" target="_blank" title="Twitter"
-            class="el-link p-2 transition-colors">
-            <Icon name="uil:twitter" size="20" />
-          </NuxtLink>
-          <NuxtLink :href="contactLinks.email.url" title="Email"
-            class="el-link p-2 transition-colors">
-            <Icon name="uil:envelope-alt" size="20" />
-          </NuxtLink>
         </div>
       </nav>
     </div>

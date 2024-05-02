@@ -20,13 +20,13 @@
     q1: Ảnh OG là gì?
     a1: Ảnh OG là ảnh đại diện cho một trang web khi chia sẻ trên các nền tảng mạng xã hội như Facebook, Twitter, LinkedIn, v.v.
     q2: Tại sao tôi cần ảnh OG?
-    a2: Một ảnh OG giúp tăng tỷ lệ truy cập khi trang web của bạn được chia sẻ trên các nền tảng mạng xã hội. Nó cũng giúp trang web của bạn trở nên chuyên nghiệp hơn.
+    a2: Ảnh OG giúp tăng tỷ lệ truy cập khi trang web của bạn được chia sẻ trên các nền tảng mạng xã hội. Nó cũng giúp trang web của bạn trở nên chuyên nghiệp hơn.
     q3: Kích thước tiêu chuẩn cho ảnh OG là bao nhiêu?
     a3: Kích thước tiêu chuẩn cho ảnh OG là 1200x630 pixel. Kích thước này đảm bảo rằng ảnh sẽ hiển thị tốt trên tất cả các nền tảng mạng xã hội.
     q4: Làm thế nào để thêm ảnh OG vào trang web của tôi?
     a4: 'Bạn có thể thêm ảnh OG vào trang web của mình bằng cách thêm thẻ meta sau vào phần head của trang web của bạn: &lt;meta property="og:image" content="URL của ảnh"&gt;'
     q5: Bạn có thể hỗ trợ thêm các tùy chọn khác cho OG Image Generator không?
-    a5: Có, chúng tôi có thể hỗ trợ thêm nếu có nhu cầu. Vui lòng liên hệ với chúng tôi qua email hoặc liên hệ với chúng tôi trên X.
+    a5: Có, chúng tôi có thể hỗ trợ thêm nếu có nhu cầu. Vui lòng liên hệ với chúng tôi qua email hoặc thông qua X (Twitter).
 </i18n>
 
 <template>

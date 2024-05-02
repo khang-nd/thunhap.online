@@ -2,6 +2,10 @@
 
 All notable changes and updates made to this website
 
+## May 3, 2024
+
+- Updated site footer with more links
+
 ## Apr 30, 2024
 
 - Added the [OG Image Generator](/ogimage) tool

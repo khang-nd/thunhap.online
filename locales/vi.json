@@ -9,6 +9,7 @@
   },
   "common": {
     "sitename": "Thu Nhập Online",
+    "home": "Trang chủ",
     "browse": "Khám phá",
     "filters": "Lọc kết quả",
     "about": "Giới thiệu",
@@ -57,7 +58,9 @@
     "listing-title": "Các công cụ và nền tảng {category}",
     "dark": "Chế độ tối",
     "light": "Chế độ sáng",
-    "system": "Theo thiết bị"
+    "system": "Theo thiết bị",
+    "sitemap": "Sitemap",
+    "tools": "Công cụ"
   },
   "category": {
     "ai": "AI",

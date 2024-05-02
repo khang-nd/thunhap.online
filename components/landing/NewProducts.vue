@@ -3,11 +3,11 @@
     {{ $t('landing.new-products-title') }}
   </h2>
 
-  <LazyContentList path="/product" :query="query" v-slot="{ list }">
+  <ContentList path="/product" :query="query" v-slot="{ list }">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
       <BrowseProductCard v-for="product in list" :key="product._path" :product="product" />
     </div>
-  </LazyContentList>
+  </ContentList>
 
   <div class="text-center mb-40">
     <CoreButton href="/browse" class="inline-flex items-center">
@@ -22,7 +22,7 @@ const { locale } = useI18n()
 const query = computed(() => ({
   where: [{ _locale: locale.value }],
   without: ['body', 'hashtags'],
-  limit: 4,
+  limit: 8,
   sort: [{ publishedAt: -1 }]
 }))
 </script>

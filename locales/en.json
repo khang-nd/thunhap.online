@@ -9,6 +9,7 @@
   },
   "common": {
     "sitename": "Thu Nhap Online",
+    "home": "Home",
     "browse": "Browse",
     "filters": "Filters",
     "about": "About",
@@ -57,7 +58,9 @@
     "listing-title": "{category} tools and resources",
     "dark": "Dark mode",
     "light": "Light mode",
-    "system": "System"
+    "system": "System",
+    "sitemap": "Sitemap",
+    "tools": "Tools"
   },
   "category": {
     "ai": "AI",

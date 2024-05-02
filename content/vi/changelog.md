@@ -2,6 +2,10 @@
 
 Các cập nhật và sửa đổi đã thực hiện trên hệ thống trang web
 
+## 03-05-2024
+
+- Bổ sung thêm liên kết vào footer trang web
+
 ## 30-04-2024
 
 - Thêm công cụ [tạo ảnh OG](/ogimage)

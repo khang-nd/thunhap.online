@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col lg:flex-row items-center py-16 lg:pt-8 mb-8" @mousemove="handleMousemove">
+  <div class="flex flex-col lg:flex-row items-center py-24 lg:pt-8 mb-8" @mousemove="handleMousemove">
     <div>
       <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight dark:text-white">
         {{ $t('landing.title') }}
@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div class="w-full relative">
+    <div class="w-full relative hidden md:block">
       <SvgHeroGraphic class="w-full" />
       <SvgHeroDecor class="w-full absolute top-0 left-0" :mouse-pos="mousePos" />
     </div>
