@@ -13,3 +13,7 @@ icon: uil:money-bill
 :product{url=patreon.com}
 :product{url=ko-fi.com}
 :product{url=buymeacoffee.com}
+:product{url=buysellads.com}
+:product{url=media.net}
+:product{url=infolinks.com}
+:product{url=bidvertiser.com}

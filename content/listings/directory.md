@@ -26,3 +26,15 @@ icon: uil:list-ul
 :product{url=alternative.me}
 :product{url=startupstash.com}
 :product{url=launchingnext.com}
+:product{url=pitchwall.co}
+:product{url=joinly.xyz}
+:product{url=startupbase.io}
+:product{url=launched.io}
+:product{url=growthjunkie.com}
+:product{url=sitejabber.com}
+:product{url=toolsalad.com}
+:product{url=startuplister.com}
+:product{url=awesomeindie.com}
+:product{url=microlaunch.net}
+:product{url=libhunt.com}
+:product{url=activesearchresults.com}
