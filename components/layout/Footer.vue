@@ -4,7 +4,7 @@
       <div class="px-2 py-8 grid grid-cols-1 md:grid-cols-2 gap-y-6 xl:flex justify-between">
         <div class="flex flex-col justify-end">
           <CoreButton v-for="p in pages" :href="p.href" :as="p.title === 'sitemap' ? 'a' : undefined" variant="inverted"
-            size="md" class="text-left">
+            size="md" class="text-left text-lg">
             {{ $t(`common.${p.title}`) }}
           </CoreButton>
         </div>

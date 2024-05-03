@@ -1,48 +1,25 @@
-import type { CategoryType, RevenueModelType, StatusType } from "./types.client";
+import type {
+  CategoryType,
+  RevenueModelType,
+  StatusType,
+} from "./types.client";
 
 export const categories: Record<CategoryType, any> = {
-  ai: {
-    icon: "uil:robot",
-  },
-  automation: {
-    icon: "uil:cog",
-  },
-  marketing: {
-    icon: "uil:megaphone",
-  },
-  design: {
-    icon: "uil:palette",
-  },
-  website: {
-    icon: "uil:web-grid",
-  },
-  form: {
-    icon: "uil:file-plus-alt",
-  },
-  mobile: {
-    icon: "uil:mobile-android",
-  },
-  analytics: {
-    icon: "uil:chart-pie",
-  },
-  editor: {
-    icon: "uil:image-edit",
-  },
-  template: {
-    icon: "uil:box",
-  },
-  utility: {
-    icon: "uil:wrench",
-  },
-  service: {
-    icon: "uil:calling",
-  },
-  entertainment: {
-    icon: "uil:play-circle",
-  },
-  jobs: {
-    icon: "uil:briefcase-alt",
-  },
+  ai: "uil:robot",
+  automation: "uil:cog",
+  marketing: "uil:megaphone",
+  design: "uil:palette",
+  website: "uil:web-grid",
+  form: "uil:file-plus-alt",
+  mobile: "uil:mobile-android",
+  analytics: "uil:chart-pie",
+  editor: "uil:image-edit",
+  template: "uil:box",
+  utility: "uil:wrench",
+  service: "uil:calling",
+  entertainment: "uil:play-circle",
+  jobs: "uil:briefcase-alt",
+  education: "uil:books",
 };
 
 export const revenueModels: RevenueModelType[] = [

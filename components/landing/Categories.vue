@@ -7,7 +7,7 @@
     <NuxtLinkLocale v-for="key in categoryKeys" :href="'/browse/' + key"
       class="el-link text-center rounded-sm px-4 py-8 transition-colors border hover:border-gray-400 dark:border-gray-700 dark:hover:border-gray-400">
       <div class="inline-block p-2 bg-gray-200 dark:bg-gray-800 rounded-full">
-        <Icon :name="categories[key].icon" size="24" />
+        <Icon :name="categories[key]" size="24" />
       </div>
       <h3 class="font-semibold lg:text-lg">{{ $t('category.' + key) }}</h3>
     </NuxtLinkLocale>

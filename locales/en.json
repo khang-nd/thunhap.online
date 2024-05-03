@@ -76,7 +76,8 @@
     "utility": "Utility",
     "service": "Service",
     "entertainment": "Entertainment",
-    "jobs": "Job Board"
+    "jobs": "Job Board",
+    "education": "Education"
   },
   "listing": {
     "affiliate": {

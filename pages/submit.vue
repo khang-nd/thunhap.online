@@ -54,7 +54,7 @@
             <CoreToggle v-for="(category, key) in categories" :key="key" :value="key"
               class="inline-flex items-center mr-3 mb-3 space-x-2">
               <span>
-                <Icon :name="category.icon" />
+                <Icon :name="category" />
               </span>
               <span>{{ $t('category.' + key) }}</span>
             </CoreToggle>
