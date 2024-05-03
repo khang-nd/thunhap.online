@@ -19,7 +19,7 @@ export const categories: Record<CategoryType, any> = {
   service: "uil:calling",
   entertainment: "uil:play-circle",
   jobs: "uil:briefcase-alt",
-  education: "uil:books",
+  education: "uil:graduation-cap",
 };
 
 export const revenueModels: RevenueModelType[] = [
