@@ -1,31 +1,34 @@
 <template>
-  <div @mouseover="isHovered = true" @mouseleave="isHovered = false" class="flex flex-col dark:bg-neutral-900">
-    <div class="w-full h-52 overflow-hidden border border-gray-300 dark:border-neutral-700 relative shrink-0">
+  <div class="flex flex-col group border border-gray-300 dark:border-neutral-700">
+    <div class="w-full h-52 overflow-hidden relative shrink-0">
       <component :is="ResolvedLink" :href="product._path">
         <img v-if="product.image?.src" :src="product.image.src" :alt="product.image.alt"
           class="w-full h-full object-cover" />
-        <div
-          :class="['absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 flex items-center justify-center transition-opacity duration-300 opacity-0', { 'opacity-100': isHovered }]">
-          <Icon name="uil:external-link-alt" class="text-white text-5xl" />
-        </div>
       </component>
+      <div
+        class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 transition-opacity duration-300 pointer-events-none opacity-0 group-hover:opacity-100">
+        <Icon name="uil:external-link-alt" class="text-white text-5xl" />
+      </div>
       <BrowseProductAdLabel v-if="product._sponsor" />
     </div>
-    <component :is="ResolvedLink" :href="product._path" class="h-full p-3 border border-t-0 border-gray-300 dark:border-neutral-700">
-      <CoreHeading as="h4">{{ product.title }}</CoreHeading>
-      <p class="mb-2 dark:text-gray-400">{{ product.description }}</p>
+    <component :is="ResolvedLink" :href="product._path"
+      class="h-full flex flex-col justify-between p-3 border-t border-gray-300 dark:border-neutral-700">
+      <div class="mb-2">
+        <CoreHeading as="h4">{{ product.title }}</CoreHeading>
+        <p class="dark:text-gray-400">{{ product.description }}</p>
+      </div>
       <div>
-        <CoreTooltip>
+        <CoreTooltip v-if="product.revenue">
           <template #trigger>
-            <CoreBadge v-if="product.revenue" class="mb-0 align-top">
+            <CoreBadge class="mb-0 align-top">
               {{ formatPrice(product.revenue, locale) }}/{{ $t('common.month') }}
             </CoreBadge>
           </template>
           {{ $t('common.revenue') }}
         </CoreTooltip>
-        <CoreTooltip>
+        <CoreTooltip v-if="product.affiliate">
           <template #trigger>
-            <CoreBadge v-if="product.affiliate" class="mb-0 align-top">
+            <CoreBadge class="mb-0 align-top">
               <Icon name="iconoir:coins" size="20" />
             </CoreBadge>
           </template>
@@ -43,6 +46,5 @@ const props = defineProps<{
   product: ParsedContent | ParsedProduct | SponsorProduct
 }>()
 const { locale } = useI18n();
-const isHovered = ref(false);
 const ResolvedLink = resolveLinkComponent(props.product._path as string);
 </script>
