@@ -23,3 +23,17 @@ useHead({
 
 const useIdFunction = () => useId()
 </script>
+
+<style>
+/* page transition styles */
+.auth-enter-active,
+.auth-leave-active {
+  transition: 0.3s;
+}
+
+.auth-enter-from,
+.auth-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+</style>
