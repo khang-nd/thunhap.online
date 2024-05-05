@@ -8,6 +8,7 @@
 <template>
   <LayoutContainer>
     <LandingHero />
+    <LandingFeatured />
     <LandingNewProducts />
     <LandingCategories />
     <!-- <LandingSponsors /> -->
