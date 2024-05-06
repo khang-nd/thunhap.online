@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between pt-[--navheight]" :style="{ '--navheight': NAV_HEIGHT + 'px' }">
+  <div class="flex flex-col justify-between">
     <LayoutNavbar />
     <slot />
     <LayoutFooter />

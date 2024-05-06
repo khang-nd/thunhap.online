@@ -1,7 +1,6 @@
 <template>
-  <header
-    class="w-full flex items-center fixed top-0 z-40 bg-white dark:bg-neutral-950 transition-all h-auto lg:h-[--navheight] shadow-md shadow-[--shadow]"
-    :style="navStyle">
+  <header :style="navStyle"
+    class="w-full flex items-center sticky top-0 z-40 bg-white dark:bg-neutral-950 transition-all h-auto lg:h-[--navheight] shadow-md shadow-[--shadow]">
     <div class="w-full max-w-screen-xl flex flex-col lg:flex-row justify-between items-center p-5 mx-auto">
       <div class="flex w-full lg:w-auto items-center justify-between">
         <NuxtLinkLocale href="/" class="flex items-center text-lg text-slate-800 dark:text-slate-200"
