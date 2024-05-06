@@ -1,8 +1,6 @@
 <template>
-  <component :is="as" class="w-full px-6 xl:px-0 mb-16">
-    <div class="max-w-screen-md h-full mx-auto">
-      <slot />
-    </div>
+  <component :is="as" class="w-full px-5 mb-16">
+    <slot />
   </component>
 </template>
 

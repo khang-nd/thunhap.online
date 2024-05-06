@@ -2,7 +2,7 @@
   <main class="w-full">
     <ContentDoc :path="path" :query="{ where: { _locale: locale } }">
       <template #default="{ doc }">
-        <div class="max-w-screen-xl mx-auto pt-8 md:pt-16 flex flex-col lg:flex-row">
+        <div class="max-w-screen-xl mx-auto pt-8 md:pt-16 flex flex-col lg:flex-row gap-10">
           <ProductContainer as="article">
             <div class="flex items-center justify-between mb-2">
               <div class="flex items-center space-x-4">
@@ -16,7 +16,7 @@
             <ContentRenderer :value="doc" class="mb-16" />
             <ProductTags :tags="doc.hashtags" />
           </ProductContainer>
-          <ProductContainer as="aside" class="lg:max-w-xs">
+          <ProductContainer as="aside" class="lg:max-w-sm">
             <div class="mb-16">
               <ProductOverview :product="doc" />
             </div>
