@@ -1,6 +1,8 @@
 <template>
-  <header class="w-full">
-    <div class="max-w-screen-xl flex flex-col lg:flex-row justify-between items-center p-5 mx-auto">
+  <header
+    class="w-full flex items-center fixed top-0 z-40 bg-white dark:bg-neutral-950 transition-all h-auto lg:h-[--navheight] shadow-md shadow-[--shadow]"
+    :style="navStyle">
+    <div class="w-full max-w-screen-xl flex flex-col lg:flex-row justify-between items-center p-5 mx-auto">
       <div class="flex w-full lg:w-auto items-center justify-between">
         <NuxtLinkLocale href="/" class="flex items-center text-lg text-slate-800 dark:text-slate-200"
           @mouseover="titleMouseOver = true" @mouseout="titleMouseOver = false">
@@ -53,6 +55,15 @@ const openMenu = ref(false);
 const titleMouseOver = ref(false);
 const currentLocale = ref(locale.value)
 const menuitems = ['browse', 'listings', 'about']
+const { y } = useWindowScroll()
+const navStyle = ref({})
 
+watch(y, (val) => {
+  const minimized = val > NAV_HEIGHT
+  navStyle.value = {
+    '--navheight': (minimized ? NAV_HEIGHT_MINIMIZED : NAV_HEIGHT) + 'px',
+    '--shadow': minimized ? 'rgb(0 0 0 / 0.1)' : 'transparent',
+  }
+})
 watch(currentLocale, setLocale)
 </script>
