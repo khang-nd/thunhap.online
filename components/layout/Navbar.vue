@@ -1,7 +1,7 @@
 <template>
-  <header :style="navStyle"
-    class="w-full flex items-center sticky top-0 z-40 bg-white dark:bg-neutral-950 transition-all h-auto lg:h-[--navheight] shadow-md shadow-[--shadow]">
-    <div class="w-full max-w-screen-xl flex flex-col lg:flex-row justify-between items-center p-5 mx-auto">
+  <header class="w-full sticky z-30 top-0 transition-shadow min-h-[86px]">
+    <div :style="navStyle"
+      class="max-w-screen-xl flex flex-col lg:flex-row justify-between items-center mx-auto bg-white dark:bg-neutral-950 transition-all px-5 py-[--py]">
       <div class="flex w-full lg:w-auto items-center justify-between">
         <NuxtLinkLocale href="/" class="flex items-center text-lg text-slate-800 dark:text-slate-200"
           @mouseover="titleMouseOver = true" @mouseout="titleMouseOver = false">
@@ -55,14 +55,15 @@ const titleMouseOver = ref(false);
 const currentLocale = ref(locale.value)
 const menuitems = ['browse', 'listings', 'about']
 const { y } = useWindowScroll()
-const navStyle = ref({})
-
-watch(y, (val) => {
-  const minimized = val > NAV_HEIGHT
-  navStyle.value = {
-    '--navheight': (minimized ? NAV_HEIGHT_MINIMIZED : NAV_HEIGHT) + 'px',
-    '--shadow': minimized ? 'rgb(0 0 0 / 0.1)' : 'transparent',
-  }
+const navStyle = ref({
+  '--py': '20px',
 })
+
+watchDebounced(y, (val) => {
+  const minimized = val > 0
+  navStyle.value = {
+    '--py': (minimized ? 8 : 20) + 'px',
+  }
+}, { debounce: 100 })
 watch(currentLocale, setLocale)
 </script>
