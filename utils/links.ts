@@ -14,4 +14,5 @@ export const affiliateLinks = {
   "typingmind.com": "https://typingmind.com/?aff=Gmbpn",
   "pdfpals.com": "https://pdfpals.com?aff=Gmbpn",
   "carrd.co": "https://try.carrd.co/rhb9ffjr",
+  "screen.studio": "https://screen.studio/@Gmbpn",
 };
