@@ -1,11 +1,12 @@
 <template>
-  <component :is="resolvedAs" :href="href" :rel="rel" :class="twMerge(
+  <component :is="resolvedAs" :href="href" :rel="rel" :disabled="loading" :class="twMerge(
     'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-black',
     sizes[size],
     styles[$attrs.disabled === '' ? 'disabled' : variant],
     $attrs.class as string,
   )">
-    <slot />
+    <Icon name="svg-spinners:bars-scale-fade" v-if="loading" class="inline" />
+    <slot v-else />
   </component>
 </template>
 
@@ -21,6 +22,7 @@ interface Props {
   href?: string;
   size?: Size;
   variant?: Variant;
+  loading?: boolean;
 }
 
 const { as, href } = withDefaults(defineProps<Props>(), {

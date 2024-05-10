@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.556.0",
+    "@google-ai/generativelanguage": "^2.3.0",
     "@nuxt/content": "^2.12.1",
     "@nuxthq/studio": "^1.0.13",
     "@nuxtjs/color-mode": "^3.4.1",

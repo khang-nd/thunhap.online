@@ -35,6 +35,7 @@ export default defineNuxtConfig({
     posthogApiKey: "",
     s3AccessKey: "",
     s3SecretKey: "",
+    geminiApiKey: "",
     public: {
       posthogKey: "",
       posthogHost: "https://us.posthog.com",
