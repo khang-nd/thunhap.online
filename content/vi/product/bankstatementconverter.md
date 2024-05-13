@@ -8,7 +8,7 @@ categories: [utility]
 revenue: 7000
 models: subscription
 year: 2021
-hashtags: [b2c, b2b]
+hashtags: [b2c, b2b, googleads, hackernews]
 publishedAt: 1712994426618
 ---
 

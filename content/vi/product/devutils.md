@@ -8,7 +8,7 @@ categories: [utility]
 revenue: 5000
 models: transaction
 year: 2020
-hashtags: [b2c, devtool, buildinpublic]
+hashtags: [b2c, devtool, buildinpublic, hackernews]
 publishedAt: 1712591624263
 ---
 

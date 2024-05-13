@@ -8,7 +8,7 @@ categories: [analytics, ai]
 revenue: 30000
 models: subscription
 year: 2018
-hashtags: [b2c, b2b]
+hashtags: [b2c, b2b, hackernews]
 publishedAt: 1714200063197
 ---
 
