@@ -8,7 +8,7 @@ categories: [entertainment, mobile]
 revenue: 2500
 models: [advertising, subscription]
 year: 2020
-hashtags: [vietnam, b2c, anon]
+hashtags: [vietnam, b2c, playstore, anon]
 publishedAt: 1711187774000
 ---
 
