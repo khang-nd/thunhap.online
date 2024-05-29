@@ -38,6 +38,18 @@
 
     <div class="flex flex-col lg:flex-row gap-6 mx-auto max-w-screen-lg mt-16 mb-32">
       <div class="flex flex-col gap-4 dark:text-white">
+        <div>
+          <span class="block mb-2 font-semibold">Preset</span>
+          <div class="space-x-3">
+            <CoreButton :variant="preset === 'default' ? 'primary' : 'outline'" size="md" @click="preset = 'default'">
+              Default
+            </CoreButton>
+            <CoreButton :variant="preset === 'metaframe' ? 'primary' : 'outline'" size="md"
+              @click="preset = 'metaframe'">
+              MetaFrame
+            </CoreButton>
+          </div>
+        </div>
         <label>
           <span class="block mb-2 font-semibold">Title</span>
           <input class="el-input px-1 py-2 w-full min-w-60" v-model="ogTitle" />
@@ -46,7 +58,7 @@
           <span class="block mb-2 font-semibold">Description</span>
           <input class="el-input px-1 py-2 w-full min-w-60" v-model="ogDescription" />
         </label>
-        <label>
+        <label v-if="preset === 'default'">
           <span class="flex items-center mb-2 space-x-1">
             <span class="font-semibold">Icon</span>
             <NuxtLink target="_blank" href="https://icones.js.org/collection/all">
@@ -55,12 +67,19 @@
           </span>
           <input class="el-input px-1 py-2 w-full min-w-60" v-model="ogIcon" />
         </label>
+        <label v-if="preset !== 'default'">
+          <span class="block mb-2 font-semibold">Theme</span>
+          <CoreToggleGroup v-model="ogTheme" :items="themes" />
+        </label>
         <CoreButton @click="exportImage">Export</CoreButton>
       </div>
       <div class="w-full overflow-auto">
         <div class="mb-2 dark:text-white font-semibold">Preview</div>
         <div class="overflow-auto border border-black">
-          <OgimageDefault ref="ogImage" :icon="ogIcon" :title="ogTitle" :description="ogDescription" />
+          <OgimageDefault v-if="preset === 'default'" ref="ogImage" :icon="ogIcon" :title="ogTitle"
+            :description="ogDescription" />
+          <OgimageMetaframe v-else-if="preset === 'metaframe'" ref="ogImage" :title="ogTitle"
+            :description="ogDescription" :image="ogScreenshot" :theme="ogTheme" @image:change="handleImageChange" />
         </div>
       </div>
     </div>
@@ -82,13 +101,22 @@
 import type { OgimageDefault } from '#build/components';
 import { domToBlob } from 'modern-screenshot';
 
+type Preset = 'default' | 'metaframe';
+
 const { t } = useI18n()
 const title = t('title')
 const description = t('description')
+const preset = ref<Preset>('default')
 const ogIcon = ref('healthicons:money-bag-outline')
 const ogTitle = ref('Thu Nhập.online')
 const ogDescription = ref('Discover successful online businesses')
+const ogScreenshot = ref('')
+const ogTheme = ref<'light' | 'dark'>('light')
 const ogImage = ref<InstanceType<typeof OgimageDefault>>()
+const themes = [
+  { label: 'Light', value: 'light' },
+  { label: 'Dark', value: 'dark' },
+]
 const knowledgeSharing = emptyArray(5).map((_, i) => ({
   q: t(`q${i + 1}`),
   a: t(`a${i + 1}`)
@@ -99,6 +127,10 @@ useHead({
     { property: 'og:image', content: `https://cdn.thunhap.online/ogimage/ogimagegen.png` },
   ]
 })
+
+const handleImageChange = (image: string) => {
+  ogScreenshot.value = image
+}
 
 const exportImage = async () => {
   if (!ogImage.value || !ogImage.value.image) return;
