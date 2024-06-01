@@ -15,7 +15,8 @@ export type CategoryType =
   | "service"
   | "entertainment"
   | "jobs"
-  | "education";
+  | "education"
+  | "review";
 
 export type RevenueModelType =
   | "subscription"

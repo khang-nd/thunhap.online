@@ -77,7 +77,8 @@
     "service": "Service",
     "entertainment": "Entertainment",
     "jobs": "Job Board",
-    "education": "Education"
+    "education": "Education",
+    "review": "Review site"
   },
   "listing": {
     "affiliate": {
