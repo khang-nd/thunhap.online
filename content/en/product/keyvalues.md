@@ -8,7 +8,7 @@ categories: [jobs]
 revenue: 30000
 models: [subscription]
 year: 2017
-hashtags: [b2c, b2b, newsletter]
+hashtags: [b2c, b2b, newsletter, hackernews]
 publishedAt: 1714872836085
 ---
 

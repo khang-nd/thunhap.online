@@ -8,7 +8,7 @@ categories: [editor, utility]
 revenue: 100000
 models: [advertising, subscription, transaction]
 year: 2013
-hashtags: [b2c, b2b, ama]
+hashtags: [b2c, b2b, ama, hackernews]
 publishedAt: 1713441300342
 ---
 

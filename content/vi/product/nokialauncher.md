@@ -1,6 +1,6 @@
 ---
 image:
-  src: https://play-lh.googleusercontent.com/Z5qgCbQeIcElYcU6c7zcbdYmvfnE0TxpvMswd3ZmShUvekI45UtBQgc6MujbSHsNhXQ=w1024-h512-rw
+  src: https://cdn.thunhap.online/product/nokialauncher.png
   alt: Nokia Launcher
 homepage: https://play.google.com/store/apps/details?id=com.daovanuong_fpt.nokialauncher
 status: active
@@ -8,7 +8,7 @@ categories: [mobile, entertainment]
 revenue: 0000
 models: [advertising, transaction]
 year: 2022
-hashtags: [b2c, vietnam]
+hashtags: [b2c, playstore, vietnam]
 publishedAt: 1711498960651
 ---
 

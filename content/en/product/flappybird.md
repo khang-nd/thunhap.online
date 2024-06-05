@@ -8,7 +8,7 @@ categories: [mobile, entertainment]
 revenue: 1500000
 models: [advertising]
 year: 2013
-hashtags: [b2c, vietnam, phenomenon]
+hashtags: [b2c, vietnam, phenomenon, playstore, appstore, game]
 publishedAt: 1714291489654
 ---
 
