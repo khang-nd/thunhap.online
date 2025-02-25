@@ -36,10 +36,14 @@ export default defineEventHandler(async (e): Promise<PageviewsResponse> => {
       ],
     }),
   });
-  const data = await $fetch(
-    `${config.public.posthogHost}/api/projects/${PROJECT_ID}/insights/trend?${params}`,
-    { headers: { Authorization: `Bearer ${config.posthogApiKey}` } }
-  );
-  // return data;
-  return { result: (data as any).result[0].aggregated_value };
+  try {
+    const data = await $fetch(
+      `${config.public.posthogHost}/api/projects/${PROJECT_ID}/insights/trend?${params}`,
+      { headers: { Authorization: `Bearer ${config.posthogApiKey}` } }
+    );
+    // return data;
+    return { result: (data as any).result[0].aggregated_value };
+  } catch (error) {
+    return { result: 0 };
+  }
 });

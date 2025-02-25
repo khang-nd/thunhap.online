@@ -37,6 +37,7 @@ const { data } = await useContentQuery(
   'similarProducts',
   queryContent('product')
     .where(query)
+    .without(['body'])
     .sort({ publishedAt: 1 })
     .limit(4)
     .find()
